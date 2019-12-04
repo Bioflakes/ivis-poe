@@ -7,9 +7,9 @@ var width = 960,
 var color = d3.scale.ordinal()
     .range(["#7A99AC", "#E4002B"]);
 
+    var test_csv = "Allagash,21,1\nTester,10,5\nAnotherTester,5,1";
 
-
-d3.text("word_groups.csv", function(error, text) {
+d3.text("data/word_groups.csv", function(error, text) {
     if (error) throw error;
     var colNames = "text,size,group\n" + text;
     var data = d3.csv.parse(colNames);
