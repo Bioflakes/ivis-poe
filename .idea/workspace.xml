@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48576897-ed1a-4a07-a59e-6bbc569ea386" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bubblechart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/globeStylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/globemap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bubblechart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bubblechart.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,22 +17,56 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="238">
+              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/globemap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/globeStylesheet.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/world-110m-country-names.tsv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="167" column="14" lean-forward="true" selection-start-line="167" selection-start-column="14" selection-end-line="167" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/bubblechart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="841">
-              <caret line="151" column="2" selection-start-line="151" selection-start-column="2" selection-end-line="151" selection-end-column="2" />
+            <state relative-caret-position="2567">
+              <caret line="151" column="4" lean-forward="true" selection-start-line="151" selection-start-column="4" selection-end-line="151" selection-end-column="4" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,17 +78,26 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev/bubbles" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/bubblechart.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/globemap.js" />
+        <option value="$PROJECT_DIR$/data/world-110m-country-names.tsv" />
+        <option value="$PROJECT_DIR$/css/globeStylesheet.css" />
       </list>
     </option>
   </component>
@@ -68,7 +112,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -79,7 +122,17 @@
             <path>
               <item name="ivis-poe" type="b2602c69:ProjectViewProjectNode" />
               <item name="ivis-poe" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ivis-poe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ivis-poe" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ivis-poe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ivis-poe" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ivis-poe" type="b2602c69:ProjectViewProjectNode" />
@@ -90,6 +143,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -97,6 +152,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -127,13 +183,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1364000" />
+    <option name="totallyTimeSpent" value="3690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31770286" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3251599" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -158,20 +214,119 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/bubblechart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="151" column="2" selection-start-line="151" selection-start-column="2" selection-end-line="151" selection-end-column="2" />
+        <state relative-caret-position="2567">
+          <caret line="151" column="4" lean-forward="true" selection-start-line="151" selection-start-column="4" selection-end-line="151" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/globemap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/globeStylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/world-110m-country-names.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="167" column="14" lean-forward="true" selection-start-line="167" selection-start-column="14" selection-end-line="167" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
