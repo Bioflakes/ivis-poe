@@ -1,5 +1,5 @@
 var width = 960,
-    height = 500,
+    height = 760,
     padding = 1.5, // separation between same-color nodes
     clusterPadding = 6, // separation between different-color nodes
     maxRadius = 12;
@@ -7,23 +7,38 @@ var width = 960,
 var color = d3.scale.ordinal()
     .range(["#7A99AC", "#E4002B"]);
 
-    var test_csv = "Allagash,21,1\nTester,10,5\nAnotherTester,5,1";
-
+/**
+ * takes the entire csv as a string and appends colNames to it, which handles as type accessors
+ * throws error if not correct format (csv)
+ * @type {string}
+ */
 d3.text("data/word_groups.csv", function(error, text) {
     if (error) throw error;
+
     var colNames = "text,size,group\n" + text;
+    // data as an object Object
     var data = d3.csv.parse(colNames);
 
+
+    //console.log("Data is : " + data + "\n");
+    //console.log("ColName is : " + colNames);
+
+    // goes through each data set, gets the size of each data
     data.forEach(function(d) {
         d.size = +d.size;
+        //console.log("doing some shit with d+ size - " + d.size);
     });
 
 
-//unique cluster/group id's
+    /**
+     * goes through cluster groups, adds the groups to an accessible array
+     * @type {Array}
+     */
     var cs = [];
     data.forEach(function(d){
         if(!cs.contains(d.group)) {
             cs.push(d.group);
+
         }
     });
 
@@ -71,6 +86,8 @@ d3.text("data/word_groups.csv", function(error, text) {
 
 
     function create_nodes(data,node_counter) {
+        // gets data[i].group id
+        // has to be changed or worked around with ids
         var i = cs.indexOf(data[node_counter].group),
             r = Math.sqrt((i + 1) / m * -Math.log(Math.random())) * maxRadius,
             d = {
@@ -80,6 +97,9 @@ d3.text("data/word_groups.csv", function(error, text) {
                 x: Math.cos(i / m * 2 * Math.PI) * 200 + width / 2 + Math.random(),
                 y: Math.sin(i / m * 2 * Math.PI) * 200 + height / 2 + Math.random()
             };
+
+        // checks if group id exists in the clusters array
+        // or if r (radius) is bigger than the radius of the cluster item
         if (!clusters[i] || (r > clusters[i].radius)) clusters[i] = d;
         return d;
     };
