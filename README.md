@@ -10,7 +10,7 @@ This project is in the form of a static HTML project, however as d3js requires a
 **To run the python server, follow these steps:**
 
 1. Run a command window / terminal / powershell, keep this open while using the website
-2. Navigate to the folder where the index.hmtl file is located at
+2. Navigate to the folder where the index.html file is located at
 3. - Python 3
 		- enter command
 		```
@@ -21,12 +21,12 @@ This project is in the form of a static HTML project, however as d3js requires a
 		```
 		python -m SimpleHTTPServer
 		```
-4. Leave this window open
+4. **Leave this window open**
 5. To open the website, type the following line in the URL window of your browser
 ```
 localhost:8000/index.html
 ```
-6. Optional:
+6. *Optional*:
 	- the python server listens to port 8000 by default, you can change this by appending "portnumber &" to the command
 		- an example of this would be ```python -m http.server 8080 &```
 		- **please note** that this also requires you to use the respective port for the localhost address from Step 5. ```localhost:8080/index.html``` in this example.
