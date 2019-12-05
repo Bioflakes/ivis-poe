@@ -4,7 +4,6 @@ var width = 600,
     focused;
 
 //Setting projection
-
 var projection = d3.geo.orthographic()
     .scale(245)
     .rotate([0, 0])
@@ -14,11 +13,17 @@ var projection = d3.geo.orthographic()
 var path = d3.geo.path()
     .projection(projection);
 
-//SVG container
 
+//SVG container
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
+
+// Append empty placeholder g element to the SVG
+var group = svg.append("g");
+
+/*visualizationData = d3.json('data/geonames_cities_100k.geojson')
+    visualizationData = svg.append("g");*/
 
 //Adding water
 
@@ -39,6 +44,8 @@ queue()
 //Main function
 
 function ready(error, world, countryData) {
+
+
 
     var countryById = {},
         countries = topojson.feature(world, world.objects.countries).features;
@@ -119,5 +126,6 @@ function ready(error, world, countryData) {
             if(cnt[i].id == sel.value) {return cnt[i];}
         }
     };
+
 
 };
