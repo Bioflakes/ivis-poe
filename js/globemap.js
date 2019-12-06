@@ -19,6 +19,10 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
+var max_population = [];
+var rScale = d3.scale.sqrt();
+var peoplePerPixel = 50000;
+
 // Append empty placeholder g element to the SVG
 var group = svg.append("g");
 
@@ -39,11 +43,12 @@ var countryTooltip = d3.select("body").append("div").attr("class", "countryToolt
 queue()
     .defer(d3.json, "data/world-110m.json")
     .defer(d3.tsv, "data/world-110m-country-names.tsv")
+    .defer(d3.json, "data/geonames_cities_100k.geojson")
     .await(ready);
 
 //Main function
 
-function ready(error, world, countryData) {
+function ready(error, world, countryData, cityData) {
 
 
 
@@ -66,6 +71,30 @@ function ready(error, world, countryData) {
         .enter().append("path")
         .attr("class", "country")
         .attr("d", path)
+
+    // setting the circle size (not radius!) according to the number of inhabitants per city
+    population_array = [];
+    for (i = 0; i < cityData.features.length; i++) {
+        population_array.push(cityData.features[i].properties.population);
+    }
+    max_population = population_array.sort(d3.descending)[0];
+
+    var rMin = 0;
+    var rMax = Math.sqrt(max_population / (peoplePerPixel * Math.PI));
+    rScale.domain([0, max_population]);
+    rScale.range([rMin, rMax]);
+
+    path.pointRadius(function(d) {
+        return d.properties ? rScale(d.properties.population) : 1;
+    });
+
+    // Drawing transparent circle markers for cities
+    svg.selectAll("path.cities").data(cityData.features)
+        .enter().append("path")
+        .attr("class", "cities")
+        .attr("d", path)
+        .attr("fill", "#ffba00")
+        .attr("fill-opacity", 0.3)
 
         //Drag event
 

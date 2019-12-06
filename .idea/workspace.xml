@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="48576897-ed1a-4a07-a59e-6bbc569ea386" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/globeStylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/globeStylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/globemap.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/globemap.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
