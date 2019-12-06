@@ -94,7 +94,7 @@ function ready(error, world, countryData, cityData) {
         .attr("class", "cities")
         .attr("d", path)
         .attr("fill", "#ffba00")
-        .attr("fill-opacity", 0.3)
+        .attr("fill-opacity", 0.45)
 
         //Drag event
 
