@@ -12,20 +12,20 @@ var color = d3.scale.ordinal()
  * throws error if not correct format (csv)
  * @type {string}
  */
-d3.text("data/word_groups.csv", function(error, text) {
+d3.text("data/MOCK_DATA_1.csv", function(error, text) {
     if (error) throw error;
 
-    var colNames = "text,size,group\n" + text;
+    var colNames = text;
     // data as an object Object
     var data = d3.csv.parse(colNames);
-
 
     //console.log("Data is : " + data + "\n");
     //console.log("ColName is : " + colNames);
 
     // goes through each data set, gets the size of each data
     data.forEach(function(d) {
-        d.size = +d.size;
+        console.log(d.gender);
+        //d.size = +d.size;
         //console.log("doing some shit with d+ size - " + d.size);
     });
 
