@@ -22,11 +22,26 @@ d3.text("data/MOCK_DATA_1.csv", function(error, text) {
     //console.log("Data is : " + data + "\n");
     //console.log("ColName is : " + colNames);
 
+    var dict_groups = []
+
     // goes through each data set, gets the size of each data
     data.forEach(function(d) {
-        console.log(d.gender);
+
+
+        if(!dict_groups.includes(d.class)) {
+            dict_groups.push({key: dict_groups.length+1, value: d.class});
+            console.log("filled dict");
+        }
+
+
+        //console.log(d.gender);
         //d.size = +d.size;
         //console.log("doing some shit with d+ size - " + d.size);
+    })
+
+    console.log()
+    dict_groups.forEach(function(d){
+        console.log(d);
     });
 
 
