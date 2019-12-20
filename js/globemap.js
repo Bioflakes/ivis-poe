@@ -103,7 +103,7 @@ function ready(error, world, countryData, cityData) {
             .on("drag", function() {
                 var rotate = projection.rotate();
                 projection.rotate([d3.event.x * sens, -d3.event.y * sens, rotate[2]]);
-                svg.selectAll("path.country").attr("d", path);
+                svg.selectAll("path.country, path.cities").attr("d", path);
                 svg.selectAll(".focused").classed("focused", focused = false);
             }))
 
@@ -158,3 +158,15 @@ function ready(error, world, countryData, cityData) {
 
 
 };
+
+var scrollSpeed = 50,
+    speed = 1e-2,
+    start = Date.now();
+
+function bgscroll(){
+
+    projection.rotate([speed * (Date.now() - start), -15]);
+    svg.selectAll("path").attr("d", path);
+}
+
+    setInterval(bgscroll, scrollSpeed);
