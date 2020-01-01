@@ -7,12 +7,14 @@ var width = 960,
 var color = d3.scale.ordinal()
     .range(["#7A99AC", "#E4002B"]);
 
+var dataset = "data/ClassFixed_MOCKDATA_v3.csv"
+
 /**
  * takes the entire csv as a string and appends colNames to it, which handles as type accessors
  * throws error if not correct format (csv)
  * @type {string}
  */
-d3.text("data/MOCK_DATA_1.csv", function(error, text) {
+d3.text(dataset, function(error, text) {
     if (error) throw error;
 
     var colNames = text;
