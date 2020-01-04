@@ -24,17 +24,20 @@ d3.text(dataset, function(error, text) {
     //console.log("Data is : " + data + "\n");
     //console.log("ColName is : " + colNames);
 
-    var dict_groups = []
+    var dict_groups = new Map();
+
 
     // goes through each data set, gets the size of each data
     data.forEach(function(d) {
 
 
-        if(!dict_groups.includes(d.class)) {
-            dict_groups.push({key: dict_groups.length+1, value: d.class});
-            console.log("filled dict");
-        }
 
+        if(!dict_groups.has(d.class)) {
+            dict_groups.set(d.class, 1);
+        }
+        else {
+            dict_groups.set(d.class, dict_groups.get(d.class)+1)
+        }
 
         //console.log(d.gender);
         //d.size = +d.size;
@@ -42,25 +45,36 @@ d3.text(dataset, function(error, text) {
     })
 
     console.log()
-    dict_groups.forEach(function(d){
-        console.log(d);
-    });
+
+    let value = 0;
+    var indexed_classes = [];
+    for (let key of dict_groups.keys()) {
+        console.log(key + ': ' + dict_groups.get(key));
+        value = value + dict_groups.get(key);
+        // pushes to a list of indexed classes, for use in grouping them together
+        indexed_classes.push(key).toString();
+    }
+    console.log("amount of classes: " + value);
 
 
     /**
      * goes through cluster groups, adds the groups to an accessible array
      * @type {Array}
      */
-    var cs = [];
+
+
+    var grouped_classes = [];
     data.forEach(function(d){
-        if(!cs.contains(d.group)) {
-            cs.push(d.group);
+        if(!grouped_classes.contains(d.class)) {
+            grouped_classes.push(indexed_classes.indexOf(d.class));
 
         }
     });
 
+    console.log(grouped_classes);
+
     var n = data.length, // total number of nodes
-        m = cs.length; // number of distinct clusters
+        m = grouped_classes.length; // number of distinct clusters
 
 //create clusters and nodes
     var clusters = new Array(m);
@@ -105,7 +119,7 @@ d3.text(dataset, function(error, text) {
     function create_nodes(data,node_counter) {
         // gets data[i].group id
         // has to be changed or worked around with ids
-        var i = cs.indexOf(data[node_counter].group),
+        var i = grouped_classes.indexOf(data[node_counter].group),
             r = Math.sqrt((i + 1) / m * -Math.log(Math.random())) * maxRadius,
             d = {
                 cluster: i,
