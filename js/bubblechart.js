@@ -55,26 +55,29 @@ d3.text(dataset, function(error, text) {
         indexed_classes.push(key).toString();
     }
     console.log("amount of classes: " + value);
+    console.log("Indexed classes: " + indexed_classes);
 
 
     /**
-     * goes through cluster groups, adds the groups to an accessible array
+     * goes through cluster groups, adds the groups to an accessible array of type number
      * @type {Array}
      */
 
 
     var grouped_classes = [];
     data.forEach(function(d){
-        if(!grouped_classes.contains(d.class)) {
+        if(!grouped_classes.contains(indexed_classes.indexOf(d.class))) {
             grouped_classes.push(indexed_classes.indexOf(d.class));
 
         }
     });
 
-    console.log(grouped_classes);
+    console.log("length of grouped classes: " + grouped_classes.length);
+    console.log("grouped classes are: " + grouped_classes);
 
     var n = data.length, // total number of nodes
         m = grouped_classes.length; // number of distinct clusters
+
 
 //create clusters and nodes
     var clusters = new Array(m);
@@ -83,13 +86,17 @@ d3.text(dataset, function(error, text) {
         nodes.push(create_nodes(data,i));
     }
 
+    console.log("nodes : " + nodes);
+
     var force = d3.layout.force()
         .nodes(nodes)
         .size([width, height])
         .gravity(.02)
         .charge(0)
         .on("tick", tick)
-        .start();
+        .start()
+        console.log("called tick");
+
 
     var svg = d3.select("body").append("svg")
         .attr("width", width)
@@ -105,13 +112,14 @@ d3.text(dataset, function(error, text) {
         .style("fill", function (d) {
             return color(d.cluster);
         })
-        .attr("r", function(d){return d.radius})
+        .attr("r", function(d){return dict_groups.get(d.class)})
 
 
     node.append("text")
         .attr("dy", ".3em")
         .style("text-anchor", "middle")
         .text(function(d) { return d.text.substring(0, d.radius / 3); });
+        //.text(function(d) { return d.class});
 
 
 
@@ -119,16 +127,20 @@ d3.text(dataset, function(error, text) {
     function create_nodes(data,node_counter) {
         // gets data[i].group id
         // has to be changed or worked around with ids
-        var i = grouped_classes.indexOf(data[node_counter].group),
+        //
+        // console.log("data node counter : " + data[node_counter].class)
+        var i = grouped_classes.indexOf(indexed_classes.indexOf(data[node_counter])),
             r = Math.sqrt((i + 1) / m * -Math.log(Math.random())) * maxRadius,
             d = {
                 cluster: i,
-                radius: data[node_counter].size*1.5,
-                text: data[node_counter].text,
+                //radius: data[node_counter].size*1.5,
+                radius: dict_groups.get(data[node_counter].class*1.5),
+                text: data[node_counter].class,
                 x: Math.cos(i / m * 2 * Math.PI) * 200 + width / 2 + Math.random(),
                 y: Math.sin(i / m * 2 * Math.PI) * 200 + height / 2 + Math.random()
             };
 
+        //console.log("after decl. " +  d.x + " " + d.y);
         // checks if group id exists in the clusters array
         // or if r (radius) is bigger than the radius of the cluster item
         if (!clusters[i] || (r > clusters[i].radius)) clusters[i] = d;
@@ -136,11 +148,14 @@ d3.text(dataset, function(error, text) {
     };
 
 
-
     function tick(e) {
+        //console.log("entered tick function.");
+        //console.log("event is: " + e.x);
         node.each(cluster(10 * e.alpha * e.alpha))
             .each(collide(.5))
             .attr("transform", function (d) {
+
+                //console.log("d.x and d.y are: " +d.x+"-"+d.y);
                 var k = "translate(" + d.x + "," + d.y + ")";
                 return k;
             })
