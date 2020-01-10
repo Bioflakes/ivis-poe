@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48576897-ed1a-4a07-a59e-6bbc569ea386" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/showreel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/MOCK_DATA_Fixed.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/showreel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/MOCK_DATA.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/MOCK_DATA.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/showreel.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/showreel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/MOCK_DATA_Fixed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/MOCK_DATA_Fixed.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/showreel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/showreel.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +93,14 @@
       <workItem from="1575375502379" duration="1364000" />
       <workItem from="1578660905791" duration="2598000" />
     </task>
+    <task id="LOCAL-00001" summary="added initial barchart with tooltips">
+      <created>1578676032767</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578676032767</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,5 +116,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added initial barchart with tooltips" />
+    <option name="LAST_COMMIT_MESSAGE" value="added initial barchart with tooltips" />
   </component>
 </project>
