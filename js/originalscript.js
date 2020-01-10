@@ -1,83 +1,34 @@
 var width = 960,
-    height = 760,
+    height = 500,
     padding = 1.5, // separation between same-color nodes
     clusterPadding = 6, // separation between different-color nodes
     maxRadius = 12;
 
 var color = d3.scale.ordinal()
-    .range(["#7A99AC", "#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B"]);
+    .range(["#7A99AC", "#E4002B"]);
 
-var dataset = "data/ClassFixed_MOCKDATA_v3_test.csv"
 
-/**
- * takes the entire csv as a string and appends colNames to it, which handles as type accessors
- * throws error if not correct format (csv)
- * @type {string}
- */
-d3.text(dataset, function(error, text) {
+
+d3.text("data/word_groups.csv", function(error, text) {
     if (error) throw error;
-
-    var colNames = text;
-    // data as an object Object
+    var colNames = "text,size,group\n" + text;
     var data = d3.csv.parse(colNames);
 
-    //console.log("Data is : " + data + "\n");
-    //console.log("ColName is : " + colNames);
-
-    var dict_groups = new Map();
-
-
-    // goes through each data set, gets the size of each data
     data.forEach(function(d) {
+        d.size = +d.size;
+    });
 
 
-
-        if(!dict_groups.has(d.class)) {
-            dict_groups.set(d.class, 1);
-        }
-        else {
-            dict_groups.set(d.class, dict_groups.get(d.class)+1)
-        }
-
-        //console.log(d.gender);
-        //d.size = +d.size;
-        //console.log("doing some shit with d+ size - " + d.size);
-    })
-
-    console.log()
-
-    let value = 0;
-    var indexed_classes = [];
-    for (let key of dict_groups.keys()) {
-        console.log(key + ': ' + dict_groups.get(key));
-        value = value + dict_groups.get(key);
-        // pushes to a list of indexed classes, for use in grouping them together
-        indexed_classes.push(key).toString();
-    }
-    console.log("amount of classes: " + value);
-    console.log("Indexed classes: " + indexed_classes);
-
-
-    /**
-     * goes through cluster groups, adds the groups to an accessible array of type number
-     * @type {Array}
-     */
-
-
-    var grouped_classes = [];
+//unique cluster/group id's
+    var cs = [];
     data.forEach(function(d){
-        if(!grouped_classes.contains(indexed_classes.indexOf(d.class))) {
-            grouped_classes.push(indexed_classes.indexOf(d.class));
-
+        if(!cs.contains(d.group)) {
+            cs.push(d.group);
         }
     });
 
-    console.log("length of grouped classes: " + grouped_classes.length);
-    console.log("grouped classes are: " + grouped_classes);
-
     var n = data.length, // total number of nodes
-        m = grouped_classes.length; // number of distinct clusters
-
+        m = cs.length; // number of distinct clusters
 
 //create clusters and nodes
     var clusters = new Array(m);
@@ -92,9 +43,7 @@ d3.text(dataset, function(error, text) {
         .gravity(.02)
         .charge(0)
         .on("tick", tick)
-        .start()
-        console.log("called tick");
-
+        .start();
 
     var svg = d3.select("body").append("svg")
         .attr("width", width)
@@ -110,56 +59,47 @@ d3.text(dataset, function(error, text) {
         .style("fill", function (d) {
             return color(d.cluster);
         })
-        .attr("r", function(d){console.log("d is:" + d.text + "\ncircle r is: " + dict_groups.get(d.text))
-            return dict_groups.get(d.text) * 4})
+        .attr("r", function(d){return d.radius})
 
 
     node.append("text")
         .attr("dy", ".3em")
         .style("text-anchor", "middle")
-        //text(function(d) { return d.text.substring(0, d.radius / 3); });
-        .text(function(d) { return d.text});
+        .text(function(d) { return d.text.substring(0, d.radius / 3); });
 
 
 
 
     function create_nodes(data,node_counter) {
-        // gets data[i].group id
-        // has to be changed or worked around with ids
-        //
-        // console.log("data node counter : " + data[node_counter].class)
-        var i = indexed_classes.indexOf(data[node_counter].class),
+        var i = cs.indexOf(data[node_counter].group),
             r = Math.sqrt((i + 1) / m * -Math.log(Math.random())) * maxRadius,
             d = {
                 cluster: i,
-                //radius: data[node_counter].size*1.5,
-                radius: dict_groups.get(data[node_counter].class),
-                text: data[node_counter].class,
+                radius: data[node_counter].size*1.5,
+                text: data[node_counter].text,
                 x: Math.cos(i / m * 2 * Math.PI) * 200 + width / 2 + Math.random(),
                 y: Math.sin(i / m * 2 * Math.PI) * 200 + height / 2 + Math.random()
             };
 
-        //console.log("data is : " + data[node_counter].class);
+        //console.log("data is " + data[node_counter].text);
         //console.log("i = " + i);
         //console.log("r = " + r);
         //console.log("d = cluster: " + d.cluster + "\nradius: " +d.radius + "\ntext: " +d.text + "\nx, y: " + d.x + ", " +d.y);
-        //
-        // checks if group id exists in the clusters array
-        // or if r (radius) is bigger than the radius of the cluster item
+
         if (!clusters[i] || (r > clusters[i].radius)) clusters[i] = d;
         return d;
     };
 
     console.log("nodes are: " + nodes.length);
 
+
     function tick(e) {
-        //console.log("entered tick function.");
-        //console.log("event is: " + e.x);
+
+
         node.each(cluster(10 * e.alpha * e.alpha))
             .each(collide(.5))
             .attr("transform", function (d) {
-
-                //console.log("d.x and d.y are: " +d.x+"-"+d.y);
+                // console.log(d.x + ' ' + d.y);
                 var k = "translate(" + d.x + "," + d.y + ")";
                 return k;
             })
