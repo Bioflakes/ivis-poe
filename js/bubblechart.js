@@ -5,7 +5,7 @@ var width = 960,
     maxRadius = 12;
 
 var color = d3.scale.ordinal()
-    .range(["#7A99AC", "#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B","#E4002B"]);
+    .range(["#7A99AC", "#E4002B","#E4002B","#FFC300","#DAF7A6","#581845","#3498DB","#148F77","#BA4A00","#1D8348","#808000","#00FFFF","#935116","#27AE60","#2C3E50","#9B59B6","#FF33CA","#FF00D8","#B44D01","#0E7574","#E4002B"]);
 
 var dataset = "data/ClassFixed_MOCKDATA_v3_test.csv"
 
@@ -54,8 +54,8 @@ d3.text(dataset, function(error, text) {
         // pushes to a list of indexed classes, for use in grouping them together
         indexed_classes.push(key).toString();
     }
-    console.log("amount of classes: " + value);
-    console.log("Indexed classes: " + indexed_classes);
+    //console.log("amount of classes: " + value);
+    //console.log("Indexed classes: " + indexed_classes);
 
 
     /**
@@ -72,8 +72,8 @@ d3.text(dataset, function(error, text) {
         }
     });
 
-    console.log("length of grouped classes: " + grouped_classes.length);
-    console.log("grouped classes are: " + grouped_classes);
+    //console.log("length of grouped classes: " + grouped_classes.length);
+    //console.log("grouped classes are: " + grouped_classes);
 
     var n = data.length, // total number of nodes
         m = grouped_classes.length; // number of distinct clusters
@@ -105,13 +105,21 @@ d3.text(dataset, function(error, text) {
         .data(nodes)
         .enter().append("g").call(force.drag);
 
-
+    var existing_playerclass = [];
     node.append("circle")
         .style("fill", function (d) {
             return color(d.cluster);
         })
-        .attr("r", function(d){console.log("d is:" + d.text + "\ncircle r is: " + dict_groups.get(d.text))
-            return dict_groups.get(d.text) * 4})
+        .attr("r", function(d){
+            if(!existing_playerclass.contains(d.text)) {
+                existing_playerclass.push(d.text);
+                console.log("pushed to list" + d.text);
+                return 50;
+            }
+            else {
+                return d.radius}
+                //return dict_groups.get(d.text) * 4}
+            })
 
 
     node.append("text")
@@ -133,7 +141,7 @@ d3.text(dataset, function(error, text) {
             d = {
                 cluster: i,
                 //radius: data[node_counter].size*1.5,
-                radius: dict_groups.get(data[node_counter].class),
+                radius: dict_groups.get(data[node_counter].class)*5.5,
                 text: data[node_counter].class,
                 x: Math.cos(i / m * 2 * Math.PI) * 200 + width / 2 + Math.random(),
                 y: Math.sin(i / m * 2 * Math.PI) * 200 + height / 2 + Math.random()
@@ -175,6 +183,7 @@ d3.text(dataset, function(error, text) {
                 y = d.y - cluster.y,
                 l = Math.sqrt(x * x + y * y),
                 r = d.radius + cluster.radius;
+                //console.log("radius in cluster function: " + r);
             if (l != r) {
                 l = (l - r) / l * alpha;
                 d.x -= x *= l;
