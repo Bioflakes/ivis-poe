@@ -45,7 +45,7 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
     })]);
 
 
-    var objLIST = data[Object.keys(data)[1]];
+    var objLIST = [];
     for(i = 0; i< 4; i++){
         //random memes
         svg.selectAll(".bar"+i)
@@ -55,12 +55,36 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
             .attr("x", function(d) { return x(d[Object.keys(d)[0]]); })
             .attr("width", x.bandwidth())
             .attr("y", function(d) {
-                return y(objLIST);
-            })
-            .attr("height", function(d) {return height - d[Object.keys(d)[i+1]];});
 
-        objLIST = objLIST + data[Object.keys(data)[i+2]];
-        console.log(objLIST);
+
+                var obj =  d[Object.keys(d)[1]]; //takes the second column value
+                for(j = 0; j<i; j++){
+                    if (i > 0) {
+                        obj = obj + d[Object.keys(d)[j+2]];
+                        console.log(obj)
+                    }
+                }
+                return y(obj);
+
+                //
+                // if (i === 0){
+                //     objLIST = d[Object.keys(d)[1]];
+                //     return y(objLIST);
+                // }
+                // else if (i === 1){
+                //    //objLIST = objLIST + d[Object.keys(d)[i+1]];
+                //     console.log(objLIST);
+                //     return y( d[Object.keys(d)[i]] + d[Object.keys(d)[i+1]] );
+                // }
+                // else if (i === 2){
+                //     //objLIST = objLIST + d[Object.keys(d)[i+1]];
+                //     console.log(objLIST);
+                //     return y( d[Object.keys(d)[1]] + d[Object.keys(d)[2]] +d[Object.keys(d)[3]]);
+                // }
+            })
+            .attr("height", function(d) {return height - y(d[Object.keys(d)[i+1]]);});
+
+
 
     }
 
