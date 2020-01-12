@@ -150,10 +150,15 @@ function ready(error, world, countryData, cityData, classData) {
         .on("mousemove", function(d) {
             countryTooltip.style("left", (d3.event.pageX + 7) + "px")
                 .style("top", (d3.event.pageY - 15) + "px");
+        })
+        .on("click", function (d) {
+            document.getElementById("JUDE").selectedIndex = 0;// = countryById[d.id];
+            console.log(countryById[d.id]);
+
         });
 
     //Country focus on option select
-    d3.select("select").on("change", function() {
+    d3.select("select").attr("id", "JUDE").on("change", function() {
         var rotate = projection.rotate(),
             focusedCountry = country(countries, this),
             p = d3.geo.centroid(focusedCountry);
