@@ -11,7 +11,7 @@ var x = d3.scaleBand()
 var y = d3.scaleLinear()
     .range([height, 0]);
 
-var colors = ["b33040", "#d25c4d", "#f2b447", "#d9d574"];
+var colors = ["#b33040", "#d25c4d", "#f2b447", "#d9d574"];
 
 // append the svg object to the body of the page
 // append a 'group' element to 'svg'
@@ -36,7 +36,7 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
 
     // Scale the range of the data in the domains
     x.domain(data.map(function(d) { return d.league; }));
-    y.domain([0, d3.max(data, function(d) { return d.scion+d.maurauder+d.zombie; })]);
+    y.domain([0, d3.max(data, function(d) { return d.scion+d.maurauder+d.zombie+ d[Object.keys(d)[4]]; })]);
 
     // append the rectangles for the bar chart
     svg.selectAll(".bar")
@@ -88,6 +88,23 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
             var yPosition = d3.mouse(this)[1] - 25;
             tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
             tooltip.select("text").text(d.zombie);
+        });
+
+    svg.selectAll(".bar4")
+        .data(data)
+        .enter().append("rect")
+        .attr("class", "bar4")
+        .attr("x", function(d) { return x(d.league); })
+        .attr("width", x.bandwidth())
+        .attr("y", function(d) { return y(d.maurauder+d.scion+d.zombie+d.templar);})
+        .attr("height", function(d) { return height - y(d.templar); })
+        .on("mouseover", function() { tooltip.style("display", null); })
+        .on("mouseout", function() { tooltip.style("display", "none"); })
+        .on("mousemove", function(d) {
+            var xPosition = d3.mouse(this)[0] - 15;
+            var yPosition = d3.mouse(this)[1] - 25;
+            tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+            tooltip.select("text").text(d.templar);
         });
 
     // add the x Axis
