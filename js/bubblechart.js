@@ -1,5 +1,5 @@
-var width = 960,
-    height = 760,
+var width = 1080,
+    height = 900,
     padding = 1.5, // separation between same-color nodes
     clusterPadding = 6, // separation between different-color nodes
     maxRadius = 12;
@@ -17,7 +17,21 @@ var dataset = "data/ClassFixed_MOCKDATA_v3_test.csv"
 d3.text(dataset, function(error, text) {
     if (error) throw error;
 
+    d3.text("data/SKILL_LIST.csv", function(error, skilltext) {
+        if(error) throw error;
+
+        var headers = skilltext;
+
+        var skilldata = d3.csv.parse(headers);
+
+        skilldata.forEach(function(d) {
+            console.log(d.skill);
+        })
+    })
+
+
     var colNames = text;
+    console.log("colnames are : " + colNames);
     // data as an object Object
     var data = d3.csv.parse(colNames);
 
