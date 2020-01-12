@@ -44,19 +44,20 @@ queue()
     .defer(d3.json, "data/world-110m.json")
     .defer(d3.tsv, "data/world-110m-country-names.tsv")
     .defer(d3.json, "data/geonames_cities_100k.geojson")
+    .defer(d3.csv, "data/ClassFixed_MOCKDATA_v3.csv")
     .await(ready);
 
 //Main function
 
-function ready(error, world, countryData, cityData) {
+function ready(error, world, countryData, cityData, classData) {
 
-
+    //console.log(error);
+    console.log(world);
 
     var countryById = {},
         countries = topojson.feature(world, world.objects.countries).features;
 
     //Adding countries to select
-
     countryData.forEach(function(d) {
         countryById[d.id] = d.name;
         option = countryList.append("option");
@@ -65,14 +66,13 @@ function ready(error, world, countryData, cityData) {
     });
 
     //Drawing countries on the globe
-
     var world = svg.selectAll("path.country")
         .data(countries)
         .enter().append("path")
         .attr("class", "country")
         .attr("d", path)
 
-    // setting the circle size (not radius!) according to the number of inhabitants per city
+  /*  // setting the circle size (not radius!) according to the number of inhabitants per city
     population_array = [];
     for (i = 0; i < cityData.features.length; i++) {
         population_array.push(cityData.features[i].properties.population);
@@ -94,7 +94,7 @@ function ready(error, world, countryData, cityData) {
         .attr("class", "cities")
         .attr("d", path)
         .attr("fill", "#ffba00")
-        .attr("fill-opacity", 0.45)
+        .attr("fill-opacity", 0.45)*/
 
         //Drag event
 
@@ -150,12 +150,25 @@ function ready(error, world, countryData, cityData) {
         })();
     });
 
+
+    //list sum of players of all countries
+    //key = list of countries ordered by country
+    // rollup = sum of country
+    var countryClasssCount = d3.nest()
+        .key(function(d) { return d.country; })
+        .rollup(function(v) { return v.length; })
+        .entries(classData);
+    console.log(JSON.stringify(countryClasssCount));
+
     function country(cnt, sel) {
         for(var i = 0, l = cnt.length; i < l; i++) {
             if(cnt[i].id == sel.value) {return cnt[i];}
         }
     };
 
+    /*var thresholdScale = d3.scaleThreshold()
+        .domain([10, 40, 70, 100, 130])
+        .range(['#104761', '#3E637A', '#648093', '#8A9EAD', '#B0BDC8', '#D7DEE3']);*/
 
 };
 
