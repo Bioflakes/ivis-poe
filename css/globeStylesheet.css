@@ -21,7 +21,7 @@ svg .ocean{
 }
 
 .country {
-    fill: #104761;
+   /* fill: #104761;*/
     stroke: #083242;
     stroke-width: 0.7px;
 }

@@ -56,6 +56,7 @@ function ready(error, world, countryData, cityData, classData) {
 
     var countryById = {},
         countries = topojson.feature(world, world.objects.countries).features;
+    console.log(countries);
 
     //Adding countries to select
     countryData.forEach(function(d) {
@@ -65,12 +66,61 @@ function ready(error, world, countryData, cityData, classData) {
         option.property("value", d.id);
     });
 
+    /* list sum of players of all countries
+    ** key = list of countries ordered by country
+    ** rollup = sum of country
+    */
+    var countryClasssCount = d3.nest()
+        .key(function(d) { return d.country; })
+        .rollup(function(v) { return v.length; })
+        .entries(classData);
+    console.log(JSON.stringify(countryClasssCount));
+
+    // define colorScale for heatmapped data
+    var colorScale = d3.scale.threshold()
+        .domain([0,10, 40, 70, 100, 130])
+        .range(['#FFDF00','red', 'blue', 'orange', 'yellow', 'green', 'purple']);
+
+    var test = countryClasssCount.valueOf("Norway");
+    var test2 = countryClasssCount[3].key;
+    var test3 = countryClasssCount.length;
+    //var test3 = countryClasssCount.
+    console.log(test ,test2, test3);
+
     //Drawing countries on the globe
     var world = svg.selectAll("path.country")
         .data(countries)
         .enter().append("path")
         .attr("class", "country")
         .attr("d", path)
+        .attr("fill", function (d) {
+            // Pull data for this country
+           // var selectedCountry =  countryClasssCount(d.country)
+            /*countryClasssCount.forEach(function (c) {
+                var selectedCountry = c.key(countryById[d.id])
+                console.log(selectedCountry);
+            })*/
+            //console.log(countryById[d.id]);
+            var idTest = countryById[d.id];
+            console.log("listed countries by ID " + idTest);
+           //var test = countryClasssCount.key("Afghanistan");
+           //var test = countryClasssCount.
+           // console.log(test);
+
+            // d.total = data.get(d.id) || 0;
+            for (i=0; i < countryClasssCount.length; i++) {
+                var test2 = countryClasssCount[i].key;
+                console.log("Keys of nestedClass " + test2);
+                if (test2 === countryById[d.id]) {
+                    console.log("it works " +  countryClasssCount[i].values + " " + countryClasssCount[i].key)
+                    return colorScale(countryClasssCount[i].values);
+                }
+            }
+            // Set the color
+            return colorScale(0);
+        })
+
+
 
   /*  // setting the circle size (not radius!) according to the number of inhabitants per city
     population_array = [];
@@ -124,7 +174,6 @@ function ready(error, world, countryData, cityData, classData) {
             countryTooltip.style("left", (d3.event.pageX + 7) + "px")
                 .style("top", (d3.event.pageY - 15) + "px");
         });
-
     //Country focus on option select
 
     d3.select("select").on("change", function() {
@@ -150,25 +199,12 @@ function ready(error, world, countryData, cityData, classData) {
         })();
     });
 
-
-    //list sum of players of all countries
-    //key = list of countries ordered by country
-    // rollup = sum of country
-    var countryClasssCount = d3.nest()
-        .key(function(d) { return d.country; })
-        .rollup(function(v) { return v.length; })
-        .entries(classData);
-    console.log(JSON.stringify(countryClasssCount));
-
     function country(cnt, sel) {
         for(var i = 0, l = cnt.length; i < l; i++) {
             if(cnt[i].id == sel.value) {return cnt[i];}
         }
     };
 
-    /*var thresholdScale = d3.scaleThreshold()
-        .domain([10, 40, 70, 100, 130])
-        .range(['#104761', '#3E637A', '#648093', '#8A9EAD', '#B0BDC8', '#D7DEE3']);*/
 
 };
 
@@ -176,10 +212,10 @@ var scrollSpeed = 50,
     speed = 1e-2,
     start = Date.now();
 
-function bgscroll(){
+/*function bgscroll(){
 
     projection.rotate([speed * (Date.now() - start), -15]);
     svg.selectAll("path").attr("d", path);
 }
 
-    setInterval(bgscroll, scrollSpeed);
+    setInterval(bgscroll, scrollSpeed);*/
