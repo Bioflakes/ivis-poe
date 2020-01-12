@@ -23,6 +23,13 @@ var svg = d3.select("body").append("svg")
     .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
 
+var svg2 = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform",
+        "translate(" + margin.left + "," + margin.top + ")");
+
 // get the data
 d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
 
@@ -44,118 +51,35 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
         return obj;
     })]);
 
-
-    var objLIST = [];
-    for(i = 0; i< 4; i++){
+    for(i = 0; i< 4; i++){ //4 is the current number of leagues
         //random memes
         svg.selectAll(".bar"+i)
             .data(data)
             .enter().append("rect")
             .attr("class", "bar"+i)
-            .attr("x", function(d) { return x(d[Object.keys(d)[0]]); })
+            .attr("x", function(d) {return x(d[Object.keys(d)[0]]); })
             .attr("width", x.bandwidth())
             .attr("y", function(d) {
-
-
                 var obj =  d[Object.keys(d)[1]]; //takes the second column value
                 for(j = 0; j<i; j++){
                     if (i > 0) {
                         obj = obj + d[Object.keys(d)[j+2]];
-                        console.log(obj)
                     }
                 }
                 return y(obj);
-
-                //
-                // if (i === 0){
-                //     objLIST = d[Object.keys(d)[1]];
-                //     return y(objLIST);
-                // }
-                // else if (i === 1){
-                //    //objLIST = objLIST + d[Object.keys(d)[i+1]];
-                //     console.log(objLIST);
-                //     return y( d[Object.keys(d)[i]] + d[Object.keys(d)[i+1]] );
-                // }
-                // else if (i === 2){
-                //     //objLIST = objLIST + d[Object.keys(d)[i+1]];
-                //     console.log(objLIST);
-                //     return y( d[Object.keys(d)[1]] + d[Object.keys(d)[2]] +d[Object.keys(d)[3]]);
-                // }
             })
-            .attr("height", function(d) {return height - y(d[Object.keys(d)[i+1]]);});
-
-
-
+            .attr("height", function(d) {return height - y(d[Object.keys(d)[i+1]]);})
+            .attr("playerCount", i+1)
+            .on("mouseover", function() { tooltip.style("display", null); })
+            .on("mouseout", function() { tooltip.style("display", "none"); })
+            .on("mousemove", function(d) {
+                var playerCount = d3.select(this).attr("playerCount");
+                var xPosition = d3.mouse(this)[0] - 15;
+                var yPosition = d3.mouse(this)[1] - 25;
+                tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+                tooltip.select("text").text(d[Object.keys(d)[playerCount]]);
+            });
     }
-
-    // append the rectangles for the bar chart
-    // svg.selectAll(".bar")
-    //     .data(data)
-    //     .enter().append("rect")
-    //     .attr("class", "bar")
-    //     .attr("x", function(d) { return x(d.league); })
-    //     .attr("width", x.bandwidth())
-    //     .attr("y", function(d) { return y(d.scion); })
-    //     .attr("height", function(d) { return height - y(d.scion); })
-    //     .on("mouseover", function() { tooltip.style("display", null); })
-    //     .on("mouseout", function() { tooltip.style("display", "none"); })
-    //     .on("mousemove", function(d) {
-    //         var xPosition = d3.mouse(this)[0] - 15;
-    //         var yPosition = d3.mouse(this)[1] - 25;
-    //         tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-    //         tooltip.select("text").text(d.scion);
-    //     });
-
-    // svg.selectAll(".bar2")
-    //     .data(data)
-    //     .enter().append("rect")
-    //     .attr("class", "bar2")
-    //     .attr("x", function(d) { return x(d.league); })
-    //     .attr("width", x.bandwidth())
-    //     .attr("y", function(d) { return y(d.maurauder+d.scion);})
-    //     .attr("height", function(d) { return height - y(d.maurauder); })
-    //     .on("mouseover", function() { tooltip.style("display", null); })
-    //     .on("mouseout", function() { tooltip.style("display", "none"); })
-    //     .on("mousemove", function(d) {
-    //         var xPosition = d3.mouse(this)[0] - 15;
-    //         var yPosition = d3.mouse(this)[1] - 25;
-    //         tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-    //         tooltip.select("text").text(d.maurauder);
-    //     });
-    //
-    // svg.selectAll(".bar3")
-    //     .data(data)
-    //     .enter().append("rect")
-    //     .attr("class", "bar3")
-    //     .attr("x", function(d) { return x(d.league); })
-    //     .attr("width", x.bandwidth())
-    //     .attr("y", function(d) { return y(d.maurauder+d.scion+d.zombie);})
-    //     .attr("height", function(d) { return height - y(d.zombie); })
-    //     .on("mouseover", function() { tooltip.style("display", null); })
-    //     .on("mouseout", function() { tooltip.style("display", "none"); })
-    //     .on("mousemove", function(d) {
-    //         var xPosition = d3.mouse(this)[0] - 15;
-    //         var yPosition = d3.mouse(this)[1] - 25;
-    //         tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-    //         tooltip.select("text").text(d.zombie);
-    //     });
-    //
-    // svg.selectAll(".bar4")
-    //     .data(data)
-    //     .enter().append("rect")
-    //     .attr("class", "bar4")
-    //     .attr("x", function(d) { return x(d.league); })
-    //     .attr("width", x.bandwidth())
-    //     .attr("y", function(d) { return y(d.maurauder+d.scion+d.zombie+d.templar);})
-    //     .attr("height", function(d) { return height - y(d.templar); })
-    //     .on("mouseover", function() { tooltip.style("display", null); })
-    //     .on("mouseout", function() { tooltip.style("display", "none"); })
-    //     .on("mousemove", function(d) {
-    //         var xPosition = d3.mouse(this)[0] - 15;
-    //         var yPosition = d3.mouse(this)[1] - 25;
-    //         tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-    //         tooltip.select("text").text(d.templar);
-    //     });
 
     // add the x Axis
     svg.append("g")
