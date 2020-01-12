@@ -27,7 +27,7 @@ svg .ocean{
 }
 
 .country:hover {
-    fill:#53A9C0;
+    fill: #FFDF00; /*#53A9C0;*/
     stroke-width: 1px;
 }
 

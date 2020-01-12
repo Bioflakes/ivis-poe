@@ -51,9 +51,6 @@ queue()
 
 function ready(error, world, countryData, cityData, classData) {
 
-    //console.log(error);
-    console.log(world);
-
     var countryById = {},
         countries = topojson.feature(world, world.objects.countries).features;
     console.log(countries);
@@ -81,12 +78,6 @@ function ready(error, world, countryData, cityData, classData) {
         .domain([0,10, 40, 70, 100, 130])
         .range(['#D7DEE3','#B0BDC8', '#8A9EAD', '#648093', '#3E637A', '#104761', '#024059']);
 
-    var test = countryClasssCount.valueOf("Norway");
-    var test2 = countryClasssCount[3].key;
-    var test3 = countryClasssCount.length;
-    //var test3 = countryClasssCount.
-    console.log(test ,test2, test3);
-
     //Drawing countries on the globe
     var world = svg.selectAll("path.country")
         .data(countries)
@@ -94,30 +85,17 @@ function ready(error, world, countryData, cityData, classData) {
         .attr("class", "country")
         .attr("d", path)
         .attr("fill", function (d) {
-            // Pull data for this country
-           // var selectedCountry =  countryClasssCount(d.country)
-            /*countryClasssCount.forEach(function (c) {
-                var selectedCountry = c.key(countryById[d.id])
-                console.log(selectedCountry);
-            })*/
-            //console.log(countryById[d.id]);
-            var idTest = countryById[d.id];
-            console.log("listed countries by ID " + idTest);
-           //var test = countryClasssCount.key("Afghanistan");
-           //var test = countryClasssCount.
-           // console.log(test);
 
-            // d.total = data.get(d.id) || 0;
+            //loop through countryClassCount and test if country is the same as the id of the path.country
             for (i=0; i < countryClasssCount.length; i++) {
                 var test2 = countryClasssCount[i].key;
-                console.log("Keys of nestedClass " + test2);
+                //console.log("Keys of nestedClass " + test2);
                 if (test2 === countryById[d.id]) {
-                    console.log("it works " +  countryClasssCount[i].values + " " + countryClasssCount[i].key)
+                   // console.log("it works " +  countryClasssCount[i].values + " " + countryClasssCount[i].key)
                     return colorScale(countryClasssCount[i].values);
                 }
             }
-            // Set the color
-            return colorScale(0);
+
         })
 
 
@@ -146,8 +124,8 @@ function ready(error, world, countryData, cityData, classData) {
         .attr("fill", "#ffba00")
         .attr("fill-opacity", 0.45)*/
 
-        //Drag event
 
+        //Drag event
         .call(d3.behavior.drag()
             .origin(function() { var r = projection.rotate(); return {x: r[0] / sens, y: -r[1] / sens}; })
             .on("drag", function() {
@@ -158,9 +136,8 @@ function ready(error, world, countryData, cityData, classData) {
             }))
 
         //Mouse events
-
         .on("mouseover", function(d) {
-            countryTooltip.text(countryById[d.id])
+            countryTooltip.text(countryById[d.id] )
                 .style("left", (d3.event.pageX + 7) + "px")
                 .style("top", (d3.event.pageY - 15) + "px")
                 .style("display", "block")
@@ -174,8 +151,8 @@ function ready(error, world, countryData, cityData, classData) {
             countryTooltip.style("left", (d3.event.pageX + 7) + "px")
                 .style("top", (d3.event.pageY - 15) + "px");
         });
-    //Country focus on option select
 
+    //Country focus on option select
     d3.select("select").on("change", function() {
         var rotate = projection.rotate(),
             focusedCountry = country(countries, this),
@@ -183,8 +160,8 @@ function ready(error, world, countryData, cityData, classData) {
 
         svg.selectAll(".focused").classed("focused", focused = false);
 
-        //Globe rotating
 
+        //Globe rotating
         (function transition() {
             d3.transition()
                 .duration(2500)
