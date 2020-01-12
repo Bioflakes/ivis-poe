@@ -44,74 +44,94 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
         return obj;
     })]);
 
+
+    var objLIST = data[Object.keys(data)[1]];
+    for(i = 0; i< 4; i++){
+        //random memes
+        svg.selectAll(".bar"+i)
+            .data(data)
+            .enter().append("rect")
+            .attr("class", "bar"+i)
+            .attr("x", function(d) { return x(d[Object.keys(d)[0]]); })
+            .attr("width", x.bandwidth())
+            .attr("y", function(d) {
+                return y(objLIST);
+            })
+            .attr("height", function(d) {return height - d[Object.keys(d)[i+1]];});
+
+        objLIST = objLIST + data[Object.keys(data)[i+2]];
+        console.log(objLIST);
+
+    }
+
     // append the rectangles for the bar chart
-    svg.selectAll(".bar")
-        .data(data)
-        .enter().append("rect")
-        .attr("class", "bar")
-        .attr("x", function(d) { return x(d.league); })
-        .attr("width", x.bandwidth())
-        .attr("y", function(d) { return y(d.scion); })
-        .attr("height", function(d) { return height - y(d.scion); })
-        .on("mouseover", function() { tooltip.style("display", null); })
-        .on("mouseout", function() { tooltip.style("display", "none"); })
-        .on("mousemove", function(d) {
-            var xPosition = d3.mouse(this)[0] - 15;
-            var yPosition = d3.mouse(this)[1] - 25;
-            tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-            tooltip.select("text").text(d.scion);
-        });
+    // svg.selectAll(".bar")
+    //     .data(data)
+    //     .enter().append("rect")
+    //     .attr("class", "bar")
+    //     .attr("x", function(d) { return x(d.league); })
+    //     .attr("width", x.bandwidth())
+    //     .attr("y", function(d) { return y(d.scion); })
+    //     .attr("height", function(d) { return height - y(d.scion); })
+    //     .on("mouseover", function() { tooltip.style("display", null); })
+    //     .on("mouseout", function() { tooltip.style("display", "none"); })
+    //     .on("mousemove", function(d) {
+    //         var xPosition = d3.mouse(this)[0] - 15;
+    //         var yPosition = d3.mouse(this)[1] - 25;
+    //         tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+    //         tooltip.select("text").text(d.scion);
+    //     });
 
-    svg.selectAll(".bar2")
-        .data(data)
-        .enter().append("rect")
-        .attr("class", "bar2")
-        .attr("x", function(d) { return x(d.league); })
-        .attr("width", x.bandwidth())
-        .attr("y", function(d) { return y(d.maurauder+d.scion);})
-        .attr("height", function(d) { return height - y(d.maurauder); })
-        .on("mouseover", function() { tooltip.style("display", null); })
-        .on("mouseout", function() { tooltip.style("display", "none"); })
-        .on("mousemove", function(d) {
-            var xPosition = d3.mouse(this)[0] - 15;
-            var yPosition = d3.mouse(this)[1] - 25;
-            tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-            tooltip.select("text").text(d.maurauder);
-        });
-
-    svg.selectAll(".bar3")
-        .data(data)
-        .enter().append("rect")
-        .attr("class", "bar3")
-        .attr("x", function(d) { return x(d.league); })
-        .attr("width", x.bandwidth())
-        .attr("y", function(d) { return y(d.maurauder+d.scion+d.zombie);})
-        .attr("height", function(d) { return height - y(d.zombie); })
-        .on("mouseover", function() { tooltip.style("display", null); })
-        .on("mouseout", function() { tooltip.style("display", "none"); })
-        .on("mousemove", function(d) {
-            var xPosition = d3.mouse(this)[0] - 15;
-            var yPosition = d3.mouse(this)[1] - 25;
-            tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-            tooltip.select("text").text(d.zombie);
-        });
-
-    svg.selectAll(".bar4")
-        .data(data)
-        .enter().append("rect")
-        .attr("class", "bar4")
-        .attr("x", function(d) { return x(d.league); })
-        .attr("width", x.bandwidth())
-        .attr("y", function(d) { return y(d.maurauder+d.scion+d.zombie+d.templar);})
-        .attr("height", function(d) { return height - y(d.templar); })
-        .on("mouseover", function() { tooltip.style("display", null); })
-        .on("mouseout", function() { tooltip.style("display", "none"); })
-        .on("mousemove", function(d) {
-            var xPosition = d3.mouse(this)[0] - 15;
-            var yPosition = d3.mouse(this)[1] - 25;
-            tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-            tooltip.select("text").text(d.templar);
-        });
+    // svg.selectAll(".bar2")
+    //     .data(data)
+    //     .enter().append("rect")
+    //     .attr("class", "bar2")
+    //     .attr("x", function(d) { return x(d.league); })
+    //     .attr("width", x.bandwidth())
+    //     .attr("y", function(d) { return y(d.maurauder+d.scion);})
+    //     .attr("height", function(d) { return height - y(d.maurauder); })
+    //     .on("mouseover", function() { tooltip.style("display", null); })
+    //     .on("mouseout", function() { tooltip.style("display", "none"); })
+    //     .on("mousemove", function(d) {
+    //         var xPosition = d3.mouse(this)[0] - 15;
+    //         var yPosition = d3.mouse(this)[1] - 25;
+    //         tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+    //         tooltip.select("text").text(d.maurauder);
+    //     });
+    //
+    // svg.selectAll(".bar3")
+    //     .data(data)
+    //     .enter().append("rect")
+    //     .attr("class", "bar3")
+    //     .attr("x", function(d) { return x(d.league); })
+    //     .attr("width", x.bandwidth())
+    //     .attr("y", function(d) { return y(d.maurauder+d.scion+d.zombie);})
+    //     .attr("height", function(d) { return height - y(d.zombie); })
+    //     .on("mouseover", function() { tooltip.style("display", null); })
+    //     .on("mouseout", function() { tooltip.style("display", "none"); })
+    //     .on("mousemove", function(d) {
+    //         var xPosition = d3.mouse(this)[0] - 15;
+    //         var yPosition = d3.mouse(this)[1] - 25;
+    //         tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+    //         tooltip.select("text").text(d.zombie);
+    //     });
+    //
+    // svg.selectAll(".bar4")
+    //     .data(data)
+    //     .enter().append("rect")
+    //     .attr("class", "bar4")
+    //     .attr("x", function(d) { return x(d.league); })
+    //     .attr("width", x.bandwidth())
+    //     .attr("y", function(d) { return y(d.maurauder+d.scion+d.zombie+d.templar);})
+    //     .attr("height", function(d) { return height - y(d.templar); })
+    //     .on("mouseover", function() { tooltip.style("display", null); })
+    //     .on("mouseout", function() { tooltip.style("display", "none"); })
+    //     .on("mousemove", function(d) {
+    //         var xPosition = d3.mouse(this)[0] - 15;
+    //         var yPosition = d3.mouse(this)[1] - 25;
+    //         tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+    //         tooltip.select("text").text(d.templar);
+    //     });
 
     // add the x Axis
     svg.append("g")
