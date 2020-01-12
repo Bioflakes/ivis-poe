@@ -36,7 +36,13 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
 
     // Scale the range of the data in the domains
     x.domain(data.map(function(d) { return d.league; }));
-    y.domain([0, d3.max(data, function(d) { return d.scion+d.maurauder+d.zombie+ d[Object.keys(d)[4]]; })]);
+    y.domain([0, d3.max(data, function(d) {
+        var obj =  d[Object.keys(d)[1]];
+        for(i = 2; i<= Object.keys(d).length-1; i++){
+            obj = obj + d[Object.keys(d)[i]];
+        }
+        return obj;
+    })]);
 
     // append the rectangles for the bar chart
     svg.selectAll(".bar")
