@@ -36,7 +36,7 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
 
     // Scale the range of the data in the domains
     x.domain(data.map(function(d) { return d.league; }));
-    y.domain([0, d3.max(data, function(d) { return d.scion+d.maurauder; })]);
+    y.domain([0, d3.max(data, function(d) { return d.scion+d.maurauder+d.zombie; })]);
 
     // append the rectangles for the bar chart
     svg.selectAll(".bar")
@@ -62,8 +62,8 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
         .attr("class", "bar2")
         .attr("x", function(d) { return x(d.league); })
         .attr("width", x.bandwidth())
-        .attr("y", function(d) { return y(d.maurauder); })
-        .attr("height", function(d) { return height - y(d.maurauder)})
+        .attr("y", function(d) { return y(d.maurauder+d.scion);})
+        .attr("height", function(d) { return height - y(d.maurauder); })
         .on("mouseover", function() { tooltip.style("display", null); })
         .on("mouseout", function() { tooltip.style("display", "none"); })
         .on("mousemove", function(d) {
@@ -71,6 +71,23 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
             var yPosition = d3.mouse(this)[1] - 25;
             tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
             tooltip.select("text").text(d.maurauder);
+        });
+
+    svg.selectAll(".bar3")
+        .data(data)
+        .enter().append("rect")
+        .attr("class", "bar3")
+        .attr("x", function(d) { return x(d.league); })
+        .attr("width", x.bandwidth())
+        .attr("y", function(d) { return y(d.maurauder+d.scion+d.zombie);})
+        .attr("height", function(d) { return height - y(d.zombie); })
+        .on("mouseover", function() { tooltip.style("display", null); })
+        .on("mouseout", function() { tooltip.style("display", "none"); })
+        .on("mousemove", function(d) {
+            var xPosition = d3.mouse(this)[0] - 15;
+            var yPosition = d3.mouse(this)[1] - 25;
+            tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+            tooltip.select("text").text(d.zombie);
         });
 
     // add the x Axis
