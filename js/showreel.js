@@ -37,7 +37,7 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
     // Scale the range of the data in the domains
     x.domain(data.map(function(d) { return d.league; }));
     y.domain([0, d3.max(data, function(d) {
-        var obj =  d[Object.keys(d)[1]];
+        var obj =  d[Object.keys(d)[1]]; //takes the second column value
         for(i = 2; i<= Object.keys(d).length-1; i++){
             obj = obj + d[Object.keys(d)[i]];
         }
