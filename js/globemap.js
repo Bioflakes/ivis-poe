@@ -79,7 +79,7 @@ function ready(error, world, countryData, cityData, classData) {
     // define colorScale for heatmapped data
     var colorScale = d3.scale.threshold()
         .domain([0,10, 40, 70, 100, 130])
-        .range(['#FFDF00','red', 'blue', 'orange', 'yellow', 'green', 'purple']);
+        .range(['#D7DEE3','#B0BDC8', '#8A9EAD', '#648093', '#3E637A', '#104761', '#024059']);
 
     var test = countryClasssCount.valueOf("Norway");
     var test2 = countryClasssCount[3].key;
