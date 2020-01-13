@@ -23,12 +23,11 @@ var svg = d3.select("body").append("svg")
     .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
 
-var svg2 = d3.select("body").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform",
-        "translate(" + margin.left + "," + margin.top + ")");
+//generate the legend svg
+var legendSvg = d3.select("body").append("svg")
+    .attr("width", "200")
+    .attr("height", "200")
+    .attr("transform","translate(" + margin.left + "," + margin.top + ")");
 
 // get the data
 d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
@@ -51,6 +50,8 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
         return obj;
     })]);
 
+
+    // GENERATE THE BARS
     for(i = 0; i< 4; i++){ //4 is the current number of leagues
         //random memes
         svg.selectAll(".bar"+i)
@@ -109,23 +110,74 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
                 tooltip.select("text").text(d[Object.keys(d)[playerCount]]);
             })
             .on("click", function(d) {
-            var playerCount = d3.select(this).attr("playerCount");
-            //get the unique class of this bar
-            var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[d3.select(this).attr("playerCount")]]+"_"+d3.select(this).attr("class");
+                var playerCount = d3.select(this).attr("playerCount");
+                //get the unique class of this bar
+                var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[playerCount]]+"_"+d3.select(this).attr("class");
 
                 if(d3.select(this).attr("classSelected") !== "1") {
                     $("#"+e).css('fill', 'red');
                     d3.select(this).attr("classSelected", "1");
                     // CODE THAT DISPLAYS THE SPECIFIC VALUES OF SELECTED
+
+                    console.log("League: "+ d[Object.keys(d)[0]]
+                        +"\nClass: "+ d3.keys(data[0])[playerCount]
+                        +"\nCount: "+ d[Object.keys(d)[playerCount]]
+                    )
+
+                    var infoDivID="infoDiv"+d3.select(this).attr("id");
+                    $( "body" ).append( "<div id='"+infoDivID+"'><strong>League: </strong>"+d[Object.keys(d)[0]]+"<br>" +
+                        "<strong>Class: </strong>"+d3.keys(data[0])[playerCount]+"<br>" +
+                        "<strong>Count: </strong>"+d[Object.keys(d)[playerCount]]+"<br>" +
+                        "</div>" )
+
                 }
                 else {
                     $("#"+e).css('fill', d3.select(this).attr("lastColor"));
                     d3.select(this).attr("classSelected", "0");
 
                     // CODE THAT RESETS THE SPECIFIC VALUES OF SELECTED
+                    var infoDivID="infoDiv"+d3.select(this).attr("id");
+                    $('#'+infoDivID).remove();
+
                 }
         });
     }
+
+    //TODO: GENERATE THE LEGEND
+    // Add one dot in the legend for each name.
+    var color = d3.scaleOrdinal()
+        .domain(data)
+        .range(d3.schemeSet1)
+
+    var classData = d3.keys(data[0]);
+    classData.shift(); //removes first entity of data array
+    console.log(classData)
+
+    var size = 20
+    legendSvg.selectAll("mydots")
+        .data(function(d){return classData})
+        .enter()
+        .append("rect")
+        .attr("x", 100)
+        .attr("y", function(d,i){ return 100 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
+        .attr("width", size)
+        .attr("height", size)
+        .style("fill", function(d, i){ return colors[i]})
+        .style("outline", "dashed")
+        .style("outline-offset", "-5px");
+
+    // Add one dot in the legend for each name.
+    legendSvg.selectAll("mylabels")
+        .data(d3.keys(data[0]))
+        .enter()
+        .append("text")
+        .attr("x", 100 + size*1.2)
+        .attr("y", function(d,i){ return 100 + i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
+        .style("fill", function(d, i){ return colors[i]})
+        .text(function(d, i){ return d3.keys(data[0])[i+1] })
+        .attr("text-anchor", "left")
+        .style("alignment-baseline", "middle");
+
 
     // add the x Axis
     svg.append("g")

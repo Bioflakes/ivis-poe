@@ -2,19 +2,15 @@
 .bar0:hover{
    outline: 0.1rem solid red;
 }
-.bar1 { fill: green; }
+.bar1 { fill: #d25c4d; }
 .bar1:hover{
     outline: 0.1rem solid red;
 }
-.bar2 { fill: #d25c4d; }
+.bar2 { fill: #f2b447; }
 .bar2:hover{
     outline: 0.1rem solid red;
 }
-.bar3 { fill: #f2b447; }
+.bar3 { fill: #d9d574; }
 .bar3:hover{
-    outline: 0.1rem solid red;
-}
-.bar4 { fill: #d9d574; }
-.bar4:hover{
     outline: 0.1rem solid red;
 }
