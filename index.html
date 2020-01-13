@@ -8,7 +8,7 @@
 </head>
 <body>
 <!--Bubble Chart -->
-<script src="https://d3js.org/d3.v3.min.js"></script>
+
 
 <div class="container">
     <div class="row">
@@ -27,9 +27,34 @@
 </div>
 
 <!--script src="js/bubblechart.js"></script-->
-<script src="js/bubblechart.js"></script>
-<script>main();</script>
+<script src="lib/requirejs.js"></script>
+<script>
+    require.config({
+        paths: {
+            d3: "lib/d3js_v35",
+            d3v5: "https://d3js.org/d3.v5.min",
+            bubblechart: "js/bubblechart"
+        },
+        shim: {
+            'js/bubblechart': ['d3']
+        }
+    });
+</script>
+
+<script>
+    require(["js/bubblechart"], function(d3) {
 
 
+
+        main();
+    });
+</script>
+
+
+<script>
+    require(["d3v5"], function(d3) {
+        console.log(d3.version);
+    });
+</script>
 </body>
 </html>
