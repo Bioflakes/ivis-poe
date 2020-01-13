@@ -17,11 +17,18 @@ var skilldata;
  * throws error if not correct format (csv)
  * @type {string}
  */
-d3.text(dataset, function(error, text) {
-    if (error) throw error;
 
+function main() {
+    console.log("called main");
+    readSkillFile();
+    readClassFile();
+}
+
+function readSkillFile() {
     d3.text("data/SKILL_LIST.csv", function(error, skilltext) {
         if(error) throw error;
+
+        console.log("reading skill file");
 
         var headers = skilltext;
 
@@ -33,248 +40,279 @@ d3.text(dataset, function(error, text) {
         })
 
     })
+}
 
-    console.log(skill_groups);
-
-
-    var colNames = text;
-    //console.log("colnames are : " + colNames);
-    // data as an object Object
-    var data = d3.csv.parse(colNames);
-
-    //console.log("Data is : " + data + "\n");
-    //console.log("ColName is : " + colNames);
-
-    var dict_groups = new Map();
-
-
-    // goes through each data set, gets the size of each data
-    data.forEach(function(d) {
+function readClassFile() {
+    d3.text(dataset, function(error, text) {
+        if (error) throw error;
 
 
 
-        if(!dict_groups.has(d.class)) {
-            dict_groups.set(d.class, 1);
+
+        console.log(skill_groups);
+
+
+        var colNames = text;
+        //console.log("colnames are : " + colNames);
+        // data as an object Object
+        var data = d3.csv.parse(colNames);
+
+        //console.log("Data is : " + data + "\n");
+        //console.log("ColName is : " + colNames);
+
+        var dict_groups = new Map();
+
+
+        // goes through each data set, gets the size of each data
+        data.forEach(function(d) {
+
+
+
+            if(!dict_groups.has(d.class)) {
+                dict_groups.set(d.class, 1);
+            }
+            else {
+                dict_groups.set(d.class, dict_groups.get(d.class)+1)
+            }
+
+            //console.log(d.gender);
+            //d.size = +d.size;
+            //console.log("doing some shit with d+ size - " + d.size);
+        })
+
+        console.log()
+
+        let value = 0;
+        var indexed_classes = [];
+        for (let key of dict_groups.keys()) {
+            console.log(key + ': ' + dict_groups.get(key));
+            value = value + dict_groups.get(key);
+            // pushes to a list of indexed classes, for use in grouping them together
+            indexed_classes.push(key).toString();
         }
-        else {
-            dict_groups.set(d.class, dict_groups.get(d.class)+1)
-        }
-
-        //console.log(d.gender);
-        //d.size = +d.size;
-        //console.log("doing some shit with d+ size - " + d.size);
-    })
-
-    console.log()
-
-    let value = 0;
-    var indexed_classes = [];
-    for (let key of dict_groups.keys()) {
-        console.log(key + ': ' + dict_groups.get(key));
-        value = value + dict_groups.get(key);
-        // pushes to a list of indexed classes, for use in grouping them together
-        indexed_classes.push(key).toString();
-    }
-    //console.log("amount of classes: " + value);
-    //console.log("Indexed classes: " + indexed_classes);
+        //console.log("amount of classes: " + value);
+        //console.log("Indexed classes: " + indexed_classes);
 
 
-    /**
-     * goes through cluster groups, adds the groups to an accessible array of type number
-     * @type {Array}
-     */
+        /**
+         * goes through cluster groups, adds the groups to an accessible array of type number
+         * @type {Array}
+         */
 
 
-    var grouped_classes = [];
-    data.forEach(function(d){
-        if(!grouped_classes.contains(indexed_classes.indexOf(d.class))) {
-            grouped_classes.push(indexed_classes.indexOf(d.class));
+        var grouped_classes = [];
+        data.forEach(function(d){
+            if(!grouped_classes.contains(indexed_classes.indexOf(d.class))) {
+                grouped_classes.push(indexed_classes.indexOf(d.class));
 
-        }
-    });
+            }
+        });
 
-    //console.log("length of grouped classes: " + grouped_classes.length);
-    //console.log("grouped classes are: " + grouped_classes);
+        //console.log("length of grouped classes: " + grouped_classes.length);
+        //console.log("grouped classes are: " + grouped_classes);
 
-    var n = data.length, // total number of nodes
-        m = grouped_classes.length; // number of distinct clusters
+        var n = data.length, // total number of nodes
+            m = grouped_classes.length; // number of distinct clusters
 
 
 //create clusters and nodes
-    var clusters = new Array(m);
-    var nodes_container = [];
-    var nodes_container_names = [];
-    var nodes = [];
-    for (var i = 0; i<n; i++){
+        var clusters = new Array(m);
+        var nodes_container = [];
+        var nodes_container_names = [];
+        var nodes = [];
+        for (var i = 0; i<n; i++){
 
-        nodes_container.push(create_nodes(data,i));
+            nodes_container.push(create_nodes(data,i));
 
-    }
-    nodes_container.forEach(function(d) {
-
-        if(!nodes_container_names.contains(d.text)) {
-            nodes_container_names.push(d.text);
-            nodes.push(d);
         }
+        nodes_container.forEach(function(d) {
 
-    })
-
-    function isEquals(object) {
-        console.log("length of nodes " +nodes.length);
-        if(nodes.length === 0) {
-            console.log("length 0, proceeding...");
-            return true;
-        }
-
-        nodes.forEach(function(d) {
-            if(d.text === object.text) {
-                console.log("detected same object");
-                return false;
+            if(!nodes_container_names.contains(d.text)) {
+                nodes_container_names.push(d.text);
+                nodes.push(d);
             }
-            else {
-                console.log("compared " + d.text + " - " + object.text);
-                return true;
-            }
+
         })
-    }
 
-    var force = d3.layout.force()
-        .nodes(nodes)
-        .size([width, height])
-        .gravity(.02)
-        .charge(0)
-        .on("tick", tick)
-        .start()
+
+        console.log("skill groups: " + skill_groups.get(5));
+        console.log("skill group length: " + skill_groups.size);
+        function getRandomSkills() {
+            var randomized_skills = [];
+            var amount_of_skills = 5;
+
+            for(i = 0; i < amount_of_skills; i++) {
+                var random_skill = Math.random() * skill_groups.length;
+            }
+        }
+
+        var force = d3.layout.force()
+            .nodes(nodes)
+            .size([width, height])
+            .gravity(.02)
+            .charge(0)
+            .on("tick", tick)
+            .start()
         console.log("called tick");
 
 
-    var svg = d3.select("body").append("svg")
-        .attr("width", width)
-        .attr("height", height);
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
 
 
-    var node = svg.selectAll("circle")
-        .data(nodes)
-        .enter().append("g").call(force.drag);
+        var node = svg.selectAll("circle")
+            .data(nodes)
+            .enter().append("g").call(force.drag);
 
-    var existing_playerclass = [];
-    node.append("circle")
-        .style("fill", function (d) {
-            return color(d.cluster);
-        })
-        .attr("r", function(d){
-            if(!existing_playerclass.contains(d.text)) {
-                existing_playerclass.push(d.text);
-                console.log("pushed to list" + d.text);
-                return 50;
-            }
-            else {
-                return d.radius}
+        var existing_playerclass = [];
+        node.append("circle")
+            .style("fill", function (d) {
+                return color(d.cluster);
+            })
+            .attr("r", function(d){
+                if(!existing_playerclass.contains(d.text)) {
+                    existing_playerclass.push(d.text);
+                    console.log("pushed to list" + d.text);
+                    return 50;
+                }
+                else {
+                    return d.radius}
                 //return dict_groups.get(d.text) * 4}
             })
 
 
-    node.append("text")
-        .attr("dy", ".3em")
-        .style("text-anchor", "middle")
-        //text(function(d) { return d.text.substring(0, d.radius / 3); });
-        .text(function(d) { return d.text});
+        node.append("text")
+            .attr("dy", ".3em")
+            .style("text-anchor", "middle")
+            //text(function(d) { return d.text.substring(0, d.radius / 3); });
+            .text(function(d) { return d.text});
 
 
 
 
-    function create_nodes(data,node_counter) {
-        // gets data[i].group id
-        // has to be changed or worked around with ids
-        //
-        // console.log("data node counter : " + data[node_counter].class)
-        var i = indexed_classes.indexOf(data[node_counter].class),
-            r = Math.sqrt((i + 1) / m * -Math.log(Math.random())) * maxRadius,
-            d = {
-                cluster: i,
-                //radius: data[node_counter].size*1.5,
-                radius: dict_groups.get(data[node_counter].class)*5.5,
-                text: data[node_counter].class,
-                x: Math.cos(i / m * 2 * Math.PI) * 200 + width / 2 + Math.random(),
-                y: Math.sin(i / m * 2 * Math.PI) * 200 + height / 2 + Math.random()
-            };
+        function create_nodes(data,node_counter) {
+            // gets data[i].group id
+            // has to be changed or worked around with ids
+            //
+            // console.log("data node counter : " + data[node_counter].class)
+            var i = indexed_classes.indexOf(data[node_counter].class),
+                r = Math.sqrt((i + 1) / m * -Math.log(Math.random())) * maxRadius,
+                d = {
+                    cluster: i,
+                    //radius: data[node_counter].size*1.5,
+                    radius: dict_groups.get(data[node_counter].class)*5.5,
+                    text: data[node_counter].class,
+                    x: Math.cos(i / m * 2 * Math.PI) * 200 + width / 2 + Math.random(),
+                    y: Math.sin(i / m * 2 * Math.PI) * 200 + height / 2 + Math.random()
+                };
 
-        //console.log("data is : " + data[node_counter].class);
-        //console.log("i = " + i);
-        //console.log("r = " + r);
-        //console.log("d = cluster: " + d.cluster + "\nradius: " +d.radius + "\ntext: " +d.text + "\nx, y: " + d.x + ", " +d.y);
-        //
-        // checks if group id exists in the clusters array
-        // or if r (radius) is bigger than the radius of the cluster item
-        if (!clusters[i] || (r > clusters[i].radius)) clusters[i] = d;
-        return d;
-    };
+            //console.log("data is : " + data[node_counter].class);
+            //console.log("i = " + i);
+            //console.log("r = " + r);
+            //console.log("d = cluster: " + d.cluster + "\nradius: " +d.radius + "\ntext: " +d.text + "\nx, y: " + d.x + ", " +d.y);
+            //
+            // checks if group id exists in the clusters array
+            // or if r (radius) is bigger than the radius of the cluster item
+            if (!clusters[i] || (r > clusters[i].radius)) clusters[i] = d;
+            return d;
+        };
 
-    console.log("nodes are: " + JSON.stringify(nodes[0]));
+        function create_skillnodes(data,node_counter,skills) {
+            // gets data[i].group id
+            // has to be changed or worked around with ids
+            //
+            // console.log("data node counter : " + data[node_counter].class)
+            var i = indexed_classes.indexOf(data[node_counter].class),
+                r = Math.sqrt((i + 1) / m * -Math.log(Math.random())) * maxRadius,
+                d = {
+                    cluster: i,
+                    //radius: data[node_counter].size*1.5,
+                    radius: dict_groups.get(data[node_counter].class)*5.5,
+                    text: data[node_counter].class,
+                    x: Math.cos(i / m * 2 * Math.PI) * 200 + width / 2 + Math.random(),
+                    y: Math.sin(i / m * 2 * Math.PI) * 200 + height / 2 + Math.random()
+                };
+
+            //console.log("data is : " + data[node_counter].class);
+            //console.log("i = " + i);
+            //console.log("r = " + r);
+            //console.log("d = cluster: " + d.cluster + "\nradius: " +d.radius + "\ntext: " +d.text + "\nx, y: " + d.x + ", " +d.y);
+            //
+            // checks if group id exists in the clusters array
+            // or if r (radius) is bigger than the radius of the cluster item
+            if (!clusters[i] || (r > clusters[i].radius)) clusters[i] = d;
+            return d;
+        };
+
+        console.log("nodes are: " + JSON.stringify(nodes[0]));
 
 
-    function tick(e) {
-        //console.log("entered tick function.");
-        //console.log("event is: " + e.x);
-        node.each(cluster(10 * e.alpha * e.alpha))
-            .each(collide(.5))
-            .attr("transform", function (d) {
+        function tick(e) {
+            //console.log("entered tick function.");
+            //console.log("event is: " + e.x);
+            node.each(cluster(10 * e.alpha * e.alpha))
+                .each(collide(.5))
+                .attr("transform", function (d) {
 
-                //console.log("d.x and d.y are: " +d.x+"-"+d.y);
-                var k = "translate(" + d.x + "," + d.y + ")";
-                return k;
-            })
+                    //console.log("d.x and d.y are: " +d.x+"-"+d.y);
+                    var k = "translate(" + d.x + "," + d.y + ")";
+                    return k;
+                })
 
-    }
+        }
 
 // Move d to be adjacent to the cluster node.
-    function cluster(alpha) {
-        return function (d) {
-            var cluster = clusters[d.cluster];
-            if (cluster === d) return;
-            var x = d.x - cluster.x,
-                y = d.y - cluster.y,
-                l = Math.sqrt(x * x + y * y),
-                r = d.radius + cluster.radius;
+        function cluster(alpha) {
+            return function (d) {
+                var cluster = clusters[d.cluster];
+                if (cluster === d) return;
+                var x = d.x - cluster.x,
+                    y = d.y - cluster.y,
+                    l = Math.sqrt(x * x + y * y),
+                    r = d.radius + cluster.radius;
                 //console.log("radius in cluster function: " + r);
-            if (l != r) {
-                l = (l - r) / l * alpha;
-                d.x -= x *= l;
-                d.y -= y *= l;
-                cluster.x += x;
-                cluster.y += y;
-            }
-        };
-    }
+                if (l != r) {
+                    l = (l - r) / l * alpha;
+                    d.x -= x *= l;
+                    d.y -= y *= l;
+                    cluster.x += x;
+                    cluster.y += y;
+                }
+            };
+        }
 
 // Resolves collisions between d and all other circles.
-    function collide(alpha) {
-        var quadtree = d3.geom.quadtree(nodes);
-        return function (d) {
-            var r = d.radius + maxRadius + Math.max(padding, clusterPadding),
-                nx1 = d.x - r,
-                nx2 = d.x + r,
-                ny1 = d.y - r,
-                ny2 = d.y + r;
-            quadtree.visit(function (quad, x1, y1, x2, y2) {
-                if (quad.point && (quad.point !== d)) {
-                    var x = d.x - quad.point.x,
-                        y = d.y - quad.point.y,
-                        l = Math.sqrt(x * x + y * y),
-                        r = d.radius + quad.point.radius + (d.cluster === quad.point.cluster ? padding : clusterPadding);
-                    if (l < r) {
-                        l = (l - r) / l * alpha;
-                        d.x -= x *= l;
-                        d.y -= y *= l;
-                        quad.point.x += x;
-                        quad.point.y += y;
+        function collide(alpha) {
+            var quadtree = d3.geom.quadtree(nodes);
+            return function (d) {
+                var r = d.radius + maxRadius + Math.max(padding, clusterPadding),
+                    nx1 = d.x - r,
+                    nx2 = d.x + r,
+                    ny1 = d.y - r,
+                    ny2 = d.y + r;
+                quadtree.visit(function (quad, x1, y1, x2, y2) {
+                    if (quad.point && (quad.point !== d)) {
+                        var x = d.x - quad.point.x,
+                            y = d.y - quad.point.y,
+                            l = Math.sqrt(x * x + y * y),
+                            r = d.radius + quad.point.radius + (d.cluster === quad.point.cluster ? padding : clusterPadding);
+                        if (l < r) {
+                            l = (l - r) / l * alpha;
+                            d.x -= x *= l;
+                            d.y -= y *= l;
+                            quad.point.x += x;
+                            quad.point.y += y;
+                        }
                     }
-                }
-                return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
-            });
-        };
-    }
-});
+                    return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+                });
+            };
+        }
+    });
+}
+
+
 
 Array.prototype.contains = function(v) {
     for(var i = 0; i < this.length; i++) {
