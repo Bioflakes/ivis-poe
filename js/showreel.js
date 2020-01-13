@@ -72,23 +72,31 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
             .attr("playerCount", i+1)
             .attr("lastColor", "")
             .attr("classSelected", "0")
-            .on("mouseover", function() {
+            .attr("id", function(d) {
+                //generate a unique id
+                var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[d3.select(this).attr("playerCount")]]+"_"+d3.select(this).attr("class");
+                return e;
+            })
+            .on("mouseover", function(d) {
+                //get the unique class of this bar
+                var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[d3.select(this).attr("playerCount")]]+"_"+d3.select(this).attr("class");
                 //make the background 10% lighter
-
                 if(d3.select(this).attr("classSelected") !== "1") {
                     var playerCount = d3.select(this).attr("playerCount");
-                    d3.select(this).attr("lastColor", $(".bar" + (playerCount - 1)).css('fill'));
-                    $(".bar" + (playerCount - 1)).css('fill', pSBC(0.05, $(".bar" + (playerCount - 1)).css('fill')));
+                    d3.select(this).attr("lastColor", $("#" + e).css('fill'));
+                    $("#" + e).css('fill', pSBC(0.05, $(".bar" + (playerCount - 1)).css('fill')));
                 }
                 //clear tooltip
                 tooltip.style("display", null);
             })
-            .on("mouseout", function() {
+            .on("mouseout", function(d) {
+                //get the unique class of this bar
+                var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[d3.select(this).attr("playerCount")]]+"_"+d3.select(this).attr("class");
                 //reset the color
                 if(d3.select(this).attr("classSelected") !== "1") {
                     var playerCount = d3.select(this).attr("playerCount");
-                    $(".bar" + (playerCount - 1)).css('fill', d3.select(this).attr("lastColor"));
-                    d3.select(this).attr("lastColor", $(".bar" + (playerCount - 1)).css('fill'));
+                    $("#" + e).css('fill', d3.select(this).attr("lastColor"));
+                    d3.select(this).attr("lastColor", $("#" + e).css('fill'));
                 }
                 //remove tooltip
                 tooltip.style("display", "none"); })
@@ -102,16 +110,16 @@ d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
             })
             .on("click", function(d) {
             var playerCount = d3.select(this).attr("playerCount");
+            //get the unique class of this bar
+            var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[d3.select(this).attr("playerCount")]]+"_"+d3.select(this).attr("class");
 
                 if(d3.select(this).attr("classSelected") !== "1") {
-                    $(".bar"+(playerCount-1)).css('fill', 'red');
+                    $("#"+e).css('fill', 'red');
                     d3.select(this).attr("classSelected", "1");
-
                     // CODE THAT DISPLAYS THE SPECIFIC VALUES OF SELECTED
-
                 }
                 else {
-                    $(".bar" + (playerCount - 1)).css('fill', d3.select(this).attr("lastColor"));
+                    $("#"+e).css('fill', d3.select(this).attr("lastColor"));
                     d3.select(this).attr("classSelected", "0");
 
                     // CODE THAT RESETS THE SPECIFIC VALUES OF SELECTED
