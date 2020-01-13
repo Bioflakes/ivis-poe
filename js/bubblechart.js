@@ -102,11 +102,40 @@ d3.text(dataset, function(error, text) {
 
 //create clusters and nodes
     var clusters = new Array(m);
+    var nodes_container = [];
+    var nodes_container_names = [];
     var nodes = [];
     for (var i = 0; i<n; i++){
 
-        nodes.push(create_nodes(data,i));
+        nodes_container.push(create_nodes(data,i));
 
+    }
+    nodes_container.forEach(function(d) {
+
+        if(!nodes_container_names.contains(d.text)) {
+            nodes_container_names.push(d.text);
+            nodes.push(d);
+        }
+
+    })
+
+    function isEquals(object) {
+        console.log("length of nodes " +nodes.length);
+        if(nodes.length === 0) {
+            console.log("length 0, proceeding...");
+            return true;
+        }
+
+        nodes.forEach(function(d) {
+            if(d.text === object.text) {
+                console.log("detected same object");
+                return false;
+            }
+            else {
+                console.log("compared " + d.text + " - " + object.text);
+                return true;
+            }
+        })
     }
 
     var force = d3.layout.force()
