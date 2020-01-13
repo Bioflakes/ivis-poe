@@ -9,6 +9,9 @@ var color = d3.scale.ordinal()
 
 var dataset = "data/ClassFixed_MOCKDATA_v3_test.csv"
 
+var skill_groups = new Map();
+var skilldata;
+
 /**
  * takes the entire csv as a string and appends colNames to it, which handles as type accessors
  * throws error if not correct format (csv)
@@ -22,16 +25,20 @@ d3.text(dataset, function(error, text) {
 
         var headers = skilltext;
 
-        var skilldata = d3.csv.parse(headers);
+        skilldata = d3.csv.parse(headers);
 
+        // dict with all skills
         skilldata.forEach(function(d) {
-            console.log(d.skill);
+            skill_groups.set(d.id, d.skill)
         })
+
     })
+
+    console.log(skill_groups);
 
 
     var colNames = text;
-    console.log("colnames are : " + colNames);
+    //console.log("colnames are : " + colNames);
     // data as an object Object
     var data = d3.csv.parse(colNames);
 
@@ -97,7 +104,9 @@ d3.text(dataset, function(error, text) {
     var clusters = new Array(m);
     var nodes = [];
     for (var i = 0; i<n; i++){
+
         nodes.push(create_nodes(data,i));
+
     }
 
     var force = d3.layout.force()
@@ -172,7 +181,8 @@ d3.text(dataset, function(error, text) {
         return d;
     };
 
-    console.log("nodes are: " + nodes.length);
+    console.log("nodes are: " + JSON.stringify(nodes[0]));
+
 
     function tick(e) {
         //console.log("entered tick function.");
