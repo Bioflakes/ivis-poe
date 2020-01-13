@@ -134,8 +134,12 @@ function readClassFile() {
 
         })
 
+        var skillnodes = [];
+        for(var i = 0; i<n; i++) {
+            skillnodes.push(create_skillnodes(data,i,getRandomSkills()));
+        }
 
-        console.log("skill groups: " + skill_groups.get(5));
+        //console.log("skill groups: " + skill_groups.get("5"));
         console.log("skill group length: " + skill_groups.size);
         function getRandomSkills() {
             var randomized_skills = [];
@@ -143,7 +147,11 @@ function readClassFile() {
 
             for(i = 0; i < amount_of_skills; i++) {
                 var random_skill = Math.random() * skill_groups.length;
+                if(!randomized_skills.contains(random_skill)) {
+                    randomized_skills.push(random_skill);
+                }
             }
+            return randomized_skills;
         }
 
         var force = d3.layout.force()
@@ -225,7 +233,7 @@ function readClassFile() {
             // console.log("data node counter : " + data[node_counter].class)
             var i = indexed_classes.indexOf(data[node_counter].class),
                 r = Math.sqrt((i + 1) / m * -Math.log(Math.random())) * maxRadius,
-                d = {
+                d_skill = {
                     cluster: i,
                     //radius: data[node_counter].size*1.5,
                     radius: dict_groups.get(data[node_counter].class)*5.5,
@@ -242,7 +250,7 @@ function readClassFile() {
             // checks if group id exists in the clusters array
             // or if r (radius) is bigger than the radius of the cluster item
             if (!clusters[i] || (r > clusters[i].radius)) clusters[i] = d;
-            return d;
+            return d_skill;
         };
 
         console.log("nodes are: " + JSON.stringify(nodes[0]));
