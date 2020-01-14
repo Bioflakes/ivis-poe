@@ -25,10 +25,7 @@ var svg = d3.select("#stackedBarChart").append("svg")
         "translate(" + margin.left + "," + margin.top + ")");
 
 //generate the legend svg
-var legendSvg = d3.select("#stackedBarChart_Legend").append("svg")
-    .attr("width", "200")
-    .attr("height", "200")
-    .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+var legendSvg = d3.select("#stackedBarChart_Legend").append("svg");
 
 var data2 = d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
 
@@ -42,7 +39,9 @@ var data2 = d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
 
     generateLegend(data);
     generateSortButtons(data);
-    generateDiagram(data);
+    //startview == timeline
+    update(data, "time");
+    $('select').val('time');
 });
 
 function generateDiagram(data){
@@ -134,7 +133,7 @@ function generateDiagram(data){
 
                     // CODE THAT DISPLAYS THE SPECIFIC VALUES OF SELECTED
                     var infoDivID="infoDiv"+d3.select(this).attr("id");
-                    $( "#selectedDiv" ).append( "<div id='"+infoDivID+"'><strong>League: </strong>"+d[Object.keys(d)[0]]+"<br>" +
+                    $( "#selectedDiv" ).append( "<div id='"+infoDivID+"' class='infoDiv'><strong>League: </strong>"+d[Object.keys(d)[0]]+"<br>" +
                         "<strong>Class: </strong>"+d3.keys(data[0])[playerCount]+"<br>" +
                         "<strong>Count: </strong>"+d[Object.keys(d)[playerCount]]+"<br>" +
                         "</div>" )
@@ -192,8 +191,8 @@ function generateLegend(data){
         .data(function(d){return classData})
         .enter()
         .append("rect")
-        .attr("x", 100)
-        .attr("y", function(d,i){ return 100 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
+        .attr("x", 0)
+        .attr("y", function(d,i){ return i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
         .attr("width", size)
         .attr("height", size)
         .style("fill", function(d, i){ return colors[i]})
@@ -205,8 +204,8 @@ function generateLegend(data){
         .data(d3.keys(data[0]))
         .enter()
         .append("text")
-        .attr("x", 100 + size*1.2)
-        .attr("y", function(d,i){ return 100 + i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
+        .attr("x", size*1.2)
+        .attr("y", function(d,i){ return i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
         .style("fill", function(d, i){ return colors[i]})
         .text(function(d, i){ return d3.keys(data[0])[i+1] })
         .attr("text-anchor", "left")
@@ -227,9 +226,6 @@ function generateSortButtons(data){
 
     //dropdownButton.selectAll("*").remove();
     $("#select").parent().remove();
-
-
-
 
     // add the options to the button
     dropdownButton.selectAll('myOptions') // Next 4 lines add 6 options = 6 colors
@@ -255,7 +251,7 @@ function generateSortButtons(data){
 
         // recover the option that has been chosen
         var selectedOption = d3.select(this).property("value");
-        // run the updateChart function with this selected option
+        // run the update function with this selected option
         update(data, selectedOption);
     })
 }
