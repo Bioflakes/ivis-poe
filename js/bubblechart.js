@@ -133,9 +133,9 @@ function readClassFile() {
             }
             else {
                 var randomSkill = Math.floor(Math.random() * skill_groups.size);
-                //d.text = skill_groups.get(randomSkill.toString());
+                d.text = skill_groups.get(randomSkill.toString());
                 d.radius = 2;
-                d.text = d.radius;
+                //d.text = d.radius;
                 console.log("random number: " + randomSkill);
                 console.log("randomed " + skill_groups.get(randomSkill.toString()));
                 nodes.push(d);
