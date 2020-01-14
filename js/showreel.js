@@ -11,12 +11,13 @@ var x = d3.scaleBand()
 var y = d3.scaleLinear()
     .range([height, 0]);
 
-var colors = ["#b33040", "#d25c4d", "#f2b447", "#d9d574"];
+var colors = ["#104761", "#3E637A", "#648093", "#8A9EAD"];
+var selectedColor = "#FFDF00";
 
 // append the svg object to the body of the page
 // append a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#stackedBarChart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -24,7 +25,7 @@ var svg = d3.select("body").append("svg")
         "translate(" + margin.left + "," + margin.top + ")");
 
 //generate the legend svg
-var legendSvg = d3.select("body").append("svg")
+var legendSvg = d3.select("#stackedBarChart_Legend").append("svg")
     .attr("width", "200")
     .attr("height", "200")
     .attr("transform","translate(" + margin.left + "," + margin.top + ")");
@@ -44,11 +45,7 @@ var data2 = d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
     generateDiagram(data);
 });
 
-
-
-
 function generateDiagram(data){
-
     //reset the svg
     svg.selectAll("*").remove(); //clear barchart
 
@@ -132,7 +129,7 @@ function generateDiagram(data){
                 var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[playerCount]]+"_"+d3.select(this).attr("class");
 
                 if(d3.select(this).attr("classSelected") !== "1") {
-                    $("#"+e).css('fill', 'red');
+                    $("#"+e).css('fill', selectedColor);
                     d3.select(this).attr("classSelected", "1");
 
                     // CODE THAT DISPLAYS THE SPECIFIC VALUES OF SELECTED
@@ -141,7 +138,6 @@ function generateDiagram(data){
                         "<strong>Class: </strong>"+d3.keys(data[0])[playerCount]+"<br>" +
                         "<strong>Count: </strong>"+d[Object.keys(d)[playerCount]]+"<br>" +
                         "</div>" )
-
                 }
                 else {
                     $("#"+e).css('fill', d3.select(this).attr("lastColor"));
@@ -182,23 +178,6 @@ function generateDiagram(data){
         .attr("font-size", "12px")
         .attr("font-weight", "bold");
 
-
-}
-
-
-function update(data, selectedOption) {
-    if(selectedOption === "all"){
-        console.log("eyy")
-        data.sort((a, b) => (b[Object.keys(b)[1]]+b[Object.keys(b)[2]]+b.templar+b.zombie) - (a.scion+a.maurauder+a.templar+a.zombie))
-        generateDiagram(data);
-    }
-    else {
-        //sort the different data according to the selected option
-        data.sort(function (a, b) {
-            return b[Object.keys(a)[selectedOption]] - a[Object.keys(a)[selectedOption]];
-        });
-        generateDiagram(data);
-    }
 }
 
 function generateLegend(data){
@@ -232,7 +211,6 @@ function generateLegend(data){
         .text(function(d, i){ return d3.keys(data[0])[i+1] })
         .attr("text-anchor", "left")
         .style("alignment-baseline", "middle");
-
 }
 
 
@@ -241,12 +219,17 @@ function generateSortButtons(data){
     var classData = d3.keys(data[0]);
     classData.shift();
 
+    $('#stackedBarChart_Select').append("<span>Sort by </span>");
+
     // Initialize the button
-    var dropdownButton = d3.select("body")
+    var dropdownButton = d3.select("#stackedBarChart_Select")
         .append('select');
 
     //dropdownButton.selectAll("*").remove();
     $("#select").parent().remove();
+
+
+
 
     // add the options to the button
     dropdownButton.selectAll('myOptions') // Next 4 lines add 6 options = 6 colors
@@ -261,7 +244,11 @@ function generateSortButtons(data){
         .style("alignment-baseline", "middle");
 
     $('select').append(`<option value="all"> 
-                                       Sort League 
+                                       player count 
+                                  </option>`);
+
+    $('select').append(`<option value="time"> 
+                                       timeline
                                   </option>`);
     // When the button is changed, run the updateChart function
     dropdownButton.on("change", function(d) {
@@ -273,7 +260,32 @@ function generateSortButtons(data){
     })
 }
 
+function update(data, selectedOption) {
+    if(selectedOption === "all"){
+        data.sort((a, b) => (b[Object.keys(b)[1]]+b[Object.keys(b)[2]]+b.templar+b.zombie) - (a.scion+a.maurauder+a.templar+a.zombie))
+        generateDiagram(data);
+    }
+    else if(selectedOption === "time"){
+        var time = d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
+            // format the data
+            data.forEach(function(d) {
+                d.scion = +d.scion;
+                d.maurauder = +d.maurauder;
+                d.templar = +d.templar;
+                d.zombie = +d.zombie;
+            });
 
+            generateDiagram(data);
+        });
+    }
+    else {
+        //sort the different data according to the selected option
+        data.sort(function (a, b) {
+            return b[Object.keys(a)[selectedOption]] - a[Object.keys(a)[selectedOption]];
+        });
+        generateDiagram(data);
+    }
+}
 
 //Make a color lighter or darker
 //Crudos to Pimp Trizkit
