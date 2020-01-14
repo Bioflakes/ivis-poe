@@ -29,200 +29,217 @@ var legendSvg = d3.select("body").append("svg")
     .attr("height", "200")
     .attr("transform","translate(" + margin.left + "," + margin.top + ")");
 
-generateDiagram();
+var data2 = d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
 
-
-function generateDiagram(selectedOption){
-
-    //TODO: RESETT SVG ON START
-    svg.selectAll("*").remove(); //clear barchart
-    legendSvg.selectAll("*").remove(); //clear legendd
-
-    // get the data
-    d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
-
-        //sort the different data according to the selected option
-        data.sort(function (a, b) {
-            return  b[Object.keys(a)[selectedOption]]- a[Object.keys(a)[selectedOption]];
-        });
-
-        // format the data
-        data.forEach(function(d) {
-            d.scion = +d.scion;
-            d.maurauder = +d.maurauder;
-            d.templar = +d.templar;
-            d.zombie = +d.zombie;
-        });
-
-        // Scale the range of the data in the domains
-        x.domain(data.map(function(d) { return d.league; }));
-        y.domain([0, d3.max(data, function(d) {
-            var obj =  d[Object.keys(d)[1]]; //takes the second column value
-            for(i = 2; i<= Object.keys(d).length-1; i++){
-                obj = obj + d[Object.keys(d)[i]];
-            }
-            return obj;
-        })]);
-
-
-        // GENERATE THE BARS
-        for(i = 0; i< 4; i++){ //4 is the current number of leagues
-            //random memes
-            svg.selectAll(".bar"+i)
-                .data(data)
-                .enter().append("rect")
-                .attr("class", "bar"+i)
-                .attr("x", function(d) {return x(d[Object.keys(d)[0]]); })
-                .attr("width", x.bandwidth())
-                .attr("y", function(d) {
-                    var obj =  d[Object.keys(d)[1]]; //takes the second column value
-                    for(j = 0; j<i; j++){
-                        if (i > 0) {
-                            obj = obj + d[Object.keys(d)[j+2]];
-                        }
-                    }
-                    return y(obj);
-                })
-                .attr("height", function(d) {return height - y(d[Object.keys(d)[i+1]]);})
-                .attr("playerCount", i+1)
-                .attr("lastColor", "")
-                .attr("classSelected", "0")
-                .attr("id", function(d) {
-                    //generate a unique id
-                    var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[d3.select(this).attr("playerCount")]]+"_"+d3.select(this).attr("class");
-                    return e;
-                })
-                .on("mouseover", function(d) {
-                    //get the unique class of this bar
-                    var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[d3.select(this).attr("playerCount")]]+"_"+d3.select(this).attr("class");
-                    //make the background 10% lighter
-                    if(d3.select(this).attr("classSelected") !== "1") {
-                        var playerCount = d3.select(this).attr("playerCount");
-                        d3.select(this).attr("lastColor", $("#" + e).css('fill'));
-                        $("#" + e).css('fill', pSBC(0.05, $(".bar" + (playerCount - 1)).css('fill')));
-                    }
-                    //clear tooltip
-                    tooltip.style("display", null);
-                })
-                .on("mouseout", function(d) {
-                    //get the unique class of this bar
-                    var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[d3.select(this).attr("playerCount")]]+"_"+d3.select(this).attr("class");
-                    //reset the color
-                    if(d3.select(this).attr("classSelected") !== "1") {
-                        var playerCount = d3.select(this).attr("playerCount");
-                        $("#" + e).css('fill', d3.select(this).attr("lastColor"));
-                        d3.select(this).attr("lastColor", $("#" + e).css('fill'));
-                    }
-                    //remove tooltip
-                    tooltip.style("display", "none"); })
-                .on("mousemove", function(d) {
-                    //display tooltip on mouse
-                    var playerCount = d3.select(this).attr("playerCount");
-                    var xPosition = d3.mouse(this)[0] - 15;
-                    var yPosition = d3.mouse(this)[1] - 25;
-                    tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-                    tooltip.select("text").text(d[Object.keys(d)[playerCount]]);
-                })
-                .on("click", function(d) {
-                    var playerCount = d3.select(this).attr("playerCount");
-                    //get the unique class of this bar
-                    var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[playerCount]]+"_"+d3.select(this).attr("class");
-
-                    if(d3.select(this).attr("classSelected") !== "1") {
-                        $("#"+e).css('fill', 'red');
-                        d3.select(this).attr("classSelected", "1");
-
-                        // CODE THAT DISPLAYS THE SPECIFIC VALUES OF SELECTED
-                        var infoDivID="infoDiv"+d3.select(this).attr("id");
-                        $( "body" ).append( "<div id='"+infoDivID+"'><strong>League: </strong>"+d[Object.keys(d)[0]]+"<br>" +
-                            "<strong>Class: </strong>"+d3.keys(data[0])[playerCount]+"<br>" +
-                            "<strong>Count: </strong>"+d[Object.keys(d)[playerCount]]+"<br>" +
-                            "</div>" )
-
-                    }
-                    else {
-                        $("#"+e).css('fill', d3.select(this).attr("lastColor"));
-                        d3.select(this).attr("classSelected", "0");
-
-                        // CODE THAT RESETS THE SPECIFIC VALUES OF SELECTED
-                        var infoDivID="infoDiv"+d3.select(this).attr("id");
-                        $('#'+infoDivID).remove();
-
-                    }
-                });
-        }
-
-
-
-
-
-        //TODO: GENERATE THE LEGEND
-        // Add one dot in the legend for each name.
-        var color = d3.scaleOrdinal()
-            .domain(data)
-            .range(d3.schemeSet1);
-
-        var classData = d3.keys(data[0]);
-        classData.shift(); //removes first entity of data array
-
-        var size = 20;
-        legendSvg.selectAll("mydots")
-            .data(function(d){return classData})
-            .enter()
-            .append("rect")
-            .attr("x", 100)
-            .attr("y", function(d,i){ return 100 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
-            .attr("width", size)
-            .attr("height", size)
-            .style("fill", function(d, i){ return colors[i]})
-            .style("outline", "dashed")
-            .style("outline-offset", "-5px");
-
-        // Add one dot in the legend for each name.
-        legendSvg.selectAll("mylabels")
-            .data(d3.keys(data[0]))
-            .enter()
-            .append("text")
-            .attr("x", 100 + size*1.2)
-            .attr("y", function(d,i){ return 100 + i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
-            .style("fill", function(d, i){ return colors[i]})
-            .text(function(d, i){ return d3.keys(data[0])[i+1] })
-            .attr("text-anchor", "left")
-            .style("alignment-baseline", "middle");
-
-        // add the x Axis
-        svg.append("g")
-            .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(x));
-
-        // add the y Axis
-        svg.append("g")
-            .call(d3.axisLeft(y));
-
-        // Prep the tooltip bits, initial display is hidden
-        var tooltip = svg.append("g")
-            .attr("class", "tooltip")
-            .style("display", "none");
-
-        tooltip.append("rect")
-            .attr("width", 30)
-            .attr("height", 20)
-            .attr("fill", "white")
-            .style("opacity", 0.5);
-
-        tooltip.append("text")
-            .attr("x", 15)
-            .attr("dy", "1.2em")
-            .style("text-anchor", "middle")
-            .attr("font-size", "12px")
-            .attr("font-weight", "bold");
-
-        generateSortButtons(classData, data);
+    // format the data
+    data.forEach(function(d) {
+        d.scion = +d.scion;
+        d.maurauder = +d.maurauder;
+        d.templar = +d.templar;
+        d.zombie = +d.zombie;
     });
 
+    generateLegend(data);
+    generateSortButtons(data);
+    generateDiagram(data);
+});
+
+
+
+
+function generateDiagram(data){
+
+    //reset the svg
+    svg.selectAll("*").remove(); //clear barchart
+
+    //reset the selected bars
+    var element = document.getElementById("selectedDiv");
+    while (element.firstChild) {
+        element.removeChild(element.firstChild);
+    }
+
+    // Scale the range of the data in the domains
+    x.domain(data.map(function(d) { return d.league; }));
+    y.domain([0, d3.max(data, function(d) {
+        var obj =  d[Object.keys(d)[1]]; //takes the second column value
+        for(i = 2; i<= Object.keys(d).length-1; i++){
+            obj = obj + d[Object.keys(d)[i]];
+        }
+        return obj;
+    })]);
+
+    // GENERATE THE BARS
+    for(i = 0; i< 4; i++){ //4 is the current number of leagues
+        //random memes
+        svg.selectAll(".bar"+i)
+            .data(data)
+            .enter().append("rect")
+            .attr("class", "bar"+i)
+            .attr("x", function(d) {return x(d[Object.keys(d)[0]]); })
+            .attr("width", x.bandwidth())
+            .attr("y", function(d) {
+                var obj =  d[Object.keys(d)[1]]; //takes the second column value
+                for(j = 0; j<i; j++){
+                    if (i > 0) {
+                        obj = obj + d[Object.keys(d)[j+2]];
+                    }
+                }
+                return y(obj);
+            })
+            .attr("height", function(d) {return height - y(d[Object.keys(d)[i+1]]);})
+            .attr("playerCount", i+1)
+            .attr("lastColor", "")
+            .attr("classSelected", "0")
+            .attr("id", function(d) {
+                //generate a unique id
+                var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[d3.select(this).attr("playerCount")]]+"_"+d3.select(this).attr("class");
+                return e;
+            })
+            .on("mouseover", function(d) {
+                //get the unique class of this bar
+                var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[d3.select(this).attr("playerCount")]]+"_"+d3.select(this).attr("class");
+                //make the background 10% lighter
+                if(d3.select(this).attr("classSelected") !== "1") {
+                    var playerCount = d3.select(this).attr("playerCount");
+                    d3.select(this).attr("lastColor", $("#" + e).css('fill'));
+                    $("#" + e).css('fill', pSBC(0.05, $(".bar" + (playerCount - 1)).css('fill')));
+                }
+                //clear tooltip
+                tooltip.style("display", null);
+            })
+            .on("mouseout", function(d) {
+                //get the unique class of this bar
+                var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[d3.select(this).attr("playerCount")]]+"_"+d3.select(this).attr("class");
+                //reset the color
+                if(d3.select(this).attr("classSelected") !== "1") {
+                    var playerCount = d3.select(this).attr("playerCount");
+                    $("#" + e).css('fill', d3.select(this).attr("lastColor"));
+                    d3.select(this).attr("lastColor", $("#" + e).css('fill'));
+                }
+                //remove tooltip
+                tooltip.style("display", "none"); })
+            .on("mousemove", function(d) {
+                //display tooltip on mouse
+                var playerCount = d3.select(this).attr("playerCount");
+                var xPosition = d3.mouse(this)[0] - 15;
+                var yPosition = d3.mouse(this)[1] - 25;
+                tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+                tooltip.select("text").text(d[Object.keys(d)[playerCount]]);
+            })
+            .on("click", function(d) {
+                var playerCount = d3.select(this).attr("playerCount");
+                //get the unique class of this bar
+                var e = d[Object.keys(d)[0]]+"_"+d[Object.keys(d)[playerCount]]+"_"+d3.select(this).attr("class");
+
+                if(d3.select(this).attr("classSelected") !== "1") {
+                    $("#"+e).css('fill', 'red');
+                    d3.select(this).attr("classSelected", "1");
+
+                    // CODE THAT DISPLAYS THE SPECIFIC VALUES OF SELECTED
+                    var infoDivID="infoDiv"+d3.select(this).attr("id");
+                    $( "#selectedDiv" ).append( "<div id='"+infoDivID+"'><strong>League: </strong>"+d[Object.keys(d)[0]]+"<br>" +
+                        "<strong>Class: </strong>"+d3.keys(data[0])[playerCount]+"<br>" +
+                        "<strong>Count: </strong>"+d[Object.keys(d)[playerCount]]+"<br>" +
+                        "</div>" )
+
+                }
+                else {
+                    $("#"+e).css('fill', d3.select(this).attr("lastColor"));
+                    d3.select(this).attr("classSelected", "0");
+
+                    // CODE THAT RESETS THE SPECIFIC VALUES OF SELECTED
+                    var infoDivID="infoDiv"+d3.select(this).attr("id");
+                    $('#'+infoDivID).remove();
+
+                }
+            });
+    }
+
+    // add the x Axis
+    svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x));
+
+    // add the y Axis
+    svg.append("g")
+        .call(d3.axisLeft(y));
+
+    // Prep the tooltip bits, initial display is hidden
+    var tooltip = svg.append("g")
+        .attr("class", "tooltip")
+        .style("display", "none");
+
+    tooltip.append("rect")
+        .attr("width", 30)
+        .attr("height", 20)
+        .attr("fill", "white")
+        .style("opacity", 0.5);
+
+    tooltip.append("text")
+        .attr("x", 15)
+        .attr("dy", "1.2em")
+        .style("text-anchor", "middle")
+        .attr("font-size", "12px")
+        .attr("font-weight", "bold");
+
+
 }
+
+
+function update(data, selectedOption) {
+    if(selectedOption === "all"){
+        console.log("eyy")
+        data.sort((a, b) => (b[Object.keys(b)[1]]+b[Object.keys(b)[2]]+b.templar+b.zombie) - (a.scion+a.maurauder+a.templar+a.zombie))
+        generateDiagram(data);
+    }
+    else {
+        //sort the different data according to the selected option
+        data.sort(function (a, b) {
+            return b[Object.keys(a)[selectedOption]] - a[Object.keys(a)[selectedOption]];
+        });
+        generateDiagram(data);
+    }
+}
+
+function generateLegend(data){
+    //TODO: GENERATE THE LEGEND
+    // Add one dot in the legend for each name.
+
+    var classData = d3.keys(data[0]);
+    classData.shift(); //removes first entity of data array
+
+    var size = 20;
+    legendSvg.selectAll("mydots")
+        .data(function(d){return classData})
+        .enter()
+        .append("rect")
+        .attr("x", 100)
+        .attr("y", function(d,i){ return 100 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
+        .attr("width", size)
+        .attr("height", size)
+        .style("fill", function(d, i){ return colors[i]})
+        .style("outline", "dashed")
+        .style("outline-offset", "-5px");
+
+    // Add one dot in the legend for each name.
+    legendSvg.selectAll("mylabels")
+        .data(d3.keys(data[0]))
+        .enter()
+        .append("text")
+        .attr("x", 100 + size*1.2)
+        .attr("y", function(d,i){ return 100 + i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
+        .style("fill", function(d, i){ return colors[i]})
+        .text(function(d, i){ return d3.keys(data[0])[i+1] })
+        .attr("text-anchor", "left")
+        .style("alignment-baseline", "middle");
+
+}
+
+
 //TODO: GENERATE SORT BUTTONS
-function generateSortButtons(classData, data){
+function generateSortButtons(data){
+    var classData = d3.keys(data[0]);
+    classData.shift();
 
     // Initialize the button
     var dropdownButton = d3.select("body")
@@ -243,12 +260,16 @@ function generateSortButtons(classData, data){
         .attr("value", function (d,i) {return i+1; }) // corresponding value returned by the button
         .style("alignment-baseline", "middle");
 
+    $('select').append(`<option value="all"> 
+                                       Sort League 
+                                  </option>`);
     // When the button is changed, run the updateChart function
     dropdownButton.on("change", function(d) {
+
         // recover the option that has been chosen
         var selectedOption = d3.select(this).property("value");
         // run the updateChart function with this selected option
-        generateDiagram(selectedOption);
+        update(data, selectedOption);
     })
 }
 
