@@ -39,13 +39,16 @@ svg.append("path")
 var countryTooltip = d3.select("body").append("div").attr("class", "countryTooltip"),
     countryList = d3.select("body").append("select").attr("name", "countries");
 
+function getData(nameCSV){
 
 queue()
     .defer(d3.json, "data/world-110m.json")
     .defer(d3.tsv, "data/world-110m-country-names.tsv")
     .defer(d3.json, "data/geonames_cities_100k.geojson")
-    .defer(d3.csv, "data/ClassFixed_MOCKDATA_v3.csv")
+    .defer(d3.csv, nameCSV)
     .await(ready);
+}
+getData("data/ClassFixed_MOCKDATA_v3.csv")
 
 //Main function
 
@@ -63,6 +66,9 @@ function ready(error, world, countryData, cityData, classData) {
         option.property("value", d.id);
     });
 
+
+
+
     /* list sum of players of all countries
     ** key = list of countries ordered by country
     ** rollup = sum of country
@@ -74,6 +80,7 @@ function ready(error, world, countryData, cityData, classData) {
     console.log(JSON.stringify(countryClasssCount));
 
     // define colorScale for heatmapped data
+
     var colorScale = d3.scale.threshold()
         .domain([0,10, 40, 70, 100, 130])
         .range(['#D7DEE3','#B0BDC8', '#8A9EAD', '#648093', '#3E637A', '#104761', '#024059']);
@@ -152,13 +159,13 @@ function ready(error, world, countryData, cityData, classData) {
                 .style("top", (d3.event.pageY - 15) + "px");
         })
         .on("click", function (d) {
-            document.getElementById("JUDE").selectedIndex = 0;// = countryById[d.id];
+            document.getElementById("selectOption").selectedIndex = 0;// = countryById[d.id];
             console.log(countryById[d.id]);
 
         });
 
     //Country focus on option select
-    d3.select("select").attr("id", "JUDE").on("change", function() {
+    d3.select("select").attr("id", "selectOption").on("change", function() {
         var rotate = projection.rotate(),
             focusedCountry = country(countries, this),
             p = d3.geo.centroid(focusedCountry);
