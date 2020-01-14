@@ -153,10 +153,12 @@ function generateDiagram(data){
     // add the x Axis
     svg.append("g")
         .attr("transform", "translate(0," + height + ")")
+        .attr("color", "white")
         .call(d3.axisBottom(x));
 
     // add the y Axis
     svg.append("g")
+        .attr("color", "white")
         .call(d3.axisLeft(y));
 
     // Prep the tooltip bits, initial display is hidden
