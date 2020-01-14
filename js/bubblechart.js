@@ -119,6 +119,8 @@ function readClassFile() {
         var clusters = new Array(m);
         var nodes_container = [];
         var nodes_container_names = [];
+
+        var hidden_nodes = [];
         var nodes = [];
         for (var i = 0; i<n; i++){
 
@@ -136,32 +138,27 @@ function readClassFile() {
                 d.text = skill_groups.get(randomSkill.toString());
                 d.radius = 2;
                 //d.text = d.radius;
-                console.log("random number: " + randomSkill);
-                console.log("randomed " + skill_groups.get(randomSkill.toString()));
-                nodes.push(d);
+                //console.log("random number: " + randomSkill);
+                //console.log("randomed " + skill_groups.get(randomSkill.toString()));
+                hidden_nodes.push(d);
             }
 
         })
 
-/*        var skillnodes = [];
-        for(var i = 0; i<n; i++) {
-            skillnodes.push(getRandomSkills());
-        }*/
-        //console.log(skillnodes);
-        //console.log("skill groups: " + skill_groups.get("5"));
-        //console.log("skill group length: " + skill_groups.size);
 
-        function getRandomSkills() {
-            var randomized_skills = [];
-            var amount_of_skills = 5;
 
-            for(i = 0; i < amount_of_skills; i++) {
-                var random_skill = Math.random() * skill_groups.length;
-                if(!randomized_skills.contains(random_skill)) {
-                    randomized_skills.push(skill_groups.get("'" + random_skill + "'"));
-                }
-            }
-            return randomized_skills;
+        function tester() {
+
+
+
+
+            node = svg.selectAll("circle")
+                .data(nodes)
+                .enter().append("g")
+                .call(force.drag)
+                .on("click", function(d) {
+                    display_skills(d);
+                });
         }
 
         var force = d3.layout.force()
@@ -181,16 +178,29 @@ function readClassFile() {
 
         var node = svg.selectAll("circle")
             .data(nodes)
-            .enter().append("g").call(force.drag);
+            .enter().append("g")
+            .call(force.drag)
+            .on("click", function(d) {
+                display_skills(d);
+            });
 
 
+
+
+        function display_skills(d) {
+            hidden_nodes.forEach(function(node) {
+                if(d.cluster === node.cluster) {
+                    console.log("node cluster: " + node.cluster + " - given data cluster: " + d.cluster);
+                    console.log("node text: " + node.text + " - given text: " + d.text);
+                    nodes.push(d);
+                    tester();
+                }
+            })
+        }
 
         var existing_playerclass = [];
         var existing_playerskills = [];
 
-        skill_groups.forEach(function(val) {
-            console.log("val is " + val);
-        })
 
         node.append("circle")
             .style("fill", function (d) {
@@ -199,7 +209,7 @@ function readClassFile() {
             .attr("r", function(d){
                 if(dict_groups.has(d.text)) {
                     //existing_playerclass.push(d.text);
-                    console.log("pushed to list" + d.text);
+                    //console.log("pushed to list" + d.text);
                     return 50;
                 }
                 else {
