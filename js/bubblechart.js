@@ -1,7 +1,7 @@
 var width = 1080,
     height = 900,
-    padding = 1.5, // separation between same-color nodes
-    clusterPadding = 6, // separation between different-color nodes
+    padding = 60, // separation between same-color nodes
+    clusterPadding = 85, // separation between different-color nodes
     maxRadius = 12;
 
 var color = d3.scale.ordinal()
@@ -133,8 +133,9 @@ function readClassFile() {
             }
             else {
                 var randomSkill = Math.floor(Math.random() * skill_groups.size);
-                d.text = skill_groups.get(randomSkill.toString());
+                //d.text = skill_groups.get(randomSkill.toString());
                 d.radius = 2;
+                d.text = d.radius;
                 console.log("random number: " + randomSkill);
                 console.log("randomed " + skill_groups.get(randomSkill.toString()));
                 nodes.push(d);
@@ -226,7 +227,7 @@ function readClassFile() {
                 d = {
                     cluster: i,
                     //radius: data[node_counter].size*1.5,
-                    radius: dict_groups.get(data[node_counter].class)*15,
+                    radius: dict_groups.get(data[node_counter].class),
                     text: data[node_counter].class,
                     x: Math.cos(i / m * 2 * Math.PI) * 200 + width / 2 + Math.random(),
                     y: Math.sin(i / m * 2 * Math.PI) * 200 + height / 2 + Math.random()
