@@ -107,3 +107,19 @@ select {
 .legend-text{
     color: white;
 }
+
+#range-slider__input{
+    width: 550px;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    color: white;
+}
+.range-slider__input-text{
+    margin: 1rem;
+
+}
