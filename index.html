@@ -11,19 +11,8 @@
 
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div id="toolbar">
-                <button id="all" class="button active">All</button>
-                <button id="Location" class="button">By Location</button>
-                <button id="Group" class="button">By Group</button>
-                <button id="Class" class="button">By Class</button>
-                <button id="Type" class="button">By Type</button>
-            </div>
-
-
-        </div>
-    </div>
+    <label for="customRange2">League Slider</label>
+    <input type="range" class="custom-range" min="0" max="14" id="customRange2" onchange="changeDataset(this.value)">
 </div>
 
 <!--script src="js/bubblechart.js"></script-->
@@ -56,5 +45,9 @@
         console.log(d3.version);
     });
 </script>
+
+
+
+
 </body>
 </html>

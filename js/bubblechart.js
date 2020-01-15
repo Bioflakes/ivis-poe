@@ -7,12 +7,14 @@ var width = 1080,
 var color = d3.scale.ordinal()
     .range(["#7A99AC", "#E4002B","#E4002B","#FFC300","#DAF7A6","#581845","#3498DB","#148F77","#BA4A00","#1D8348","#808000","#00FFFF","#935116","#27AE60","#2C3E50","#9B59B6","#FF33CA","#FF00D8","#B44D01","#0E7574","#E4002B"]);
 
-var dataset = "data/ClassFixed_MOCKDATA_v3_test.csv"
+var dataset = "data/minimized/ClassFixed_MOCKDATA_v3_min_0.csv"
 
 var skill_groups = new Map();
 var skilldata;
 
 var nodes = [];
+
+var active_league = 0;
 
 /**
  * takes the entire csv as a string and appends colNames to it, which handles as type accessors
@@ -26,6 +28,20 @@ function main() {
     d3.select('svg').remove();
     readSkillFile();
     readClassFile();
+}
+
+function changeDataset(value) {
+    dataset = "data/minimized/ClassFixed_MOCKDATA_v3_min_" + value + ".csv";
+
+    skill_groups = null;
+    nodes = null;
+
+    skill_groups = new Map();
+    nodes = [];
+
+    active_league = value;
+
+    main();
 }
 
 function readSkillFile() {
