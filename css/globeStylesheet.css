@@ -108,18 +108,24 @@ select {
     color: white;
 }
 
+.range-slider{
+    text-align: center;
+}
+
 #range-slider__input{
-    width: 550px;
-    display: block;
+    width: 600px;
+    /*display: block;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 1rem;*/
 }
 ul{
-    display: flex;
+    display: inline-flex;
     list-style-type: none;
+    margin-top: 1rem;
     color: white;
 }
 .range-slider__input-text{
-    margin: 1rem;
+    margin: .2rem;
+    transform: rotate(-90deg);
 
 }
