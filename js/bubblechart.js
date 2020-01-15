@@ -148,6 +148,14 @@ function readClassFile() {
 
 
         function tester() {
+            force = d3.layout.force()
+                .nodes(nodes)
+                .size([width, height])
+                .gravity(.02)
+                .charge(0)
+                .on("tick", tick)
+                .start()
+            console.log("called tick");
 
 
 
@@ -159,6 +167,28 @@ function readClassFile() {
                 .on("click", function(d) {
                     display_skills(d);
                 });
+
+            node.append("circle")
+                .style("fill", function (d) {
+                    return color(d.cluster);
+                })
+                .attr("r", function(d){
+                    if(dict_groups.has(d.text)) {
+                        //existing_playerclass.push(d.text);
+                        //console.log("pushed to list" + d.text);
+                        return 50;
+                    }
+                    else {
+                        return d.radius*15}
+                    //return dict_groups.get(d.text) * 4}
+                })
+
+
+            node.append("text")
+                .attr("dy", ".3em")
+                .style("text-anchor", "middle")
+                //text(function(d) { return d.text.substring(0, d.radius / 3); });
+                .text(function(d) { return d.text});
         }
 
         var force = d3.layout.force()
@@ -190,9 +220,19 @@ function readClassFile() {
         function display_skills(d) {
             hidden_nodes.forEach(function(node) {
                 if(d.cluster === node.cluster) {
+                    console.log("----------------------------------------------------------");
                     console.log("node cluster: " + node.cluster + " - given data cluster: " + d.cluster);
                     console.log("node text: " + node.text + " - given text: " + d.text);
-                    nodes.push(d);
+
+                    node.index = d.index;
+                    node.weight = d.weight;
+                    node.px = d.px;
+                    node.py = d.py;
+                    node.fixed = d.fixed;
+
+                    console.log("d - " + JSON.stringify(d));
+                    console.log("node - " + JSON.stringify(node));
+                    nodes.push(node);
                     tester();
                 }
             })
