@@ -50,6 +50,14 @@ queue()
 }
 getData("data/ClassFixed_MOCKDATA_v3.csv")
 
+function changeDataset(value) {
+    dataset = "data/minimized/ClassFixed_MOCKDATA_v3_" + value + ".csv";
+    console.log(dataset);
+
+    getData(dataset);
+}
+
+
 //Main function
 
 function ready(error, world, countryData, cityData, classData) {
@@ -80,10 +88,11 @@ function ready(error, world, countryData, cityData, classData) {
     console.log(JSON.stringify(countryClasssCount));
 
     // define colorScale for heatmapped data
-
     var colorScale = d3.scale.threshold()
         .domain([0,10, 40, 70, 100, 130])
         .range(['#D7DEE3','#B0BDC8', '#8A9EAD', '#648093', '#3E637A', '#104761', '#024059']);
+
+    svg.selectAll("path.country").remove();
 
     //Drawing countries on the globe
     var world = svg.selectAll("path.country")
@@ -96,9 +105,9 @@ function ready(error, world, countryData, cityData, classData) {
             //loop through countryClassCount and test if country is the same as the id of the path.country
             for (i=0; i < countryClasssCount.length; i++) {
                 var test2 = countryClasssCount[i].key;
-                //console.log("Keys of nestedClass " + test2);
+
                 if (test2 === countryById[d.id]) {
-                   // console.log("it works " +  countryClasssCount[i].values + " " + countryClasssCount[i].key)
+
                     return colorScale(countryClasssCount[i].values);
                 }
             }
