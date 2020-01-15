@@ -155,7 +155,7 @@ function readClassFile() {
             else {
                 var randomSkill = Math.floor(Math.random() * skill_groups.size);
                 d.text = skill_groups.get(randomSkill.toString());
-                d.radius = 2;
+                d.radius = (Math.random() * 2)+1;
                 //d.text = d.radius;
                 //console.log("random number: " + randomSkill);
                 //console.log("randomed " + skill_groups.get(randomSkill.toString()));
@@ -185,6 +185,9 @@ function readClassFile() {
             .call(force.drag)
             .on("click", function(d) {
                 display_skills(d);
+            })
+            .on("mouseover", function(d) {
+                console.log(d.text);
             });
 
 
@@ -214,13 +217,17 @@ function readClassFile() {
             main();
         }
 
-        var existing_playerclass = [];
-        var existing_playerskills = [];
 
 
         node.append("circle")
             .style("fill", function (d) {
                 return color(d.cluster);
+            })
+            .style("opacity", function (d) {
+                if(dict_groups.has(d.text)) {
+                    return 1;
+                }
+                else {return 0.5}
             })
             .attr("r", function(d){
                 if(dict_groups.has(d.text)) {
