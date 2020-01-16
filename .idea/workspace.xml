@@ -115,6 +115,8 @@
         <option value="$PROJECT_DIR$/js/bubblechart.js" />
       </list>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -183,6 +185,14 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Praeses\IdeaProjects\ivis-poe\data" />
+    </key>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Herfeus-18\Documents\ivis-poe\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Herfeus-18\Documents\ivis-poe\data" />
     </key>
   </component>
   <component name="RunDashboard">
