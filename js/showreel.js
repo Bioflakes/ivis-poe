@@ -242,7 +242,7 @@ require(["d3"], function(d3) {
             .data(function(d){return classData})
             .enter()
             .append('option')
-            .attr("id", function(d) {
+            .attr("class", function(d) {
                 return "select";
             })
             .text(function(d, i){ return d3.keys(data[0])[i+1] })// text showed in the menu

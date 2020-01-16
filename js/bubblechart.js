@@ -1,8 +1,10 @@
 var width = 1080,
     height = 900,
-    padding = 60, // separation between same-color nodes
-    clusterPadding = 70, // separation between different-color nodes
+    padding = 80, // separation between same-color nodes
+    clusterPadding = 90, // separation between different-color nodes
     maxRadius = 12;
+
+var color_by_size = ['#124963', '#3E637A', '#648093', '#8A9EAD', '#B0BDC8', '#D7DEE3', '#FFDF00'];
 
 var color = d3.scale.ordinal()
     .range(["#7A99AC", "#E4002B","#E4002B","#FFC300","#DAF7A6","#581845","#3498DB","#148F77","#BA4A00","#1D8348","#808000","#00FFFF","#935116","#27AE60","#2C3E50","#9B59B6","#FF33CA","#FF00D8","#B44D01","#0E7574","#E4002B"]);
@@ -162,7 +164,7 @@ function readClassFile() {
                 hidden_nodes.push(d);
             }
 
-        })
+        });
 
         var force = d3.layout.force()
             .nodes(nodes)
@@ -180,19 +182,37 @@ function readClassFile() {
             .attr("height", height);
 
 
+        var mouseX, mouseY;
+        var lastMouseX, lastMouseY;
         var node = svg1.selectAll("circle")
             .data(nodes)
             .enter().append("g")
             .call(force.drag)
-            .on("click", function(d) {
-                display_skills(d);
+            .on("mousedown", function(d) {
+                mouseX = getCursorPositionX(d);
+                mouseY = getCursorPositionY(d);
+                console.log("pos is: " + mouseX + " " + mouseY);
+            })
+            .on("mouseup", function(d) {
+                lastMouseX = getCursorPositionX(d);
+                lastMouseY = getCursorPositionY(d);
+
+                if(!(Math.abs(mouseX - lastMouseX) > 10 || Math.abs(mouseY - lastMouseY) > 10)) {
+                    display_skills(d);
+                }
             })
             .on("mouseover", function(d) {
-                console.log(d.text);
+                //d.style("tooltip", d.text);
             });
 
 
 
+        function getCursorPositionX(d) {
+            return d.x;
+        }
+        function getCursorPositionY(d) {
+            return d.y;
+        }
 
         function display_skills(d) {
 
@@ -210,8 +230,6 @@ function readClassFile() {
                     console.log("d - " + JSON.stringify(d));
                     console.log("node - " + JSON.stringify(node));
                     nodes.push(node);
-
-
                 }
             });
 
@@ -222,13 +240,33 @@ function readClassFile() {
 
         node.append("circle")
             .style("fill", function (d) {
+
+                if(dict_groups.has(d.text)) {
+                    switch(true) {
+                        case(d.radius >= 10): return color_by_size[0]
+                            break;
+                        case(d.radius >= 8): return color_by_size[1]
+                            break;
+                        case(d.radius >= 6): return color_by_size[2]
+                            break;
+                        case(d.radius >= 4): return color_by_size[3]
+                            break;
+                        case(d.radius >= 2): return color_by_size[4]
+                            break;
+                        default: return color_by_size[5];
+                    }
+                }
+                else {return color_by_size[6]}
+
+
+                console.log(d.text + " radius is " + d.radius);
                 return color(d.cluster);
             })
             .style("opacity", function (d) {
                 if(dict_groups.has(d.text)) {
                     return 1;
                 }
-                else {return 0.5}
+                else {return 0.8}
             })
             .attr("r", function(d){
                 if(dict_groups.has(d.text)) {
@@ -245,8 +283,10 @@ function readClassFile() {
         node.append("text")
             .attr("dy", ".3em")
             .style("text-anchor", "middle")
+            .style("fill", "#FFFFFF")
             //text(function(d) { return d.text.substring(0, d.radius / 3); });
-            .text(function(d) { return d.text});
+            .text(function(d) {
+                return d.text});
 
 
 
