@@ -1,0 +1,378 @@
+id,skill
+0,Abyssal Cry
+1,Added Chaos Damage Support
+2,Added Cold Damage Support
+3,Added Fire Damage Support
+4,Added Lightning Damage Support
+5,Additional Accuracy Support
+6,Advanced Traps Support
+7,Ancestral Call Support
+8,Ancestral Protector
+9,Ancestral Warchief
+10,Anger
+11,Animate Guardian
+12,Animate Weapon
+13,Arc
+14,Arcane Surge Support
+15,Arctic Armour
+16,Arctic Breath
+17,Armageddon Brand
+18,Assassin's Mark
+19,Ball Lightning
+20,Bane
+21,Barrage
+22,Bear Trap
+23,Berserk
+24,Blade Flurry
+25,Blade Vortex
+26,Bladefall
+27,Bladestorm
+28,Blasphemy Support
+29,Blast Rain
+30,Blastchain Mine Support
+31,Blight
+32,Blind Support
+33,Blink Arrow
+34,Block Chance Reduction Support
+35,Blood and Sand
+36,Blood Magic Support
+37,Blood Rage
+38,Bloodlust Support
+39,Bodyswap
+40,Bone Offering
+41,Bonechill Support
+42,Brand Recall
+43,Brutality Support
+44,Burning Arrow
+45,Burning Damage Support
+46,Cast On Critical Strike Support
+47,Cast on Death Support
+48,Cast on Melee Kill Support
+49,Cast when Damage Taken Support
+50,Cast when Stunned Support
+51,Cast while Channelling Support
+52,Caustic Arrow
+53,Chain Hook
+54,Chain Support
+55,Chance to Bleed Support
+56,Chance to Flee Support
+57,Charged Dash
+58,Charged Mines Support
+59,Charged Traps Support
+60,Clarity
+61,Cleave
+62,Close Combat Support
+63,Cluster Traps Support
+64,Cobra Lash
+65,Cold Penetration Support
+66,Cold Snap
+67,Cold to Fire Support
+68,Combustion Support
+69,Concentrated Effect Support
+70,Conductivity
+71,Consecrated Path
+72,Contagion
+73,Controlled Destruction Support
+74,Conversion Trap
+75,Convocation
+76,Cremation
+77,Culling Strike Support
+78,Curse On Hit Support
+79,Cyclone
+80,Damage on Full Life Support
+81,Dark Pact
+82,Dash
+83,Deadly Ailments Support
+84,Deathmark Support
+85,Decay Support
+86,Decoy Totem
+87,Desecrate
+88,Despair
+89,Determination
+90,Detonate Dead
+91,Detonate Mines
+92,Devouring Totem
+93,Discharge
+94,Discipline
+95,Divine Ire
+96,Dominating Blow
+97,Double Strike
+98,Dread Banner
+99,Dual Strike
+100,Earthquake
+101,Efficacy Support
+102,Elemental Army Support
+103,Elemental Damage with Attacks Support
+104,Elemental Focus Support
+105,Elemental Hit
+106,Elemental Proliferation Support
+107,Elemental Weakness
+108,Empower Support
+109,Endurance Charge on Melee Stun Support
+110,Enduring Cry
+111,Energy Leech Support
+112,Enfeeble
+113,Enhance Support
+114,Enlighten Support
+115,Essence Drain
+116,Ethereal Knives
+117,Explosive Arrow
+118,Explosive Trap
+119,Faster Attacks Support
+120,Faster Casting Support
+121,Faster Projectiles Support
+122,Feeding Frenzy Support
+123,Fire Penetration Support
+124,Fire Trap
+125,Fireball
+126,Firestorm
+127,Flame Dash
+128,Flame Surge
+129,Flameblast
+130,Flamethrower Trap
+131,Flammability
+132,Flesh and Stone
+133,Flesh Offering
+134,Flicker Strike
+135,Fork Support
+136,Fortify Support
+137,Freezing Pulse
+138,Frenzy
+139,Frost Blades
+140,Frost Bomb
+141,Frost Wall
+142,Frostbite
+143,Frostblink
+144,Frostbolt
+145,Generosity Support
+146,Glacial Cascade
+147,Glacial Hammer
+148,Grace
+149,Greater Multiple Projectiles Support
+150,Ground Slam
+151,Haste
+152,Hatred
+153,Heavy Strike
+154,Herald of Agony
+155,Herald of Ash
+156,Herald of Ice
+157,Herald of Purity
+158,Herald of Thunder
+159,High-Impact Mine Support
+160,Holy Flame Totem
+161,Hypothermia Support
+162,Ice Bite Support
+163,Ice Crash
+164,Ice Nova
+165,Ice Shot
+166,Ice Spear
+167,Ice Trap
+168,Icicle Mine
+169,Ignite Proliferation Support
+170,Immolate Support
+171,Immortal Call
+172,Impale Support
+173,Incinerate
+174,Increased Area of Effect Support
+175,Increased Critical Damage Support
+176,Increased Critical Strikes Support
+177,Increased Duration Support
+178,Infernal Blow
+179,Infernal Legion Support
+180,Infused Channelling Support
+181,Innervate Support
+182,Inspiration Support
+183,Intensify Support
+184,Iron Grip Support
+185,Iron Will Support
+186,Item Quantity Support
+187,Item Rarity Support
+188,Kinetic Blast
+189,Knockback Support
+190,Lacerate
+191,Lancing Steel
+192,Leap Slam
+193,Less Duration Support
+194,Lesser Multiple Projectiles Support
+195,Lesser Poison Support
+196,Life Gain on Hit Support
+197,Life Leech Support
+198,Lightning Arrow
+199,Lightning Penetration Support
+200,Lightning Spire Trap
+201,Lightning Strike
+202,Lightning Tendrils
+203,Lightning Trap
+204,Lightning Warp
+205,Magma Orb
+206,Maim Support
+207,Malevolence
+208,Mana Leech Support
+209,Meat Shield Support
+210,Melee Physical Damage Support
+211,Melee Splash Support
+212,Minefield Support
+213,Minion Damage Support
+214,Minion Life Support
+215,Minion Speed Support
+216,Mirage Archer Support
+217,Mirror Arrow
+218,Molten Shell
+219,Molten Strike
+220,Multiple Totems Support
+221,Multiple Traps Support
+222,Multistrike Support
+223,Nightblade Support
+224,Onslaught Support
+225,Orb of Storms
+226,Perforate
+227,Pestilent Strike
+228,Phase Run
+229,Physical to Lightning Support
+230,Pierce Support
+231,Plague Bearer
+232,Poacher's Mark
+233,Point Blank Support
+234,Poison Support
+235,Portal (gem)
+236,Power Charge On Critical Support
+237,Power Siphon
+238,Precision
+239,Pride
+240,Projectile Weakness
+241,Pulverise Support
+242,Puncture
+243,Punishment
+244,Purifying Flame
+245,Purity of Elements
+246,Purity of Fire
+247,Purity of Ice
+248,Purity of Lightning
+249,Pyroclast Mine
+250,Rage Support
+251,Rain of Arrows
+252,Raise Spectre
+253,Raise Zombie
+254,Rallying Cry
+255,Ranged Attack Totem Support
+256,Reave
+257,Reckoning
+258,Rejuvenation Totem
+259,Righteous Fire
+260,Riposte
+261,Ruthless Support
+262,Scorching Ray
+263,Scourge Arrow
+264,Searing Bond
+265,Seismic Trap
+266,Shattering Steel
+267,Shield Charge
+268,Shock Nova
+269,Shockwave Support
+270,Shockwave Totem
+271,Shrapnel Shot
+272,Siege Ballista
+273,Siphoning Trap
+274,Slower Projectiles Support
+275,Smite
+276,Smoke Mine
+277,Soulrend
+278,Spark
+279,Spectral Shield Throw
+280,Spectral Throw
+281,Spell Cascade Support
+282,Spell Echo Support
+283,Spell Totem Support
+284,Spirit Offering
+285,Split Arrow
+286,Static Strike
+287,Steelskin
+288,Storm Brand
+289,Storm Burst
+290,Storm Call
+291,Stormblast Mine
+292,Stun Support
+293,Summon Carrion Golem
+294,Summon Chaos Golem
+295,Summon Flame Golem
+296,Summon Holy Relic
+297,Summon Ice Golem
+298,Summon Lightning Golem
+299,Summon Phantasm Support
+300,Summon Raging Spirit
+301,Summon Skeletons
+302,Summon Skitterbots
+303,Summon Stone Golem
+304,Sunder
+305,Sweep
+306,Swift Affliction Support
+307,Swift Assembly Support
+308,Tectonic Slam
+309,Tempest Shield
+310,Temporal Chains
+311,Tornado Shot
+312,Toxic Rain
+313,Trap and Mine Damage Support
+314,Trap Support
+315,Unbound Ailments Support
+316,Unearth
+317,Unleash Support
+318,Vaal Ancestral Warchief
+319,Vaal Arc
+320,Vaal Blade Vortex
+321,Vaal Blight
+322,Vaal Breach
+323,Vaal Burning Arrow
+324,Vaal Clarity
+325,Vaal Cold Snap
+326,Vaal Cyclone
+327,Vaal Detonate Dead
+328,Vaal Discipline
+329,Vaal Double Strike
+330,Vaal Earthquake
+331,Vaal Fireball
+332,Vaal Flameblast
+333,Vaal Glacial Hammer
+334,Vaal Grace
+335,Vaal Ground Slam
+336,Vaal Haste
+337,Vaal Ice Nova
+338,Vaal Immortal Call
+339,Vaal Impurity of Fire
+340,Vaal Impurity of Ice
+341,Vaal Impurity of Lightning
+342,Vaal Lightning Strike
+343,Vaal Lightning Trap
+344,Vaal Lightning Warp
+345,Vaal Molten Shell
+346,Vaal Power Siphon
+347,Vaal Rain of Arrows
+348,Vaal Reave
+349,Vaal Righteous Fire
+350,Vaal Spark
+351,Vaal Spectral Throw
+352,Vaal Storm Call
+353,Vaal Summon Skeletons
+354,Vengeance
+355,Venom Gyre
+356,Vicious Projectiles Support
+357,Vigilant Strike
+358,Vile Toxins Support
+359,Viper Strike
+360,Vitality
+361,Void Manipulation Support
+362,Volatile Dead
+363,Volley Support
+364,Vortex
+365,Vulnerability
+366,War Banner
+367,Warlord's Mark
+368,Wave of Conviction
+369,Whirling Blades
+370,Wild Strike
+371,Winter Orb
+372,Wither
+373,Withering Step
+374,Withering Touch Support
+375,Wrath
+376,Zealotry
