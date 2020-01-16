@@ -25,7 +25,7 @@ var active_league = 0;
 function main() {
     console.log("called main");
 
-    d3.select('svg').remove();
+    d3.select('#bubbles-svg').remove();
     readSkillFile();
     readClassFile();
 }
@@ -174,7 +174,8 @@ function readClassFile() {
         console.log("called tick");
 
 
-        var svg = d3.select("body").append("svg")
+        var svg = d3.select("#bubbles").append("svg")
+            .attr("id", "bubbles-svg")
             .attr("width", width)
             .attr("height", height);
 
@@ -236,12 +237,6 @@ function readClassFile() {
                     return d.radius*6;
                 }
                 else {
-
-                    var unpadded_text = d.text.split(" ").join("\n");
-                    console.log(unpadded_text);
-
-                    d.text = unpadded_text;
-
                     return d.radius*6}
                 //return dict_groups.get(d.text) * 4}
             })
