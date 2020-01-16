@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/globeStylesheet.css" />
+    <link rel="stylesheet" href="css/showreel.css">
 </head>
 <body>
 <!--Bubble Chart -->
@@ -29,14 +30,45 @@
             d3v5: "https://d3js.org/d3.v5.min",
             d3cel: "https://d3js.org/d3.v3.min",
             bubblechart: "js/bubblechart",
-            globemap: "js/globemap"
+            globemap: "js/globemap",
+            showreel: "js/showreel"
         },
         shim: {
-            'js/bubblechart': ['d3'],
-            'js/globemap': ['d3cel']
+            'bubblechart': {
+                deps: ['d3']
+            },
+            'globemap': {
+                deps: ['d3cel']
+            },
+            'showreel': {
+                deps: ['d3v5']
+            }
         }
     });
+
+
+    require(["globemap"], function() {
+        console.log("globemaps d3 \n --------- \n" + d3.version);
+
+    });
+    require(["bubblechart"], function() {
+        main();
+    });
 </script>
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="stackedBarChart_Select"></div>
+        <div class="container">
+            <div id="stackedBarChart"></div>
+            <div id="stackedBarChart_Legend"></div>
+        </div>
+
+        <script src="js/showreel.js"></script>
+
+    </div>
+</div>
+
 <div class="row" id="globe">
     <div class="col-md-12">
 
@@ -87,11 +119,7 @@
 
         <div>
 
-            <script>
-                require(["js/globemap"], function() {
 
-                });
-            </script>
         </div>
     </div>
 </div>
@@ -109,18 +137,16 @@
     <div class="col-md-12">
 
 
-        <script>
-            require(["js/bubblechart"], function() {
 
-
-
-                main();
-            });
-        </script>
 
 
     </div>
 </div>
+
+
+
+
+
 
 </body>
 </html>

@@ -1,4 +1,6 @@
-    var width = 600,
+
+
+var width = 600,
         height = 500,
         sens = 0.25,
         focused;

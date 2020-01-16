@@ -246,7 +246,7 @@ function readClassFile() {
             .attr("dy", ".3em")
             .style("text-anchor", "middle")
             //text(function(d) { return d.text.substring(0, d.radius / 3); });
-            .text(function(d) { return d.text.split(" ").join("\n")});
+            .text(function(d) { return d.text});
 
 
 
