@@ -7,7 +7,7 @@ var width = 1080,
 var color = d3.scale.ordinal()
     .range(["#7A99AC", "#E4002B","#E4002B","#FFC300","#DAF7A6","#581845","#3498DB","#148F77","#BA4A00","#1D8348","#808000","#00FFFF","#935116","#27AE60","#2C3E50","#9B59B6","#FF33CA","#FF00D8","#B44D01","#0E7574","#E4002B"]);
 
-var dataset = "data/minimized/ClassFixed_MOCKDATA_v3_min_0.csv"
+var dataset_bubbles = "data/minimized/ClassFixed_MOCKDATA_v3_min_0.csv"
 
 var skill_groups = new Map();
 var skilldata;
@@ -31,7 +31,7 @@ function main() {
 }
 
 function changeDatasetBubbles(value) {
-    dataset = "data/minimized/ClassFixed_MOCKDATA_v3_min_" + value + ".csv";
+    dataset_bubbles = "data/minimized/ClassFixed_MOCKDATA_v3_min_" + value + ".csv";
 
     skill_groups = null;
     nodes = null;
@@ -63,7 +63,7 @@ function readSkillFile() {
 }
 
 function readClassFile() {
-    d3.text(dataset, function(error, text) {
+    d3.text(dataset_bubbles, function(error, text) {
         if (error) throw error;
 
 

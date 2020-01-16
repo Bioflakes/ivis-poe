@@ -18,34 +18,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="176" column="118" selection-start-line="176" selection-start-column="118" selection-end-line="176" selection-end-column="118" />
+            <state relative-caret-position="561">
+              <caret line="75" column="49" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/bubblechart.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+              <caret line="65" column="19" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/globemap.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3757">
+              <caret line="221" selection-start-line="221" selection-end-line="221" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/showreel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="212" column="17" selection-start-line="212" selection-start-column="14" selection-end-line="212" selection-end-column="17" />
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -93,9 +97,11 @@
       <find>svg</find>
       <find>data</find>
       <find>type</find>
+      <find>dataset</find>
     </findStrings>
     <replaceStrings>
       <replace>data</replace>
+      <replace>data_line</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -121,8 +127,8 @@
         <option value="$PROJECT_DIR$/css/globeStylesheet.css" />
         <option value="$PROJECT_DIR$/js/globemap.js" />
         <option value="$PROJECT_DIR$/js/showreel.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/bubblechart.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -306,7 +312,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64170000" />
+    <option name="totallyTimeSpent" value="64240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
@@ -464,26 +470,30 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/globemap.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/showreel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="212" column="17" selection-start-line="212" selection-start-column="14" selection-end-line="212" selection-end-column="17" />
+        <state relative-caret-position="3757">
+          <caret line="221" selection-start-line="221" selection-end-line="221" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/showreel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="176" column="118" selection-start-line="176" selection-start-column="118" selection-end-line="176" selection-end-column="118" />
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/bubblechart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <caret line="65" column="19" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="75" column="49" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
         </state>
       </provider>
     </entry>
