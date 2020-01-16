@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="48576897-ed1a-4a07-a59e-6bbc569ea386" name="Default Changelist" comment="fixed colors 2.0">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bubblechart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bubblechart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/globemap.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/globemap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/showreel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/showreel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+            <state relative-caret-position="885">
+              <caret line="138" column="14" selection-start-line="138" selection-start-column="14" selection-end-line="138" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -303,7 +300,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62431000" />
+    <option name="totallyTimeSpent" value="63129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
@@ -479,8 +476,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+        <state relative-caret-position="885">
+          <caret line="138" column="14" selection-start-line="138" selection-start-column="14" selection-end-line="138" selection-end-column="14" />
         </state>
       </provider>
     </entry>
