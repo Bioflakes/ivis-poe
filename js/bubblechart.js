@@ -1,7 +1,7 @@
 var width = 1080,
     height = 900,
     padding = 60, // separation between same-color nodes
-    clusterPadding = 85, // separation between different-color nodes
+    clusterPadding = 70, // separation between different-color nodes
     maxRadius = 12;
 
 var color = d3.scale.ordinal()
@@ -233,10 +233,16 @@ function readClassFile() {
                 if(dict_groups.has(d.text)) {
                     //existing_playerclass.push(d.text);
                     //console.log("pushed to list" + d.text);
-                    return 50;
+                    return d.radius*6;
                 }
                 else {
-                    return d.radius*15}
+
+                    var unpadded_text = d.text.split(" ").join("\n");
+                    console.log(unpadded_text);
+
+                    d.text = unpadded_text;
+
+                    return d.radius*6}
                 //return dict_groups.get(d.text) * 4}
             })
 
@@ -245,7 +251,7 @@ function readClassFile() {
             .attr("dy", ".3em")
             .style("text-anchor", "middle")
             //text(function(d) { return d.text.substring(0, d.radius / 3); });
-            .text(function(d) { return d.text});
+            .text(function(d) { return d.text.split(" ").join("\n")});
 
 
 
