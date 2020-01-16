@@ -174,13 +174,13 @@ function readClassFile() {
         console.log("called tick");
 
 
-        var svg = d3.select("#bubbles").append("svg")
+        var svg1 = d3.select("#bubbles").append("svg")
             .attr("id", "bubbles-svg")
             .attr("width", width)
             .attr("height", height);
 
 
-        var node = svg.selectAll("circle")
+        var node = svg1.selectAll("circle")
             .data(nodes)
             .enter().append("g")
             .call(force.drag)
