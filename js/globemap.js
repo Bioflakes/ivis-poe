@@ -13,6 +13,8 @@ var projection = d3.geo.orthographic()
 var path = d3.geo.path()
     .projection(projection);
 
+var sliderValue = 0;
+
 
 //SVG container
 var svg = d3.select("body").append("svg")
@@ -46,6 +48,7 @@ queue()
     .defer(d3.tsv, "data/world-110m-country-names.tsv")
     .defer(d3.json, "data/geonames_cities_100k.geojson")
     .defer(d3.csv, nameCSV)
+    .defer(d3.csv, "data/listOfLeagues.csv")
     .await(ready);
 }
 getData("data/ClassFixed_MOCKDATA_v3.csv")
@@ -53,6 +56,8 @@ getData("data/ClassFixed_MOCKDATA_v3.csv")
 function changeDataset(value) {
     dataset = "data/minimized/ClassFixed_MOCKDATA_v3_" + value + ".csv";
     console.log(dataset);
+    sliderValue = value;
+    console.log("SliderValue: " + sliderValue);
 
     getData(dataset);
 }
@@ -60,7 +65,7 @@ function changeDataset(value) {
 
 //Main function
 
-function ready(error, world, countryData, cityData, classData) {
+function ready(error, world, countryData, cityData, classData, leagueData) {
 
     var countryById = {},
         countries = topojson.feature(world, world.objects.countries).features;
@@ -116,31 +121,6 @@ function ready(error, world, countryData, cityData, classData) {
 
 
 
-  /*  // setting the circle size (not radius!) according to the number of inhabitants per city
-    population_array = [];
-    for (i = 0; i < cityData.features.length; i++) {
-        population_array.push(cityData.features[i].properties.population);
-    }
-    max_population = population_array.sort(d3.descending)[0];
-
-    var rMin = 0;
-    var rMax = Math.sqrt(max_population / (peoplePerPixel * Math.PI));
-    rScale.domain([0, max_population]);
-    rScale.range([rMin, rMax]);
-
-    path.pointRadius(function(d) {
-        return d.properties ? rScale(d.properties.population) : 1;
-    });
-
-    // Drawing transparent circle markers for cities
-    svg.selectAll("path.cities").data(cityData.features)
-        .enter().append("path")
-        .attr("class", "cities")
-        .attr("d", path)
-        .attr("fill", "#ffba00")
-        .attr("fill-opacity", 0.45)*/
-
-
         //Drag event
         .call(d3.behavior.drag()
             .origin(function() { var r = projection.rotate(); return {x: r[0] / sens, y: -r[1] / sens}; })
@@ -168,8 +148,28 @@ function ready(error, world, countryData, cityData, classData) {
                 .style("top", (d3.event.pageY - 15) + "px");
         })
         .on("click", function (d) {
-            document.getElementById("selectOption").selectedIndex = 0;// = countryById[d.id];
-            console.log(countryById[d.id]);
+
+            //get name of League
+            var leagueValue = leagueData[sliderValue].leagues;
+
+            //get count Values of the Selected Country
+            for (i=0; i < countryClasssCount.length; i++) {
+                var test2 = countryClasssCount[i].key;
+
+                if (test2 === countryById[d.id]) {
+
+                   var count = countryClasssCount[i].values;
+
+                }
+            }
+
+            // CODE THAT DISPLAYS THE SPECIFIC VALUES OF SELECTED
+            var infoDivID="infoDiv"+countryById[d.id];
+
+            $( "#selectedDiv" ).append( "<div id='"+infoDivID+"' class='infoDiv'><strong>League: </strong>"+leagueValue+"<br>" +
+                "<strong>Country: </strong>"+countryById[d.id]+"<br>" +
+                "<strong>Count: </strong>"+count+"<br>" +
+                "</div>" )
 
         });
 

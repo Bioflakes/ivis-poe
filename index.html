@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/globeStylesheet.css" />
 </head>
 <body>
-<!--Bubble Chart -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <!--<script src="https://d3js.org/d3.v5.min.js"></script>-->
 <script src="https://d3js.org/topojson.v1.min.js"></script>
@@ -16,27 +16,29 @@
 <script src="js/globemap.js"></script>
 
 <div class="range-slider">
-    <input id="range-slider__input" type="range" min="0" max="14" steps="1" value="1" id="customRange2" onchange="changeDataset(this.value)"><br/>
+    <input id="range-slider__input" type="range" min="0" max="14" steps="1" value="0" onchange="changeDataset(this.value)"><br/>
 
     <ul class="range-slider__input-list">
-        <li class="range-slider__input-text">League1</li>
-        <li class="range-slider__input-text">hallo</li>
-        <li class="range-slider__input-text">hallo</li>
-        <li class="range-slider__input-text">hallo</li>
-        <li class="range-slider__input-text">hallo</li>
-        <li class="range-slider__input-text">hallo</li>
-        <li class="range-slider__input-text">hallo</li>
-        <li class="range-slider__input-text">hallo</li>
-        <li class="range-slider__input-text">hallo</li>
-        <li class="range-slider__input-text">hallo</li>
-        <li class="range-slider__input-text">hallo</li>
-        <li class="range-slider__input-text">hallo</li>
-        <li class="range-slider__input-text">hallo</li>
-        <li class="range-slider__input-text">hallo</li>
-        <li class="range-slider__input-text">hallo</li>
+        <li class="range-slider__input-text">Perandus</li>
+        <li class="range-slider__input-text">Prophecy</li>
+        <li class="range-slider__input-text">Essence</li>
+        <li class="range-slider__input-text">Breach</li>
+        <li class="range-slider__input-text">Legacy</li>
+        <li class="range-slider__input-text">Harbinger</li>
+        <li class="range-slider__input-text">Abyss</li>
+        <li class="range-slider__input-text">Bestiary</li>
+        <li class="range-slider__input-text">Incursion</li>
+        <li class="range-slider__input-text">Delve</li>
+        <li class="range-slider__input-text">Betrayal</li>
+        <li class="range-slider__input-text">Synthesis</li>
+        <li class="range-slider__input-text">Legion</li>
+        <li class="range-slider__input-text">Blight</li>
+        <li class="range-slider__input-text">Metamorph</li>
     </ul>
 
 </div>
+
+<div id="selectedDiv"></div>
 
 
 <div>
