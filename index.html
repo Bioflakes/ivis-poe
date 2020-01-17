@@ -54,53 +54,26 @@
 </script>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 barContainer">
         <div id="stackedBarChart_Select"></div>
         <div class="container">
             <div id="stackedBarChart"></div>
             <div id="stackedBarChart_Legend"></div>
         </div>
+        <div id="selectedDiv"></div>
 
         <script src="js/showreel.js"></script>
 
     </div>
 </div>
 
+
+<div id="globeDIV"></div>
+
 <div class="row" id="globe">
     <div class="col-md-12">
-
-
-        <div class="range-slider">
-            <input id="range-slider__input" type="range" min="0" max="14" steps="1" value="0" onchange="changeDataset(this.value)"><br/>
-
-            <ul class="range-slider__input-list">
-                <li class="range-slider__input-text">Perandus</li>
-                <li class="range-slider__input-text">Prophecy</li>
-                <li class="range-slider__input-text">Essence</li>
-                <li class="range-slider__input-text">Breach</li>
-                <li class="range-slider__input-text">Legacy</li>
-                <li class="range-slider__input-text">Harbinger</li>
-                <li class="range-slider__input-text">Abyss</li>
-                <li class="range-slider__input-text">Bestiary</li>
-                <li class="range-slider__input-text">Incursion</li>
-                <li class="range-slider__input-text">Delve</li>
-                <li class="range-slider__input-text">Betrayal</li>
-                <li class="range-slider__input-text">Synthesis</li>
-                <li class="range-slider__input-text">Legion</li>
-                <li class="range-slider__input-text">Blight</li>
-                <li class="range-slider__input-text">Metamorph</li>
-            </ul>
-
-        </div>
-
         <div id="selectCountry"></div>
-
-        <div id="selectedDiv"></div>
-
-
-        <div>
-            <div  class="legend">
-
+        <div  class="legend">
                 <div class="öpis">
                     <div class="rect lg1"></div>
                     <span class="legend-text"> > 130</span>
@@ -136,16 +109,31 @@
                     <span class="legend-text"> 0 </span>
                 </div>
             </div>
-
-        </div>
-
-        <div>
-
-
-        </div>
     </div>
-</div>
 
+
+</div>
+<div class="range-slider">
+    <input id="range-slider__input" type="range" min="0" max="14" steps="1" value="0" onchange="changeDataset(this.value)"><br/>
+    <ul class="range-slider__input-list">
+        <li class="range-slider__input-text">Perandus</li>
+        <li class="range-slider__input-text">Prophecy</li>
+        <li class="range-slider__input-text">Essence</li>
+        <li class="range-slider__input-text">Breach</li>
+        <li class="range-slider__input-text">Legacy</li>
+        <li class="range-slider__input-text">Harbinger</li>
+        <li class="range-slider__input-text">Abyss</li>
+        <li class="range-slider__input-text">Bestiary</li>
+        <li class="range-slider__input-text">Incursion</li>
+        <li class="range-slider__input-text">Delve</li>
+        <li class="range-slider__input-text">Betrayal</li>
+        <li class="range-slider__input-text">Synthesis</li>
+        <li class="range-slider__input-text">Legion</li>
+        <li class="range-slider__input-text">Blight</li>
+        <li class="range-slider__input-text">Metamorph</li>
+    </ul>
+</div>
+<div id="selectedDiv2"></div>
 <div class="row">
     <div class="col-md-12">
         <br><br><br><br>

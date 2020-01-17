@@ -40,8 +40,8 @@ var width = 600,
         .attr("class", "ocean")
         .attr("d", path);
 
-    var countryTooltip = d3.select("body").append("div").attr("class", "countryTooltip"),
-        countryList = d3.select("body").append("select").attr("name", "countries");
+    var countryTooltip = d3.select("#globe").append("div").attr("class", "countryTooltip"),
+        countryList = d3.select("#globe").append("select").attr("name", "countries");
 
     function getData(nameCSV){
 
@@ -168,7 +168,7 @@ var width = 600,
                 // CODE THAT DISPLAYS THE SPECIFIC VALUES OF SELECTED
                 var infoDivID="infoDiv"+countryById[d.id];
 
-                $( "#selectedDiv" ).append( "<div id='"+infoDivID+"' class='infoDiv'><strong>League: </strong>"+leagueValue+"<br>" +
+                $( "#selectedDiv2" ).append( "<div id='"+infoDivID+"' class='infoDiv'><strong>League: </strong>"+leagueValue+"<br>" +
                     "<strong>Country: </strong>"+countryById[d.id]+"<br>" +
                     "<strong>Count: </strong>"+count+"<br>" +
                     "</div>" )

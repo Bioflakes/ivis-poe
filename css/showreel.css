@@ -15,6 +15,10 @@ select{
     height: 2rem;
     width: 6.5rem;
 }
+.barContainer{
+    margin-bottom: 13rem;
+    margin-top: 5rem;
+}
 .container {
     width: 70rem;
     overflow: hidden;
