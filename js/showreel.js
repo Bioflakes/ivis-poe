@@ -241,7 +241,7 @@ require(["d3v5"], function(d3) {
                 return "select";
             })
             .text(function(d, i){ return d3.keys(data[0])[i+1] })// text showed in the menu
-            .attr("value", function (d,i) {return i+1; }) // corresponding value returned by the button
+            .attr("value", function (d,i) {return "StackedI"+(i+1); }) // corresponding value returned by the button
             .style("alignment-baseline", "middle");
 
         $('select').append(`<option value="all"> 
@@ -280,9 +280,10 @@ require(["d3v5"], function(d3) {
             });
         }
         else {
+            var y = selectedOption.split["StackedI"];
             //sort the different data according to the selected option
             data.sort(function (a, b) {
-                return b[Object.keys(a)[selectedOption]] - a[Object.keys(a)[selectedOption]];
+                return b[Object.keys(a)[y[1]]] - a[Object.keys(a)[y[1]]];
             });
             generateDiagram(data);
         }
