@@ -37,7 +37,7 @@ function main() {
     readClassFile();
 }
 
-function changeDataset(value) {
+function changeDatasetBubbles(value) {
     dataset_bubbles = "data/minimized/ClassFixed_MOCKDATA_v3_min_" + value + ".csv";
 
     skill_groups = null;
