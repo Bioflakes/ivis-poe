@@ -61,6 +61,8 @@ var width = 600,
         sliderValue = value;
         console.log("SliderValue: " + sliderValue);
 
+
+        changeDatasetBubbles(value);
         getData(dataset);
     }
 
