@@ -1,0 +1,1001 @@
+index,first_name,last_name,email,gender,gem,class,character_name,gametime,country,level
+0,,Attwell,kattwell0@hhs.gov,female,arctic armour,Berserker,jattwell0,409,Japan,10
+1,Shoshanna,,scorrigan1@pinterest.com,female,barrage,Chieftain,scarnson1,12,Mexico,29
+2,Nadya,Boobyer,nboobyer2@yahoo.com,female,arctic armour,Juggernaut,nboobyer2,320,Guatemala,47
+3,Tris,Chippindale,tchippindale3@businessinsider.com,female,barrage,Juggernaut,tchippindale3,171,Kosovo,47
+4,Netta,,nmateescu4@flavors.me,female,arctic armour,Gladiator,ngeorgins4,446,Finland,95
+5,Austin,Formoy,aformoy5@live.com,female,animate weapon,Inquisitor,aformoy5,215,Israel,80
+6,Greta,Capponeer,gcapponeer6@furl.net,female,animate weapon,Berserker,gcapponeer6,157,South Africa,76
+7,Barbette,,bcrosfield7@weather.com,female,animate weapon,Raider,bmargarson7,439,Morocco,36
+8,Adiana,Kissock,akissock8@pcworld.com,female,arctic armour,Chieftain,akissock8,233,Sweden,75
+9,Patty,,pdelion9@hugedomains.com,female,arctic armour,Saboteur,pheeron9,16,Moldova,96
+10,Stanfield,Minifie,sminifiea@list-manage.com,female,barrage,Assassin,sminifiea,354,Mauritania,80
+11,Lotti,Fochs,lfochsb@lycos.com,female,barrage,Gladiator,lfochsb,163,Pakistan,48
+12,Gordon,Dradey,gdradeyc@miitbeian.gov.cn,female,barrage,Berserker,gdradeyc,423,South Sudan,70
+13,Ivy,,igregrd@google.es,female,barrage,Inquisitor,ipimlockd,310,Czech Republic,8
+14,Hale,Rowlson,hrowlsone@exblog.jp,female,barrage,Necromancer,hrowlsone,370,Moldova,16
+15,Northrup,,nskitralf@ibm.com,female,animate weapon,Slayer,nhabardf,301,Sierra Leone,87
+16,Cleo,,clucianog@dot.gov,female,arctic armour,Hierophant,ceasmang,48,Poland,15
+17,Sherwynd,Boffey,sboffeyh@lycos.com,female,barrage,Trickster,sboffeyh,315,Zambia,15
+18,Paige,Bucke,pbuckei@ustream.tv,female,barrage,Berserker,pbuckei,385,Guatemala,2
+19,Keary,,krainsdonj@mapy.cz,female,animate weapon,Champion,kwevellj,323,Laos,18
+20,Tarrance,Rait,traitk@ehow.com,female,barrage,Raider,traitk,286,Ghana,92
+21,Antone,,adeluzel@mediafire.com,female,arctic armour,Juggernaut,agoulterl,78,El Salvador,50
+22,,Tidey,rtideym@oaic.gov.au,female,barrage,Ascendant,ktideym,60,Tajikistan,68
+23,Sheela,,sredfearnn@nationalgeographic.com,female,arctic armour,Gladiator,selkingtonn,148,Czech Republic,91
+24,Selma,Alven,salveno@themeforest.net,female,animate weapon,Slayer,salveno,384,Chile,92
+25,Magdalen,Kennaird,mkennairdp@mail.ru,female,arctic armour,Assassin,mkennairdp,264,Micronesia,56
+26,Ilene,Metheringham,imetheringhamq@domainmarket.com,female,barrage,Deadeye,imetheringhamq,434,Kazakhstan,23
+27,Karlene,Bezemer,kbezemerr@digg.com,female,animate weapon,Champion,kbezemerr,44,Moldova,34
+28,,Kearns,jkearnss@amazon.com,female,barrage,Hierophant,skearnss,59,Argentina,22
+29,Hendrik,Baterip,hbateript@google.cn,female,arctic armour,Hierophant,hbateript,347,Lithuania,25
+30,Daile,Qusklay,dqusklayu@chicagotribune.com,female,arctic armour,Assassin,dqusklayu,103,Tajikistan,93
+31,Jeanna,,jwhearv@163.com,female,barrage,Hierophant,jbainesv,228,Denmark,50
+32,Rosamund,Matelaitis,rmatelaitisw@webeden.co.uk,female,animate weapon,Elementalist,rmatelaitisw,322,Egypt,61
+33,Celia,Fellenor,cfellenorx@nps.gov,female,barrage,Gladiator,cfellenorx,133,Belarus,39
+34,Dacey,,dcassiey@ihg.com,female,barrage,Chieftain,dbrienty,333,South Africa,3
+35,Eben,,ecavanz@t.co,female,arctic armour,Occultist,evanderhoevenz,390,Israel,79
+36,Mordy,Shelly,mshelly10@wufoo.com,female,animate weapon,Deadeye,mshelly10,60,Jordan,82
+37,Brook,Severwright,bseverwright11@constantcontact.com,female,arctic armour,Guardian,bseverwright11,214,South Sudan,60
+38,Jacquette,Pettet,jpettet12@shinystat.com,female,arctic armour,Chieftain,jpettet12,416,Uganda,76
+39,Roberto,,rwhickman13@cornell.edu,female,barrage,Guardian,rmcmanaman13,124,Uruguay,13
+40,Mathilda,Scintsbury,mscintsbury14@shutterfly.com,female,animate weapon,Ascendant,mscintsbury14,429,Japan,91
+41,Bancroft,,bball15@ihg.com,female,arctic armour,Raider,bmarrington15,362,Netherlands,75
+42,Bengt,Shory,bshory16@apple.com,female,barrage,Elementalist,bshory16,173,Malta,92
+43,Laina,,lscoyne17@independent.co.uk,female,barrage,Pathfinder,lennew17,364,Croatia,76
+44,,Citrine,jcitrine18@usnews.com,female,animate weapon,Chieftain,jcitrine18,54,Afghanistan,47
+45,,Kenforth,tkenforth19@printfriendly.com,female,arctic armour,Slayer,kkenforth19,312,Croatia,61
+46,Brigid,,bhardiman1a@wired.com,female,animate weapon,Slayer,bguisot1a,395,Bolivia,2
+47,Gusty,Jerger,gjerger1b@toplist.cz,female,barrage,Deadeye,gjerger1b,335,Hungary,78
+48,,Nenci,rnenci1c@cisco.com,female,barrage,Slayer,jnenci1c,184,Bulgaria,85
+49,,Pennycook,zpennycook1d@linkedin.com,female,barrage,Inquisitor,ppennycook1d,111,Ethiopia,72
+50,Niel,,ngorelli1e@digg.com,female,arctic armour,Chieftain,nsouten1e,362,Japan,89
+51,Buddy,Padwick,bpadwick1f@baidu.com,female,barrage,Deadeye,bpadwick1f,30,Norway,1
+52,Jamison,Itzkin,jitzkin1g@tinypic.com,female,barrage,Gladiator,jitzkin1g,283,China,16
+53,Cathe,,ctoomer1h@networkadvertising.org,female,animate weapon,Occultist,cbusek1h,413,Belize,92
+54,,,vwitter1i@163.com,female,barrage,Assassin,dbeatty1i,99,Sri Lanka,31
+55,Christabella,Kem,ckem1j@aol.com,female,barrage,Assassin,ckem1j,365,Republic of the Congo,17
+56,Pam,Cavolini,pcavolini1k@geocities.com,female,animate weapon,Berserker,pcavolini1k,90,Germany,14
+57,Elaine,,ebreens1l@ucoz.ru,female,barrage,Necromancer,esage1l,397,Austria,86
+58,Pen,Grolle,pgrolle1m@tripadvisor.com,female,barrage,Assassin,pgrolle1m,46,Slovenia,85
+59,Cherilyn,Scutcheon,cscutcheon1n@comsenz.com,female,barrage,Berserker,cscutcheon1n,186,Latvia,41
+60,Cahra,Rawes,crawes1o@oaic.gov.au,female,arctic armour,Slayer,crawes1o,390,Mauritania,22
+61,Port,Caulcutt,pcaulcutt1p@cornell.edu,female,barrage,Saboteur,pcaulcutt1p,144,Chile,9
+62,Fifine,Pinchen,fpinchen1q@wikipedia.org,female,barrage,Gladiator,fpinchen1q,441,Macedonia,13
+63,Geoff,,gcogger1r@nytimes.com,female,animate weapon,Juggernaut,gcamier1r,397,Argentina,97
+64,Jarrad,Meechan,jmeechan1s@elegantthemes.com,female,arctic armour,Slayer,jmeechan1s,310,Sudan,65
+65,Zedekiah,,zferraresi1t@storify.com,female,animate weapon,Juggernaut,ztomson1t,54,Czech Republic,9
+66,Hester,Verrill,hverrill1u@tmall.com,female,barrage,Berserker,hverrill1u,51,Kenya,24
+67,Gareth,Spadaro,gspadaro1v@livejournal.com,female,animate weapon,Inquisitor,gspadaro1v,252,Chad,24
+68,Graham,Attwoul,gattwoul1w@topsy.com,female,animate weapon,Saboteur,gattwoul1w,273,Syria,10
+69,,,vromi1x@sciencedaily.com,female,barrage,Hierophant,csargint1x,105,Jamaica,43
+70,Edith,Lyst,elyst1y@opensource.org,female,animate weapon,Gladiator,elyst1y,392,Thailand,97
+71,Walton,,wramsdell1z@jalbum.net,female,arctic armour,Assassin,wbetts1z,24,Israel,68
+72,Paul,,prootes20@stumbleupon.com,female,animate weapon,Ascendant,plysaght20,225,Iraq,33
+73,Ferris,Wroath,fwroath21@pinterest.com,female,animate weapon,Elementalist,fwroath21,284,Bulgaria,7
+74,Riane,Farfoot,rfarfoot22@shutterfly.com,female,barrage,Trickster,rfarfoot22,32,Brazil,65
+75,Flor,Callander,fcallander23@tiny.cc,female,animate weapon,Gladiator,fcallander23,256,Chile,59
+76,Harold,Davidov,hdavidov24@issuu.com,female,barrage,Gladiator,hdavidov24,295,Malta,8
+77,Molli,,mhaps25@wp.com,female,barrage,Trickster,mgyves25,118,Benin,48
+78,Aloysius,,ajimmes26@elegantthemes.com,female,animate weapon,Trickster,aokielt26,50,Portugal,53
+79,Scotty,,sfarbrace27@cocolog-nifty.com,female,animate weapon,Occultist,smuino27,164,Iran,26
+80,Janenna,,jstihl28@furl.net,female,animate weapon,Occultist,jseagar28,264,Mauritania,83
+81,Gregorio,Bartolic,gbartolic29@howstuffworks.com,female,animate weapon,Pathfinder,gbartolic29,423,Palestinian Territory,53
+82,Sandor,Popov,spopov2a@cmu.edu,female,animate weapon,Berserker,spopov2a,325,Marshall Islands,20
+83,Garrik,,gsaunderson2b@seattletimes.com,female,barrage,Assassin,gelldred2b,297,Colombia,2
+84,Padget,Kiledal,pkiledal2c@youtube.com,female,arctic armour,Slayer,pkiledal2c,126,Argentina,57
+85,Evita,Golthorpp,egolthorpp2d@newsvine.com,female,barrage,Champion,egolthorpp2d,295,Nicaragua,54
+86,Yehudi,,ycordero2e@cpanel.net,female,arctic armour,Hierophant,ybaynes2e,170,Portugal,94
+87,Charline,Rickard,crickard2f@nyu.edu,female,animate weapon,Hierophant,crickard2f,139,Belarus,52
+88,Gavrielle,,gkersey2g@sina.com.cn,female,barrage,Trickster,gfryd2g,262,Kazakhstan,79
+89,Rudolfo,Imesen,rimesen2h@paginegialle.it,female,barrage,Juggernaut,rimesen2h,253,Egypt,82
+90,Lacie,Durdle,ldurdle2i@acquirethisname.com,female,barrage,Raider,ldurdle2i,275,Israel,98
+91,Lauraine,Spatari,lspatari2j@nyu.edu,female,arctic armour,Berserker,lspatari2j,298,Uruguay,19
+92,Derry,,dcorrao2k@disqus.com,female,arctic armour,Saboteur,dgouinlock2k,69,Sri Lanka,38
+93,,MacColl,bmaccoll2l@dagondesign.com,female,animate weapon,Pathfinder,jmaccoll2l,6,Kosovo,6
+94,Charo,,cmunnings2m@rambler.ru,female,animate weapon,Juggernaut,ckumar2m,54,Greece,78
+95,Roslyn,Louisot,rlouisot2n@google.it,female,arctic armour,Juggernaut,rlouisot2n,429,Zimbabwe,88
+96,Ceil,,cgooding2o@tinyurl.com,female,arctic armour,Chieftain,cgobeau2o,373,Somalia,50
+97,Bree,Agget,bagget2p@eventbrite.com,female,animate weapon,Juggernaut,bagget2p,329,South Georgia and the South Sandwich Islands,45
+98,Alric,Sutliff,asutliff2q@businessinsider.com,female,barrage,Inquisitor,asutliff2q,53,Nigeria,49
+99,Vernon,Findlow,vfindlow2r@nbcnews.com,male,arctic armour,Inquisitor,vfindlow2r,182,Jamaica,99
+100,Burton,Brandom,bbrandom2s@ucoz.ru,male,barrage,Pathfinder,bbrandom2s,170,Uganda,49
+101,Rudolf,Prestner,rprestner2t@cloudflare.com,male,barrage,Elementalist,rprestner2t,342,Vietnam,79
+102,Si,Tearney,stearney2u@hhs.gov,male,barrage,Guardian,stearney2u,358,Guam,81
+103,Jen,Corben,jcorben2v@biglobe.ne.jp,male,animate weapon,Chieftain,jcorben2v,13,Djibouti,75
+104,Georgie,Narramore,gnarramore2w@house.gov,male,barrage,Assassin,gnarramore2w,330,Chad,4
+105,Townsend,Upsale,tupsale2x@privacy.gov.au,male,barrage,Saboteur,tupsale2x,72,Kosovo,48
+106,Patrice,Burr,pburr2y@sciencedirect.com,male,arctic armour,Trickster,pburr2y,450,South Africa,61
+107,Roze,Lindblad,rlindblad2z@hexun.com,male,animate weapon,Occultist,rlindblad2z,16,Lithuania,65
+108,Herman,,hbragg30@msn.com,male,barrage,Necromancer,hhellyar30,113,Albania,36
+109,Carmine,Pirdy,cpirdy31@bbc.co.uk,male,arctic armour,Deadeye,cpirdy31,245,Svalbard and Jan Mayen,47
+110,Paula,Perillio,pperillio32@tinyurl.com,male,barrage,Chieftain,pperillio32,400,Slovenia,48
+111,Eliot,Schooley,eschooley33@cbslocal.com,male,barrage,Slayer,eschooley33,371,Norway,68
+112,Lorilee,Greeve,lgreeve34@oaic.gov.au,male,animate weapon,Trickster,lgreeve34,284,Czech Republic,73
+113,,Berston,cberston35@aboutads.info,male,barrage,Slayer,cberston35,176,Argentina,59
+114,Burg,,blaweles36@hhs.gov,male,arctic armour,Chieftain,bserfati36,412,Venezuela,33
+115,Cherianne,Pritty,cpritty37@scribd.com,male,animate weapon,Assassin,cpritty37,79,Estonia,67
+116,Russell,,rpauncefort38@opera.com,male,arctic armour,Guardian,rsaffrin38,272,Ecuador,53
+117,Stesha,Della,sdella39@joomla.org,male,barrage,Deadeye,sdella39,224,Belarus,93
+118,Giles,,glopez3a@deviantart.com,male,barrage,Saboteur,gmcilwraith3a,377,Kosovo,35
+119,Herrick,,hvickerstaff3b@bizjournals.com,male,arctic armour,Hierophant,hpeirce3b,224,Sierra Leone,88
+120,Louie,,lnoller3c@mayoclinic.com,male,barrage,Gladiator,lingreda3c,422,Mauritania,19
+121,Aurel,,alamcken3d@cpanel.net,male,animate weapon,Deadeye,aschwaiger3d,55,China,20
+122,Shalna,Pownall,spownall3e@msn.com,male,animate weapon,Saboteur,spownall3e,12,Uganda,44
+123,Millisent,Backhurst,mbackhurst3f@topsy.com,male,arctic armour,Trickster,mbackhurst3f,229,Ethiopia,19
+124,Corilla,Killock,ckillock3g@oracle.com,male,arctic armour,Guardian,ckillock3g,268,Czech Republic,56
+125,Conni,,cartois3h@intel.com,male,barrage,Slayer,cwithers3h,425,Uruguay,40
+126,Glynis,Merriton,gmerriton3i@who.int,male,arctic armour,Assassin,gmerriton3i,231,Marshall Islands,25
+127,Tina,,tsyer3j@reverbnation.com,male,barrage,Berserker,twaddilove3j,251,Azerbaijan,4
+128,Martina,Veeler,mveeler3k@sogou.com,male,arctic armour,Saboteur,mveeler3k,167,Vietnam,52
+129,Ruddy,Shapera,rshapera3l@weibo.com,male,arctic armour,Occultist,rshapera3l,359,Mozambique,84
+130,Holt,Ruddell,hruddell3m@taobao.com,male,arctic armour,Inquisitor,hruddell3m,143,Vietnam,30
+131,Sheryl,Povah,spovah3n@scientificamerican.com,male,barrage,Occultist,spovah3n,316,United States,58
+132,Leopold,Middlebrook,lmiddlebrook3o@illinois.edu,male,arctic armour,Necromancer,lmiddlebrook3o,204,Netherlands,30
+133,,Metheringham,fmetheringham3p@drupal.org,male,arctic armour,Chieftain,jmetheringham3p,59,South Sudan,26
+134,,,kteresi3q@plala.or.jp,male,animate weapon,Inquisitor,aknightsbridge3q,343,Macedonia,46
+135,,Bedboro,ebedboro3r@cafepress.com,male,barrage,Slayer,ybedboro3r,312,Ireland,10
+136,Dee,,dmcgeagh3s@symantec.com,male,animate weapon,Saboteur,dthorwarth3s,13,South Africa,9
+137,Lars,,lallison3t@diigo.com,male,animate weapon,Champion,lplante3t,376,Namibia,33
+138,,,ctakis3u@ca.gov,male,barrage,Inquisitor,wmorfey3u,326,Bahrain,88
+139,,,jeadmead3v@sciencedaily.com,male,barrage,Ascendant,tfoux3v,166,Vietnam,8
+140,Cate,,cschulz3w@newsvine.com,male,animate weapon,Occultist,crings3w,388,Myanmar,16
+141,Merrick,Gason,mgason3x@163.com,male,barrage,Hierophant,mgason3x,51,Bolivia,64
+142,Berrie,Kabos,bkabos3y@indiegogo.com,male,animate weapon,Pathfinder,bkabos3y,44,Bhutan,15
+143,Marie,,mdybell3z@weather.com,male,animate weapon,Gladiator,mvertigan3z,95,Nicaragua,97
+144,Elsy,Hultberg,ehultberg40@live.com,male,arctic armour,Gladiator,ehultberg40,231,Namibia,34
+145,Cele,Faherty,cfaherty41@last.fm,male,arctic armour,Saboteur,cfaherty41,149,Bolivia,80
+146,Aveline,Sharper,asharper42@cornell.edu,male,animate weapon,Deadeye,asharper42,102,Thailand,62
+147,Shirley,Baldacchino,sbaldacchino43@blogger.com,male,animate weapon,Ascendant,sbaldacchino43,219,Belarus,15
+148,Mycah,Nowak,mnowak44@sitemeter.com,male,animate weapon,Inquisitor,mnowak44,423,Sudan,17
+149,Bobbe,Cleynaert,bcleynaert45@bbb.org,male,barrage,Chieftain,bcleynaert45,386,Djibouti,80
+150,Florie,,flampl46@smh.com.au,male,arctic armour,Deadeye,fgrewer46,392,Kazakhstan,42
+151,Rosemaria,,rthaller47@reuters.com,male,barrage,Juggernaut,rbarnaclough47,327,Bahrain,16
+152,Chlo,,ccolleford48@dropbox.com,male,animate weapon,Slayer,cnorthleigh48,401,Iraq,29
+153,Alvira,Heinig,aheinig49@seesaa.net,male,barrage,Occultist,aheinig49,142,Azerbaijan,35
+154,Maxy,Kinney,mkinney4a@netlog.com,male,barrage,Elementalist,mkinney4a,424,Mexico,98
+155,Amelie,,acasetti4b@dailymail.co.uk,male,barrage,Slayer,amoynihan4b,403,Cyprus,54
+156,Vilhelmina,Roadknight,vroadknight4c@ehow.com,male,barrage,Occultist,vroadknight4c,17,Azerbaijan,42
+157,Iris,Hankey,ihankey4d@hubpages.com,male,arctic armour,Ascendant,ihankey4d,313,Spain,8
+158,Dierdre,Elan,delan4e@fotki.com,male,arctic armour,Juggernaut,delan4e,325,North Korea,11
+159,Dennie,,dgraftonherbert4f@deliciousdays.com,male,animate weapon,Ascendant,dscruby4f,89,Czech Republic,75
+160,Hailee,Finlaison,hfinlaison4g@fastcompany.com,male,animate weapon,Saboteur,hfinlaison4g,190,Zambia,7
+161,Bartholemy,Alenshev,balenshev4h@mail.ru,male,animate weapon,Pathfinder,balenshev4h,322,Kazakhstan,45
+162,Mariel,,mashurst4i@icio.us,male,barrage,Deadeye,mkrystof4i,184,Iraq,49
+163,Chicky,Warlowe,cwarlowe4j@statcounter.com,male,animate weapon,Elementalist,cwarlowe4j,398,Taiwan,27
+164,Mabelle,,mcotelard4k@51.la,male,barrage,Raider,mglavias4k,255,Azerbaijan,87
+165,Wendall,,wdacks4l@jiathis.com,male,barrage,Berserker,wollenbuttel4l,301,Kazakhstan,13
+166,Herman,,hbrigdale4m@weibo.com,male,barrage,Inquisitor,helcy4m,90,Egypt,45
+167,Cam,,chellyer4n@about.com,male,animate weapon,Inquisitor,cnickless4n,328,Israel,98
+168,Porter,,pbodocs4o@netlog.com,male,barrage,Gladiator,ppetrozzi4o,246,New Caledonia,9
+169,Trenna,,tbownass4p@1und1.de,male,barrage,Ascendant,tgherardini4p,186,Bolivia,90
+170,Dmitri,,drosencrantz4q@istockphoto.com,male,barrage,Slayer,dbeckensall4q,223,New Caledonia,26
+171,Yoko,Allebone,yallebone4r@arizona.edu,male,animate weapon,Assassin,yallebone4r,365,Senegal,86
+172,Angelia,Lowndes,alowndes4s@paginegialle.it,male,animate weapon,Juggernaut,alowndes4s,162,Zambia,76
+173,Yale,Allabarton,yallabarton4t@list-manage.com,male,barrage,Deadeye,yallabarton4t,272,Peru,89
+174,Carlene,,camoore4u@bloomberg.com,male,animate weapon,Juggernaut,cosorio4u,424,Japan,15
+175,Antonella,,acote4v@behance.net,male,barrage,Assassin,agreenalf4v,273,Svalbard and Jan Mayen,21
+176,Joya,,jluna4w@example.com,male,barrage,Trickster,jbougen4w,116,Dominican Republic,84
+177,Tamera,Danovich,tdanovich4x@yellowbook.com,male,barrage,Guardian,tdanovich4x,50,Bhutan,46
+178,Ford,Salkild,fsalkild4y@yellowpages.com,male,barrage,Hierophant,fsalkild4y,251,Uruguay,43
+179,,,gsidry4z@comsenz.com,male,barrage,Assassin,jtripean4z,135,Myanmar,23
+180,Lonni,,lcroke50@miibeian.gov.cn,male,arctic armour,Berserker,lpoulsum50,79,Saint Barthelemy,22
+181,Alessandra,Reignard,areignard51@51.la,male,barrage,Hierophant,areignard51,167,Ireland,76
+182,Ilka,Doggett,idoggett52@creativecommons.org,male,barrage,Pathfinder,idoggett52,30,Iran,57
+183,Alec,,abourdas53@goodreads.com,male,animate weapon,Occultist,aettles53,129,Zimbabwe,93
+184,Vilma,Pinkie,vpinkie54@reddit.com,male,animate weapon,Assassin,vpinkie54,54,Ireland,45
+185,,,krosin55@wikispaces.com,male,arctic armour,Guardian,bblockley55,210,Latvia,5
+186,Nissy,Gleasane,ngleasane56@java.com,male,barrage,Hierophant,ngleasane56,66,Kazakhstan,91
+187,Giffie,Waryk,gwaryk57@google.ru,male,arctic armour,Slayer,gwaryk57,392,El Salvador,98
+188,Sapphira,De Simoni,sdesimoni58@51.la,male,barrage,Assassin,sdesimoni58,310,Czech Republic,29
+189,Clo,Davenhall,cdavenhall59@aol.com,male,barrage,Berserker,cdavenhall59,308,Zimbabwe,45
+190,Terese,Ropkins,tropkins5a@chronoengine.com,male,arctic armour,Champion,tropkins5a,22,Argentina,17
+191,Annice,Schubart,aschubart5b@over-blog.com,male,animate weapon,Hierophant,aschubart5b,44,Paraguay,59
+192,Madelle,McNickle,mmcnickle5c@comsenz.com,male,animate weapon,Inquisitor,mmcnickle5c,170,China,8
+193,Katherina,Angeau,kangeau5d@technorati.com,male,arctic armour,Chieftain,kangeau5d,347,Italy,90
+194,Hazlett,Deplacido,hdeplacido5e@yale.edu,male,barrage,Guardian,hdeplacido5e,401,Cameroon,39
+195,,,eandrioni5f@soup.io,male,arctic armour,Necromancer,nlovegrove5f,58,Peru,15
+196,Farand,Norsister,fnorsister5g@sohu.com,male,arctic armour,Necromancer,fnorsister5g,316,Bosnia and Herzegovina,72
+197,Isaak,Emmott,iemmott5h@dagondesign.com,male,animate weapon,Berserker,iemmott5h,352,South Georgia and the South Sandwich Islands,84
+198,,Kneesha,okneesha5i@pen.io,male,arctic armour,Pathfinder,skneesha5i,206,Belarus,80
+199,Thorpe,Soonhouse,tsoonhouse5j@jimdo.com,male,arctic armour,Assassin,tsoonhouse5j,397,Zambia,30
+200,Zelma,De Pietri,zdepietri5k@fema.gov,male,animate weapon,Champion,zdepietri5k,220,Luxembourg,85
+201,Clarence,,ceggleton5l@ucoz.ru,male,barrage,Raider,cticehurst5l,120,Vietnam,60
+202,Joelle,,jskillanders5m@about.com,male,arctic armour,Necromancer,jdigiacomettino5m,7,Morocco,45
+203,,,sgiffon5n@skyrock.com,male,barrage,Occultist,alinstead5n,285,Bulgaria,13
+204,Pris,Greensitt,pgreensitt5o@last.fm,male,animate weapon,Necromancer,pgreensitt5o,191,Sri Lanka,8
+205,Aksel,,avaudre5p@ovh.net,male,animate weapon,Raider,ahamber5p,421,Somalia,26
+206,Albertina,Seabourne,aseabourne5q@epa.gov,male,animate weapon,Guardian,aseabourne5q,362,Bangladesh,74
+207,Florenza,,flutton5r@ucla.edu,male,barrage,Guardian,fharte5r,60,Zambia,67
+208,Bank,,bwinnett5s@comcast.net,male,barrage,Gladiator,bmccorley5s,98,Saint Barthelemy,68
+209,Lilith,,lreedie5t@ehow.com,male,barrage,Gladiator,lviger5t,187,Senegal,77
+210,Rourke,,rshewring5u@aboutads.info,male,arctic armour,Pathfinder,rbraz5u,350,Tajikistan,70
+211,Evan,Saur,esaur5v@mit.edu,male,animate weapon,Champion,esaur5v,161,United States,78
+212,Markos,,mfassmann5w@lulu.com,male,barrage,Ascendant,mzambonini5w,266,Belarus,85
+213,Margaux,Feely,mfeely5x@msn.com,male,barrage,Saboteur,mfeely5x,398,South Sudan,47
+214,Llewellyn,,lcecil5y@dedecms.com,male,arctic armour,Assassin,lbeaty5y,144,East Timor,36
+215,Cassius,Northcote,cnorthcote5z@lycos.com,male,barrage,Inquisitor,cnorthcote5z,221,South Georgia and the South Sandwich Islands,37
+216,Tisha,,tfotheringham60@webs.com,male,arctic armour,Deadeye,tvallintine60,300,Moldova,6
+217,Lauritz,,liacovuzzi61@yandex.ru,male,barrage,Juggernaut,lsedgemond61,20,South Georgia and the South Sandwich Islands,86
+218,Abagael,,aewin62@upenn.edu,male,arctic armour,Champion,aisacq62,269,Marshall Islands,79
+219,Hogan,Dallyn,hdallyn63@apache.org,male,arctic armour,Berserker,hdallyn63,325,Mozambique,4
+220,Tyrone,Rickets,trickets64@imgur.com,male,animate weapon,Necromancer,trickets64,118,Uruguay,69
+221,Corny,,cglenister65@sbwire.com,male,animate weapon,Juggernaut,csummerill65,45,Vanuatu,80
+222,Giraldo,Leist,gleist66@army.mil,male,arctic armour,Trickster,gleist66,285,Sri Lanka,22
+223,Eloise,Deathridge,edeathridge67@wiley.com,male,arctic armour,Trickster,edeathridge67,405,Czech Republic,66
+224,Verile,,vtilberry68@photobucket.com,male,arctic armour,Chieftain,vransbury68,355,Chile,62
+225,,Seman,eseman69@newyorker.com,male,barrage,Guardian,dseman69,259,Nigeria,60
+226,Kahaleel,,kvescovo6a@imdb.com,male,arctic armour,Ascendant,kcristofolo6a,389,Democratic Republic of the Congo,57
+227,Gwenore,,gmacloughlin6b@skype.com,male,barrage,Necromancer,gmaccarlich6b,220,El Salvador,79
+228,Denni,,dkobpa6c@pinterest.com,male,barrage,Chieftain,dingleby6c,262,Greece,89
+229,Egan,Prest,eprest6d@engadget.com,male,arctic armour,Raider,eprest6d,305,Greece,59
+230,Noelyn,Benedettini,nbenedettini6e@cocolog-nifty.com,male,animate weapon,Champion,nbenedettini6e,80,Micronesia,22
+231,Dee,,dlodden6f@homestead.com,male,arctic armour,Deadeye,dternault6f,124,Netherlands,59
+232,Neille,,nbreckenridge6g@ftc.gov,male,barrage,Assassin,nmurison6g,184,Iran,34
+233,Korie,,kfarmloe6h@scribd.com,male,animate weapon,Occultist,kstanyforth6h,349,Djibouti,20
+234,Abdul,,aleahey6i@free.fr,male,barrage,Saboteur,agenery6i,142,Finland,76
+235,Pierce,Tinklin,ptinklin6j@netscape.com,male,barrage,Necromancer,ptinklin6j,108,Afghanistan,85
+236,Upton,,ujeremiah6k@mayoclinic.com,male,arctic armour,Assassin,ulambis6k,140,Marshall Islands,85
+237,Kristopher,,kcooch6l@nature.com,male,animate weapon,Raider,kmartugin6l,172,Hungary,75
+238,Jacob,,jcuphus6m@indiegogo.com,male,arctic armour,Necromancer,jmackowle6m,279,Sri Lanka,43
+239,Jean,Groveham,jgroveham6n@mozilla.com,male,barrage,Assassin,jgroveham6n,13,Eritrea,9
+240,Anstice,Chaucer,achaucer6o@ihg.com,male,arctic armour,Necromancer,achaucer6o,330,Ghana,55
+241,Felice,Bernholt,fbernholt6p@ihg.com,male,animate weapon,Berserker,fbernholt6p,235,Ireland,73
+242,James,Scarlan,jscarlan6q@phpbb.com,male,arctic armour,Berserker,jscarlan6q,307,Brazil,82
+243,,Newvell,hnewvell6r@ow.ly,male,barrage,Berserker,bnewvell6r,163,Hungary,45
+244,Fania,,fholbury6s@oaic.gov.au,male,animate weapon,Inquisitor,fcrane6s,200,Portugal,92
+245,Kylie,,kdye6t@whitehouse.gov,male,barrage,Hierophant,kwinchurst6t,202,Ethiopia,28
+246,,,jnutty6u@foxnews.com,male,barrage,Ascendant,nbasire6u,1,Italy,8
+247,Prentiss,,pnorbury6v@imdb.com,male,animate weapon,Occultist,pblodg6v,409,Comoros,26
+248,Rosamund,,rshillitto6w@soundcloud.com,male,barrage,Inquisitor,rdenisevich6w,182,Djibouti,31
+249,Vergil,Lambird,vlambird6x@bravesites.com,male,barrage,Guardian,vlambird6x,124,South Georgia and the South Sandwich Islands,37
+250,Gabriel,Kleyn,gkleyn6y@hhs.gov,male,arctic armour,Raider,gkleyn6y,391,Pakistan,32
+251,,Auton,lauton6z@sciencedirect.com,male,arctic armour,Chieftain,mauton6z,16,Madagascar,76
+252,Ahmad,Godmar,agodmar70@yellowbook.com,male,arctic armour,Occultist,agodmar70,58,China,37
+253,Marybeth,,mmelly71@apple.com,male,barrage,Inquisitor,mmcquillan71,122,Colombia,60
+254,Rutherford,Fanton,rfanton72@ebay.com,male,arctic armour,Assassin,rfanton72,66,Senegal,34
+255,Vick,Westney,vwestney73@yolasite.com,male,barrage,Assassin,vwestney73,140,Slovenia,8
+256,Marieann,Villalta,mvillalta74@ehow.com,male,animate weapon,Deadeye,mvillalta74,353,Ghana,26
+257,Louis,Stockwell,lstockwell75@unc.edu,male,barrage,Guardian,lstockwell75,292,Chad,1
+258,Sybille,Ende,sende76@cam.ac.uk,male,animate weapon,Elementalist,sende76,394,Malta,4
+259,Jens,Boadby,jboadby77@gnu.org,male,barrage,Necromancer,jboadby77,444,Guatemala,32
+260,Sheba,Heenan,sheenan78@europa.eu,male,barrage,Hierophant,sheenan78,312,Slovenia,12
+261,Felita,Dungay,fdungay79@techcrunch.com,male,arctic armour,Champion,fdungay79,89,Kosovo,55
+262,Gerhardt,Tows,gtows7a@ocn.ne.jp,male,animate weapon,Elementalist,gtows7a,349,Senegal,71
+263,,Flintoft,kflintoft7b@yahoo.co.jp,male,arctic armour,Gladiator,rflintoft7b,326,South Africa,14
+264,Gal,Izkovicz,gizkovicz7c@jalbum.net,male,arctic armour,Raider,gizkovicz7c,212,Yemen,92
+265,Reine,,rframmingham7d@acquirethisname.com,male,barrage,Occultist,rtobias7d,36,Netherlands,24
+266,,,rwyper7e@g.co,male,arctic armour,Ascendant,osicily7e,66,Germany,14
+267,Niven,Opfer,nopfer7f@smugmug.com,male,barrage,Inquisitor,nopfer7f,299,Haiti,47
+268,,Gillan,kgillan7g@furl.net,male,arctic armour,Hierophant,jgillan7g,426,Afghanistan,52
+269,Janek,Semken,jsemken7h@narod.ru,male,barrage,Occultist,jsemken7h,20,Kuwait,27
+270,Ber,,bmoscon7i@goo.ne.jp,male,barrage,Trickster,beates7i,300,Afghanistan,47
+271,Barn,Robison,brobison7j@hp.com,male,barrage,Champion,brobison7j,219,Kenya,37
+272,Domini,Luttger,dluttger7k@abc.net.au,male,animate weapon,Trickster,dluttger7k,275,Bahrain,81
+273,Deva,,dmeneur7l@aboutads.info,male,arctic armour,Guardian,dmcadam7l,333,Nepal,85
+274,Garry,Deane,gdeane7m@cargocollective.com,male,animate weapon,Chieftain,gdeane7m,2,El Salvador,56
+275,Perceval,,pblackaller7n@go.com,male,barrage,Ascendant,psackes7n,17,Morocco,67
+276,Trumann,Codner,tcodner7o@pinterest.com,male,animate weapon,Slayer,tcodner7o,189,Haiti,29
+277,Rasia,Layfield,rlayfield7p@bbc.co.uk,male,animate weapon,Slayer,rlayfield7p,66,Venezuela,16
+278,Shoshana,Shenton,sshenton7q@thetimes.co.uk,male,barrage,Pathfinder,sshenton7q,61,Benin,26
+279,Ulrikaumeko,,usandhill7r@va.gov,male,barrage,Trickster,ubecke7r,431,Greece,66
+280,Courtney,Dana,cdana7s@cbc.ca,male,arctic armour,Elementalist,cdana7s,448,Morocco,69
+281,Patricio,Jehaes,pjehaes7t@exblog.jp,male,barrage,Necromancer,pjehaes7t,331,Austria,85
+282,Temp,Kramer,tkramer7u@va.gov,male,arctic armour,Berserker,tkramer7u,14,Japan,80
+283,,,ckeppel7v@nyu.edu,male,barrage,Elementalist,adetoile7v,105,China,15
+284,Bendick,Linstead,blinstead7w@360.cn,male,barrage,Trickster,blinstead7w,392,South Sudan,94
+285,Anica,Loynton,aloynton7x@mlb.com,male,animate weapon,Occultist,aloynton7x,287,Paraguay,26
+286,,Currm,acurrm7y@friendfeed.com,male,barrage,Hierophant,kcurrm7y,387,Democratic Republic of the Congo,58
+287,Amargo,Bullcock,abullcock7z@amazon.co.jp,male,barrage,Slayer,abullcock7z,358,Ecuador,86
+288,Dalenna,,dbransgrove80@washingtonpost.com,male,arctic armour,Saboteur,dfolger80,259,Mexico,75
+289,Rinaldo,,rcannaway81@gov.uk,male,arctic armour,Saboteur,rsaulter81,132,Poland,61
+290,Jess,Gillow,jgillow82@jigsy.com,male,animate weapon,Berserker,jgillow82,277,Ghana,72
+291,Kelwin,,kdrew83@webnode.com,male,arctic armour,Assassin,kwalisiak83,83,Kazakhstan,78
+292,Freddy,Maase,fmaase84@state.tx.us,male,barrage,Inquisitor,fmaase84,363,Finland,84
+293,Edan,,edriuzzi85@istockphoto.com,male,animate weapon,Inquisitor,ehowton85,180,Kazakhstan,78
+294,Byron,,bnorsister86@nature.com,male,barrage,Ascendant,bspellesy86,414,Chad,6
+295,Tedi,Riddlesden,triddlesden87@51.la,male,barrage,Necromancer,triddlesden87,421,Madagascar,11
+296,Kakalina,O'Kane,kokane88@booking.com,male,barrage,Deadeye,kokane88,346,Uruguay,99
+297,,Mccaull,amccaull89@pen.io,male,barrage,Elementalist,dmccaull89,281,Kyrgyzstan,15
+298,Gretel,Meindl,gmeindl8a@state.tx.us,male,arctic armour,Guardian,gmeindl8a,286,Kosovo,91
+299,Winona,Ellerbeck,wellerbeck8b@soundcloud.com,male,barrage,Inquisitor,wellerbeck8b,381,Poland,59
+300,Gannon,,gduprey8c@google.co.jp,male,animate weapon,Juggernaut,gmowling8c,169,Sri Lanka,41
+301,Monroe,Gonzalvo,mgonzalvo8d@springer.com,male,barrage,Raider,mgonzalvo8d,364,Brazil,58
+302,,Lipscomb,elipscomb8e@alibaba.com,male,arctic armour,Elementalist,mlipscomb8e,385,Sri Lanka,49
+303,Valentina,Knappen,vknappen8f@reverbnation.com,male,animate weapon,Champion,vknappen8f,47,Azerbaijan,56
+304,Roderic,,rscarlin8g@narod.ru,male,barrage,Gladiator,rpozzo8g,186,Egypt,36
+305,Roberta,Breming,rbreming8h@washington.edu,male,arctic armour,Guardian,rbreming8h,377,South Africa,14
+306,Vite,Guillot,vguillot8i@wikispaces.com,male,animate weapon,Juggernaut,vguillot8i,247,El Salvador,2
+307,Eldin,Layson,elayson8j@europa.eu,male,animate weapon,Deadeye,elayson8j,227,Kyrgyzstan,21
+308,Sydelle,,sdanzey8k@usda.gov,male,barrage,Saboteur,sskivington8k,367,Dominican Republic,93
+309,Linc,,lmcguckin8l@mtv.com,male,animate weapon,Inquisitor,llouys8l,200,Cyprus,19
+310,Arri,,ahallitt8m@amazon.com,male,animate weapon,Pathfinder,abenardette8m,111,Greece,45
+311,Tonnie,Kerfod,tkerfod8n@senate.gov,male,barrage,Champion,tkerfod8n,115,Bosnia and Herzegovina,49
+312,Silvia,MacGettigen,smacgettigen8o@jiathis.com,male,animate weapon,Trickster,smacgettigen8o,14,Peru,68
+313,Clarance,Di Carlo,cdicarlo8p@technorati.com,male,barrage,Berserker,cdicarlo8p,33,Tajikistan,2
+314,Bert,,bmays8q@opera.com,male,barrage,Juggernaut,battrie8q,31,Republic of the Congo,41
+315,Lorene,Blamey,lblamey8r@bravesites.com,male,barrage,Deadeye,lblamey8r,323,Benin,16
+316,Muffin,,madenet8s@smugmug.com,male,barrage,Trickster,maubin8s,62,Belarus,44
+317,Maddalena,Rooper,mrooper8t@census.gov,male,animate weapon,Slayer,mrooper8t,140,Macedonia,76
+318,Aristotle,Heymann,aheymann8u@booking.com,male,arctic armour,Gladiator,aheymann8u,199,Guatemala,68
+319,Elli,,eshuxsmith8v@1und1.de,male,animate weapon,Berserker,edisman8v,30,Finland,44
+320,Cammy,Scartifield,cscartifield8w@taobao.com,male,barrage,Pathfinder,cscartifield8w,209,Uruguay,13
+321,Yorke,Rathmell,yrathmell8x@paginegialle.it,male,arctic armour,Guardian,yrathmell8x,212,North Korea,25
+322,Sally,Chapman,schapman8y@va.gov,male,barrage,Saboteur,schapman8y,214,Comoros,78
+323,Nanine,Guppy,nguppy8z@cocolog-nifty.com,male,barrage,Hierophant,nguppy8z,383,Tajikistan,52
+324,Rycca,Gonoude,rgonoude90@squidoo.com,male,barrage,Deadeye,rgonoude90,227,Nigeria,4
+325,Eolande,,efumagallo91@gravatar.com,male,arctic armour,Guardian,efessby91,431,Bulgaria,57
+326,Anders,Rosle,arosle92@webeden.co.uk,male,barrage,Gladiator,arosle92,166,Svalbard and Jan Mayen,83
+327,Aube,Carbin,acarbin93@sfgate.com,male,arctic armour,Trickster,acarbin93,414,Namibia,85
+328,Shellysheldon,,smennithorp94@techcrunch.com,male,barrage,Trickster,smerrison94,345,New Zealand,84
+329,Conni,,cjacobowicz95@noaa.gov,male,barrage,Chieftain,cbroadfield95,349,Venezuela,51
+330,Klara,,kmagister96@howstuffworks.com,male,arctic armour,Chieftain,krussell96,129,Austria,40
+331,,,mreuble97@com.com,male,arctic armour,Gladiator,mjeyness97,251,Kosovo,60
+332,,,vfontanet98@yahoo.com,male,barrage,Occultist,hmates98,112,Mexico,75
+333,Aile,,aspinks99@umn.edu,male,arctic armour,Slayer,afinlater99,202,Hungary,73
+334,Veriee,Voisey,vvoisey9a@creativecommons.org,male,barrage,Gladiator,vvoisey9a,99,Taiwan,49
+335,Danella,,drising9b@netvibes.com,male,animate weapon,Saboteur,dyeardley9b,116,Marshall Islands,97
+336,Paddy,Gally,pgally9c@vinaora.com,male,barrage,Elementalist,pgally9c,260,Argentina,38
+337,Marylinda,Oxlee,moxlee9d@digg.com,male,barrage,Hierophant,moxlee9d,133,Tunisia,76
+338,Ondrea,,omulqueen9e@nymag.com,male,barrage,Juggernaut,omillar9e,249,Madagascar,25
+339,Errol,,eygoe9f@etsy.com,male,animate weapon,Pathfinder,emagrannell9f,58,Mozambique,29
+340,Swen,Webber,swebber9g@abc.net.au,male,barrage,Slayer,swebber9g,308,Belarus,59
+341,Morry,Sandcraft,msandcraft9h@issuu.com,male,animate weapon,Elementalist,msandcraft9h,411,Tunisia,69
+342,Gypsy,,gmein9i@nasa.gov,male,barrage,Raider,gchumley9i,284,Egypt,40
+343,Trudy,Burnett,tburnett9j@livejournal.com,male,arctic armour,Hierophant,tburnett9j,115,Austria,25
+344,Pier,,phigford9k@a8.net,male,barrage,Hierophant,pbeernaert9k,354,Nepal,93
+345,,Lorent,alorent9l@studiopress.com,male,barrage,Inquisitor,alorent9l,257,Syria,5
+346,Salomone,Sidlow,ssidlow9m@nbcnews.com,male,barrage,Gladiator,ssidlow9m,30,Finland,65
+347,Sarina,Byllam,sbyllam9n@abc.net.au,male,barrage,Occultist,sbyllam9n,9,Germany,74
+348,,Fetherstan,tfetherstan9o@wiley.com,male,barrage,Occultist,afetherstan9o,411,Mozambique,8
+349,,Jellard,djellard9p@intel.com,male,barrage,Trickster,kjellard9p,97,Haiti,98
+350,Curr,Petegree,cpetegree9q@wp.com,male,barrage,Hierophant,cpetegree9q,253,Nicaragua,1
+351,Lamond,,liffe9r@state.tx.us,male,barrage,Assassin,llawtey9r,377,Mozambique,66
+352,Chris,,cscading9s@linkedin.com,male,animate weapon,Trickster,cbroome9s,416,Vietnam,10
+353,Ignacius,Blowing,iblowing9t@domainmarket.com,male,arctic armour,Elementalist,iblowing9t,34,Poland,29
+354,Rhianna,,rrosten9u@com.com,male,barrage,Trickster,rbrownscombe9u,372,South Sudan,67
+355,Tallulah,Bog,tbog9v@cnbc.com,male,barrage,Hierophant,tbog9v,49,Mongolia,77
+356,Marchall,,mrennebeck9w@mediafire.com,male,barrage,Trickster,mbatchan9w,242,Uruguay,58
+357,Ruggiero,,rbeche9x@printfriendly.com,male,barrage,Trickster,rmathias9x,317,Niger,99
+358,Gerrie,Wakerley,gwakerley9y@merriam-webster.com,male,barrage,Assassin,gwakerley9y,247,Luxembourg,1
+359,Whitaker,,wbonass9z@friendfeed.com,male,arctic armour,Juggernaut,wlayburn9z,333,New Caledonia,27
+360,Guillemette,Amies,gamiesa0@rambler.ru,male,arctic armour,Ascendant,gamiesa0,205,Iran,86
+361,Elsie,Korneichuk,ekorneichuka1@ifeng.com,male,barrage,Slayer,ekorneichuka1,409,Benin,21
+362,Luis,Dytham,ldythama2@craigslist.org,male,animate weapon,Necromancer,ldythama2,362,Brazil,13
+363,Vitia,Ffrench,vffrencha3@bigcartel.com,male,barrage,Guardian,vffrencha3,82,Brazil,70
+364,Curcio,,cburnsydea4@weibo.com,male,arctic armour,Assassin,ccompsona4,201,Estonia,23
+365,Carilyn,Bartke,cbartkea5@reddit.com,male,arctic armour,Chieftain,cbartkea5,424,Pakistan,94
+366,,,shurlera6@shareasale.com,male,animate weapon,Berserker,smongana6,64,Myanmar,61
+367,Paulo,,pdurbyna7@printfriendly.com,male,barrage,Gladiator,pjerdeina7,10,Uruguay,85
+368,Janella,Reaper,jreapera8@qq.com,male,arctic armour,Ascendant,jreapera8,240,Kosovo,47
+369,Gregor,Wild,gwilda9@nps.gov,male,barrage,Ascendant,gwilda9,284,Kyrgyzstan,48
+370,Reeba,Barthorpe,rbarthorpeaa@irs.gov,male,barrage,Guardian,rbarthorpeaa,349,Morocco,26
+371,Judye,Lawdham,jlawdhamab@biglobe.ne.jp,male,barrage,Champion,jlawdhamab,241,Tunisia,67
+372,Wright,,wcranshawac@prnewswire.com,male,barrage,Inquisitor,wyurlovac,104,Italy,20
+373,Calvin,Girdler,cgirdlerad@g.co,male,barrage,Deadeye,cgirdlerad,109,Nepal,97
+374,Ameline,Durbridge,adurbridgeae@hao123.com,male,animate weapon,Necromancer,adurbridgeae,77,Nepal,56
+375,Land,Grahame,lgrahameaf@canalblog.com,male,arctic armour,Ascendant,lgrahameaf,370,Israel,60
+376,Waly,Rapo,wrapoag@yandex.ru,male,animate weapon,Juggernaut,wrapoag,252,South Korea,26
+377,Lionel,Kertess,lkertessah@vimeo.com,male,barrage,Guardian,lkertessah,53,Nicaragua,75
+378,Violette,Cheves,vchevesai@instagram.com,male,arctic armour,Saboteur,vchevesai,146,Paraguay,98
+379,Emmit,,edurnoaj@apple.com,male,barrage,Occultist,eskateaj,88,Ireland,6
+380,Manya,Trimbey,mtrimbeyak@forbes.com,male,barrage,Gladiator,mtrimbeyak,253,Taiwan,83
+381,Edouard,,eleysal@domainmarket.com,male,barrage,Assassin,edurnallal,23,Nicaragua,16
+382,Johna,Monaghan,jmonaghanam@marriott.com,male,arctic armour,Necromancer,jmonaghanam,34,Malta,36
+383,Beatrisa,,bfarnorthan@hao123.com,male,animate weapon,Necromancer,bguerreroan,158,Nicaragua,6
+384,Maggy,,mmateescuao@yelp.com,male,animate weapon,Gladiator,mjosefsonao,139,Syria,47
+385,Abigail,,akellickap@ustream.tv,male,barrage,Trickster,agingerap,56,Luxembourg,51
+386,Marylou,Samwyse,msamwyseaq@mlb.com,male,animate weapon,Occultist,msamwyseaq,259,Japan,31
+387,Xaviera,Stowgill,xstowgillar@mayoclinic.com,male,barrage,Deadeye,xstowgillar,54,Jordan,50
+388,Ashely,,adillingstoneas@sogou.com,male,animate weapon,Necromancer,aannakinas,406,Taiwan,95
+389,Melamie,Skipping,mskippingat@dailymail.co.uk,male,arctic armour,Inquisitor,mskippingat,439,Niger,80
+390,Garvin,Ranscomb,granscombau@ft.com,male,animate weapon,Elementalist,granscombau,129,Democratic Republic of the Congo,91
+391,Arleta,Dallander,adallanderav@latimes.com,male,animate weapon,Slayer,adallanderav,80,Malaysia,77
+392,Freemon,Jamot,fjamotaw@nasa.gov,male,barrage,Slayer,fjamotaw,233,Mauritania,98
+393,Packston,,pbelliniax@nationalgeographic.com,male,animate weapon,Juggernaut,pkenlinax,294,Kuwait,21
+394,Benedetta,Espinal,bespinalay@china.com.cn,male,animate weapon,Berserker,bespinalay,416,Sudan,39
+395,Natale,Saleway,nsalewayaz@who.int,male,barrage,Chieftain,nsalewayaz,393,New Caledonia,37
+396,Tannie,,thansberryb0@usa.gov,male,barrage,Inquisitor,telveyb0,27,Nigeria,95
+397,Leeanne,,ltatloweb1@miitbeian.gov.cn,male,animate weapon,Raider,lgisburneb1,220,Slovenia,86
+398,Wildon,Savins,wsavinsb2@hubpages.com,male,animate weapon,Raider,wsavinsb2,357,Madagascar,33
+399,Carmine,,cabelesb3@about.me,male,barrage,Saboteur,cgirodonb3,14,Marshall Islands,12
+400,Ardelia,,apetrasb4@deliciousdays.com,male,barrage,Champion,awiddocksb4,388,Iraq,44
+401,Marlon,,mtschirascheb5@seattletimes.com,male,barrage,Saboteur,mmedlingb5,26,Nicaragua,53
+402,Joli,,jgerrieb6@ebay.com,male,animate weapon,Berserker,jhedworthb6,321,Haiti,83
+403,Tiebout,O'Hollegan,toholleganb7@godaddy.com,male,arctic armour,Raider,toholleganb7,303,East Timor,93
+404,Ros,,rlesmondeb8@abc.net.au,male,barrage,Gladiator,rtebaldb8,94,Morocco,89
+405,Berte,,bcaughtb9@booking.com,male,barrage,Saboteur,bbrosinib9,139,Pakistan,36
+406,Babita,Brushneen,bbrushneenba@netlog.com,male,barrage,Deadeye,bbrushneenba,335,Thailand,94
+407,Brina,Greendale,bgreendalebb@themeforest.net,male,barrage,Guardian,bgreendalebb,92,Hungary,29
+408,Cherilyn,Bracegirdle,cbracegirdlebc@marriott.com,male,barrage,Occultist,cbracegirdlebc,355,Uruguay,95
+409,Arabella,Pierrepont,apierrepontbd@gov.uk,male,arctic armour,Slayer,apierrepontbd,321,Malta,90
+410,Julian,Piecha,jpiechabe@naver.com,male,animate weapon,Slayer,jpiechabe,338,Germany,65
+411,Garry,,gcutrissbf@newyorker.com,male,barrage,Occultist,gjaggerbf,178,Cameroon,90
+412,,,cdowniebg@miibeian.gov.cn,male,barrage,Necromancer,mflackebg,292,Sierra Leone,96
+413,Hynda,,hbevenbh@networksolutions.com,male,arctic armour,Champion,hflickerbh,307,Tajikistan,72
+414,Hilario,,hgrahlmansbi@bloglovin.com,male,arctic armour,Necromancer,hskermebi,365,Afghanistan,16
+415,Mercedes,Roylance,mroylancebj@printfriendly.com,male,animate weapon,Hierophant,mroylancebj,47,Comoros,29
+416,,Oret,loretbk@com.com,male,arctic armour,Ascendant,aoretbk,28,Belize,20
+417,Petronille,Christoforou,pchristoforoubl@zimbio.com,male,arctic armour,Raider,pchristoforoubl,87,Czech Republic,94
+418,,Le-Good,nlegoodbm@yellowbook.com,male,barrage,Deadeye,wlegoodbm,17,Macedonia,20
+419,Raynell,Hanselmann,rhanselmannbn@marriott.com,male,animate weapon,Raider,rhanselmannbn,296,Germany,57
+420,Camilla,,cshoemarkbo@timesonline.co.uk,male,barrage,Deadeye,croughleybo,374,Laos,38
+421,Jacinta,Broddle,jbroddlebp@networksolutions.com,male,barrage,Inquisitor,jbroddlebp,351,Eritrea,28
+422,,Angric,mangricbq@mozilla.org,male,barrage,Raider,kangricbq,96,Denmark,45
+423,Pammie,,pkalbererbr@fda.gov,male,animate weapon,Occultist,pmahmoodbr,366,United States,92
+424,Gallagher,Gomersall,ggomersallbs@ezinearticles.com,male,barrage,Assassin,ggomersallbs,108,Nigeria,58
+425,,Hanshawe,ahanshawebt@vk.com,male,barrage,Ascendant,rhanshawebt,80,Ecuador,29
+426,Ranna,Franseco,rfransecobu@nytimes.com,male,arctic armour,Elementalist,rfransecobu,160,Serbia,65
+427,Stormy,Jeenes,sjeenesbv@ebay.co.uk,male,animate weapon,Gladiator,sjeenesbv,131,Vietnam,89
+428,Lucilia,Bill,lbillbw@ucla.edu,male,animate weapon,Inquisitor,lbillbw,34,Tanzania,24
+429,,Thickins,gthickinsbx@usnews.com,male,animate weapon,Elementalist,fthickinsbx,412,Peru,95
+430,Corty,,cwewellby@spotify.com,male,animate weapon,Raider,ccageby,68,Saint Barthelemy,64
+431,Kermit,Kelling,kkellingbz@webnode.com,male,arctic armour,Pathfinder,kkellingbz,81,Dominican Republic,39
+432,Casar,Ironside,cironsidec0@hexun.com,male,barrage,Deadeye,cironsidec0,131,Tunisia,70
+433,Alf,,awalshc1@sogou.com,male,barrage,Juggernaut,ajicklesc1,186,Uzbekistan,99
+434,Pammie,Wyndham,pwyndhamc2@zimbio.com,male,animate weapon,Pathfinder,pwyndhamc2,282,Zimbabwe,33
+435,,,mchalcroftc3@sakura.ne.jp,male,barrage,Chieftain,mlukeschc3,215,Laos,80
+436,Algernon,,abirtlesc4@ed.gov,male,barrage,Hierophant,aolliffec4,446,Morocco,17
+437,Rockie,Alejo,ralejoc5@mapy.cz,male,barrage,Inquisitor,ralejoc5,361,Republic of the Congo,23
+438,,,gratledgec6@1688.com,male,arctic armour,Guardian,efalconerc6,192,Bangladesh,70
+439,Leanor,,llednorc7@plala.or.jp,male,barrage,Slayer,lgreatbankc7,134,Vanuatu,43
+440,Sandro,Lovett,slovettc8@fc2.com,male,barrage,Assassin,slovettc8,183,North Korea,3
+441,Domingo,Cottell,dcottellc9@booking.com,male,arctic armour,Saboteur,dcottellc9,173,Mauritania,44
+442,Zackariah,Wrassell,zwrassellca@reverbnation.com,male,barrage,Saboteur,zwrassellca,322,Comoros,66
+443,Reggie,Backsal,rbacksalcb@etsy.com,male,barrage,Pathfinder,rbacksalcb,213,Kuwait,69
+444,Roxy,Denniston,rdennistoncc@soup.io,male,animate weapon,Saboteur,rdennistoncc,436,South Georgia and the South Sandwich Islands,29
+445,,,aveverscd@merriam-webster.com,male,barrage,Gladiator,dhubbockcd,391,Belize,6
+446,Leonard,,lcrosence@dion.ne.jp,male,animate weapon,Berserker,lkisbeece,155,Marshall Islands,85
+447,Read,Stovin,rstovincf@istockphoto.com,male,arctic armour,Assassin,rstovincf,41,Egypt,42
+448,Willette,,wsizlandcg@twitpic.com,male,barrage,Gladiator,wandreascg,393,Latvia,25
+449,Blanca,,bcopingch@independent.co.uk,male,barrage,Guardian,bbewlych,148,United States,60
+450,Anetta,,amilwardci@google.co.jp,male,barrage,Deadeye,apopleyci,13,Yemen,59
+451,Aurlie,,asamsoncj@squidoo.com,male,animate weapon,Berserker,astrathdeecj,230,Netherlands,35
+452,Amalee,Marke,amarkeck@dropbox.com,male,animate weapon,Occultist,amarkeck,108,Morocco,40
+453,Doreen,,dmactrustramcl@berkeley.edu,male,barrage,Necromancer,dblacklercl,29,Honduras,15
+454,Karrie,McAusland,kmcauslandcm@discuz.net,male,animate weapon,Slayer,kmcauslandcm,403,Belarus,28
+455,Jacynth,Ridgedell,jridgedellcn@umn.edu,male,barrage,Ascendant,jridgedellcn,112,Kyrgyzstan,1
+456,Richmond,Spurnier,rspurnierco@disqus.com,male,animate weapon,Berserker,rspurnierco,111,South Sudan,72
+457,Torrance,Triplow,ttriplowcp@umn.edu,male,arctic armour,Elementalist,ttriplowcp,383,Cameroon,7
+458,Drucy,,dmorloncq@about.com,male,animate weapon,Champion,dpaschkecq,26,Albania,52
+459,Tobiah,Jaffra,tjaffracr@pen.io,male,barrage,Elementalist,tjaffracr,300,Madagascar,10
+460,,Dotson,udotsoncs@bizjournals.com,male,arctic armour,Deadeye,mdotsoncs,94,Mexico,63
+461,Keeley,,kpettigreect@telegraph.co.uk,male,arctic armour,Raider,kbransdenct,161,South Korea,28
+462,Etan,Abbot,eabbotcu@bbb.org,male,animate weapon,Trickster,eabbotcu,36,Sweden,40
+463,Rowland,Fiddiman,rfiddimancv@mlb.com,male,animate weapon,Gladiator,rfiddimancv,321,Kenya,20
+464,Cloris,,cbarendtsencw@ow.ly,male,animate weapon,Inquisitor,cnellcw,259,Finland,99
+465,Lucia,Phelip,lphelipcx@ucoz.ru,male,animate weapon,Trickster,lphelipcx,109,Chad,38
+466,Eyde,Parlot,eparlotcy@berkeley.edu,male,barrage,Guardian,eparlotcy,390,Luxembourg,55
+467,Bengt,Donohue,bdonohuecz@sun.com,male,barrage,Chieftain,bdonohuecz,296,United States,52
+468,Koo,,kosmand0@amazonaws.com,male,barrage,Raider,karmfirldd0,399,Myanmar,81
+469,Patin,Mocher,pmocherd1@newsvine.com,male,arctic armour,Raider,pmocherd1,65,Azerbaijan,30
+470,Karleen,,kpawled2@apple.com,male,animate weapon,Gladiator,kmattockd2,142,Uganda,83
+471,Ivy,,ifreaked3@statcounter.com,male,animate weapon,Pathfinder,ipoulneyd3,409,Germany,54
+472,Maisey,,mgurryd4@tiny.cc,male,barrage,Deadeye,mlasseterd4,299,Ukraine,46
+473,June,Whistance,jwhistanced5@indiatimes.com,male,animate weapon,Raider,jwhistanced5,4,Bahrain,58
+474,Fanny,Gillcrist,fgillcristd6@plala.or.jp,male,barrage,Berserker,fgillcristd6,276,South Africa,81
+475,Kareem,,ktomczynskid7@cyberchimps.com,male,animate weapon,Ascendant,klascelld7,144,El Salvador,25
+476,Dimitry,Hinchon,dhinchond8@ifeng.com,male,barrage,Hierophant,dhinchond8,215,Mauritania,19
+477,Gregg,,glitzmannd9@tinyurl.com,male,animate weapon,Necromancer,gcarniliand9,165,Haiti,48
+478,Cassey,,cbestallda@mapquest.com,male,arctic armour,Champion,cgibbesonda,425,Belarus,46
+479,Sutton,,scancellariodb@china.com.cn,male,arctic armour,Elementalist,skeighleydb,175,Cyprus,37
+480,Trix,Escudier,tescudierdc@archive.org,male,barrage,Juggernaut,tescudierdc,49,Bosnia and Herzegovina,90
+481,Betta,,barkowdd@de.vu,male,barrage,Hierophant,badamskydd,113,Uzbekistan,45
+482,Cindra,Camings,ccamingsde@moonfruit.com,male,animate weapon,Guardian,ccamingsde,176,El Salvador,73
+483,Blaire,Kenen,bkenendf@oakley.com,male,barrage,Champion,bkenendf,275,Greece,40
+484,Gregorius,Ambrus,gambrusdg@smugmug.com,male,barrage,Slayer,gambrusdg,119,Republic of the Congo,10
+485,Josi,Cornock,jcornockdh@mozilla.org,male,arctic armour,Elementalist,jcornockdh,170,Cameroon,73
+486,Curry,,ctremaynedi@apache.org,male,arctic armour,Gladiator,cmcgowrandi,339,Republic of the Congo,62
+487,Alvina,Whytock,awhytockdj@unicef.org,male,arctic armour,Deadeye,awhytockdj,430,Senegal,67
+488,Karia,MacGraith,kmacgraithdk@hostgator.com,male,arctic armour,Ascendant,kmacgraithdk,233,Venezuela,42
+489,,MacFayden,hmacfaydendl@discuz.net,male,barrage,Hierophant,fmacfaydendl,140,Ivory Coast,90
+490,Ulrike,,ubilldm@arstechnica.com,male,barrage,Raider,uyanshindm,71,Palestinian Territory,83
+491,Bird,Cleaveland,bcleavelanddn@ibm.com,male,arctic armour,Necromancer,bcleavelanddn,298,Democratic Republic of the Congo,70
+492,Hart,Bernardotti,hbernardottido@wordpress.com,male,arctic armour,Saboteur,hbernardottido,84,Zambia,21
+493,Issie,Duligal,iduligaldp@squarespace.com,male,animate weapon,Juggernaut,iduligaldp,364,Syria,14
+494,Therese,Thurlby,tthurlbydq@webs.com,male,animate weapon,Saboteur,tthurlbydq,196,Ecuador,91
+495,Patsy,Wyness,pwynessdr@ocn.ne.jp,male,arctic armour,Champion,pwynessdr,318,Greece,18
+496,Cherie,Sitlinton,csitlintonds@smugmug.com,male,barrage,Chieftain,csitlintonds,438,Russia,98
+497,,,fschimekdt@ft.com,male,animate weapon,Necromancer,cwewelldt,109,Madagascar,35
+498,Idelle,Djekovic,idjekovicdu@xing.com,male,barrage,Chieftain,idjekovicdu,407,Djibouti,75
+499,,Spanswick,hspanswickdv@berkeley.edu,male,barrage,Assassin,cspanswickdv,398,Kenya,64
+500,Tod,,tmayoudw@stumbleupon.com,male,arctic armour,Gladiator,tgraceydw,320,Democratic Republic of the Congo,3
+501,Vi,Rawll,vrawlldx@hp.com,male,barrage,Slayer,vrawlldx,206,Haiti,16
+502,Janean,Leaves,jleavesdy@jigsy.com,male,barrage,Berserker,jleavesdy,278,Venezuela,7
+503,Paxton,Sparkes,psparkesdz@qq.com,male,barrage,Guardian,psparkesdz,132,Finland,30
+504,Jobi,Tackley,jtackleye0@salon.com,male,animate weapon,Assassin,jtackleye0,429,Greece,89
+505,Clair,,cbrunkere1@globo.com,male,arctic armour,Necromancer,cmalshingere1,155,Colombia,15
+506,Laird,,lpollingtone2@gnu.org,male,arctic armour,Raider,lgullande2,253,Brazil,59
+507,Papageno,,pmcgrathe3@scribd.com,male,barrage,Berserker,pibotsone3,315,Albania,48
+508,Gunar,,gjenceye4@nifty.com,male,barrage,Ascendant,galldrede4,247,Norway,86
+509,Gunther,Sailer,gsailere5@sciencedaily.com,male,barrage,Guardian,gsailere5,405,Slovenia,60
+510,Lyle,,lbrokenbrowe6@youtube.com,male,barrage,Ascendant,lgerckene6,36,Czech Republic,16
+511,Amelia,Peartree,apeartreee7@tripadvisor.com,male,animate weapon,Trickster,apeartreee7,376,Slovenia,82
+512,Ninette,,npennere8@vimeo.com,male,barrage,Berserker,ngrimsdalee8,319,Ethiopia,43
+513,Joey,Dean,jdeane9@joomla.org,male,barrage,Chieftain,jdeane9,51,Belarus,62
+514,Guinevere,Skitteral,gskitteralea@army.mil,male,animate weapon,Gladiator,gskitteralea,78,Guatemala,60
+515,Euell,Admans,eadmanseb@timesonline.co.uk,male,arctic armour,Deadeye,eadmanseb,88,South Korea,42
+516,Efren,Goodbairn,egoodbairnec@paypal.com,male,barrage,Juggernaut,egoodbairnec,332,Tanzania,66
+517,Karl,,ksearbyed@dmoz.org,male,animate weapon,Guardian,kthornbarrowed,297,North Korea,33
+518,Killy,,khacksbyee@storify.com,male,barrage,Juggernaut,kverrillsee,356,Bolivia,82
+519,Guinevere,Lindfors,glindforsef@hibu.com,male,arctic armour,Slayer,glindforsef,89,Madagascar,31
+520,Sterne,,shabershaweg@spotify.com,male,animate weapon,Inquisitor,sshirtcliffeeg,231,United States,36
+521,Paul,,plavielleeh@kickstarter.com,male,barrage,Inquisitor,pbecketeh,246,Portugal,48
+522,Pembroke,,pbrixeyei@miitbeian.gov.cn,male,animate weapon,Inquisitor,pgiraudouxei,196,North Korea,73
+523,Pierre,,ppealej@dagondesign.com,male,arctic armour,Guardian,psmoothej,280,Finland,89
+524,Shel,Soreau,ssoreauek@cmu.edu,male,arctic armour,Chieftain,ssoreauek,343,Brazil,50
+525,Vivian,,vhousbeyel@artisteer.com,male,arctic armour,Hierophant,vklimukel,269,Kuwait,59
+526,Ardeen,,abentingem@biblegateway.com,male,barrage,Slayer,amcginnisem,142,Ghana,11
+527,Mariel,Martinon,mmartinonen@dagondesign.com,male,barrage,Slayer,mmartinonen,146,Egypt,41
+528,Siobhan,Minkin,sminkineo@telegraph.co.uk,male,barrage,Trickster,sminkineo,318,Moldova,1
+529,Larissa,Fennelly,lfennellyep@cyberchimps.com,male,barrage,Occultist,lfennellyep,329,South Georgia and the South Sandwich Islands,14
+530,Ase,Stoeckle,astoeckleeq@tumblr.com,male,barrage,Gladiator,astoeckleeq,239,Tanzania,59
+531,,Zorzutti,nzorzuttier@yahoo.com,male,arctic armour,Deadeye,kzorzuttier,29,Japan,57
+532,Aridatha,Goss,agosses@dell.com,male,arctic armour,Gladiator,agosses,48,Bosnia and Herzegovina,43
+533,Sauncho,,sovenellet@dailymail.co.uk,male,barrage,Saboteur,smacaket,6,Tanzania,95
+534,,,tsealyeu@mayoclinic.com,male,barrage,Chieftain,mbarbyeu,33,Vietnam,61
+535,Sheilakathryn,Measey,smeaseyev@bloglines.com,male,animate weapon,Gladiator,smeaseyev,282,Benin,21
+536,Willis,,wmapleew@csmonitor.com,male,barrage,Deadeye,wharradew,47,Nicaragua,62
+537,Lucretia,,lcolumex@tmall.com,male,barrage,Pathfinder,lboughenex,222,Eritrea,10
+538,Carmine,,cmckeurtoney@geocities.jp,male,barrage,Ascendant,cjakabey,19,Sierra Leone,77
+539,Brittni,Malin,bmalinez@freewebs.com,male,arctic armour,Champion,bmalinez,300,Micronesia,64
+540,Arty,,asouthcombef0@seattletimes.com,male,barrage,Gladiator,aswiffanf0,5,Nigeria,23
+541,,Lillo,dlillof1@oakley.com,male,arctic armour,Saboteur,slillof1,403,Albania,78
+542,Danyette,Josefs,djosefsf2@w3.org,male,arctic armour,Assassin,djosefsf2,370,Kenya,87
+543,,Downes,vdownesf3@dailymotion.com,male,barrage,Juggernaut,mdownesf3,140,Syria,92
+544,Karoline,Arundale,karundalef4@thetimes.co.uk,male,barrage,Hierophant,karundalef4,238,Tunisia,67
+545,Holden,Wemyss,hwemyssf5@si.edu,male,barrage,Juggernaut,hwemyssf5,205,Norway,72
+546,Lilian,,lgrasonf6@amazon.co.uk,male,barrage,Hierophant,lbennedsenf6,113,Madagascar,9
+547,Neel,,nrennoldsf7@feedburner.com,male,barrage,Slayer,noutrightf7,325,Comoros,92
+548,Normie,,ncormackf8@wiley.com,male,arctic armour,Pathfinder,nborlandf8,163,Mozambique,18
+549,Staci,,sbrisseauf9@shareasale.com,male,arctic armour,Hierophant,sjinkinf9,28,Palestinian Territory,56
+550,Natividad,,ngrisdalefa@huffingtonpost.com,male,barrage,Hierophant,nhaberghamfa,95,Ireland,81
+551,Uri,Gras,ugrasfb@adobe.com,male,animate weapon,Juggernaut,ugrasfb,347,Zambia,41
+552,Lesley,Rigby,lrigbyfc@ustream.tv,male,animate weapon,Hierophant,lrigbyfc,406,Ghana,92
+553,Emalee,Sully,esullyfd@1und1.de,male,barrage,Occultist,esullyfd,277,Germany,92
+554,,,kechellefe@surveymonkey.com,male,arctic armour,Ascendant,lhartwellfe,101,Madagascar,99
+555,,Aymes,jaymesff@about.com,male,barrage,Berserker,naymesff,251,Bulgaria,10
+556,Vanya,,vbriggefg@bbb.org,male,barrage,Guardian,vsimonassifg,394,Mexico,55
+557,Vale,Simonsson,vsimonssonfh@quantcast.com,male,animate weapon,Pathfinder,vsimonssonfh,204,Niger,28
+558,Harlan,,hkarpovfi@auda.org.au,male,animate weapon,Trickster,hselbornefi,378,South Georgia and the South Sandwich Islands,18
+559,Axel,,askokoefj@github.com,male,animate weapon,Juggernaut,acobleyfj,347,Egypt,53
+560,Osmund,McAvey,omcaveyfk@paginegialle.it,male,arctic armour,Saboteur,omcaveyfk,404,Belarus,87
+561,Birgit,,bbardefl@mysql.com,male,barrage,Gladiator,bbyhamfl,291,Germany,58
+562,Tamas,,tstadenfm@blogger.com,male,barrage,Deadeye,tslaineyfm,232,Moldova,16
+563,Hort,Muldowney,hmuldowneyfn@storify.com,male,arctic armour,Hierophant,hmuldowneyfn,111,Myanmar,3
+564,Xylina,Bothe,xbothefo@timesonline.co.uk,male,barrage,Occultist,xbothefo,33,Kosovo,57
+565,Crystie,Graal,cgraalfp@vkontakte.ru,male,animate weapon,Saboteur,cgraalfp,213,Ghana,62
+566,Aurora,Diviny,adivinyfq@tumblr.com,male,barrage,Assassin,adivinyfq,302,Vanuatu,5
+567,Gerrilee,,gculletonfr@163.com,male,arctic armour,Occultist,gperrotfr,153,Venezuela,88
+568,Arin,Wegener,awegenerfs@arstechnica.com,male,arctic armour,Chieftain,awegenerfs,450,South Georgia and the South Sandwich Islands,71
+569,Licha,,lmeeksft@seattletimes.com,male,barrage,Trickster,lvancasselft,350,Ghana,23
+570,Herb,Meys,hmeysfu@cdbaby.com,male,barrage,Trickster,hmeysfu,222,Jordan,27
+571,,Aspinal,haspinalfv@php.net,male,animate weapon,Inquisitor,laspinalfv,71,Uruguay,13
+572,Parke,McCree,pmccreefw@china.com.cn,male,barrage,Saboteur,pmccreefw,130,Mozambique,30
+573,Marja,Grigolon,mgrigolonfx@discovery.com,male,arctic armour,Juggernaut,mgrigolonfx,297,Micronesia,78
+574,Petr,Sheirlaw,psheirlawfy@whitehouse.gov,male,arctic armour,Saboteur,psheirlawfy,233,Brazil,75
+575,Kerrie,Mortell,kmortellfz@who.int,male,animate weapon,Occultist,kmortellfz,75,Ecuador,77
+576,Jobi,Missington,jmissingtong0@cafepress.com,male,animate weapon,Guardian,jmissingtong0,71,Morocco,75
+577,Blinni,,bliepinsg1@huffingtonpost.com,male,arctic armour,Assassin,bsilversmidg1,321,Ivory Coast,52
+578,Jacqueline,,jsempillg2@deliciousdays.com,male,arctic armour,Pathfinder,jvalenssmithg2,123,Bahrain,50
+579,Boonie,Noweak,bnoweakg3@lycos.com,male,animate weapon,Guardian,bnoweakg3,308,Niger,8
+580,Scarface,,skondrachenkog4@mit.edu,male,barrage,Necromancer,soruddeng4,127,Macedonia,71
+581,Allys,,alansberryg5@google.pl,male,animate weapon,Elementalist,aholberryg5,88,Ivory Coast,22
+582,Elora,Sterke,esterkeg6@psu.edu,male,barrage,Gladiator,esterkeg6,203,France,87
+583,Cathleen,Ineson,cinesong7@soundcloud.com,male,barrage,Elementalist,cinesong7,282,Myanmar,18
+584,Granny,Thunnercliffe,gthunnercliffeg8@paypal.com,male,barrage,Guardian,gthunnercliffeg8,229,China,8
+585,Cirillo,,cmattong9@clickbank.net,male,arctic armour,Occultist,cthomblesong9,173,Saint Barthelemy,70
+586,Debby,Beekmann,dbeekmannga@soup.io,male,arctic armour,Assassin,dbeekmannga,403,Zimbabwe,49
+587,Eadie,,ebartlegb@arizona.edu,male,arctic armour,Guardian,eleborgnegb,284,Eritrea,9
+588,,Defau,sdefaugc@alibaba.com,male,barrage,Deadeye,bdefaugc,165,Cameroon,55
+589,Naomi,Oswell,noswellgd@ucsd.edu,male,barrage,Occultist,noswellgd,197,Madagascar,35
+590,Wilie,Tisor,wtisorge@theatlantic.com,male,barrage,Chieftain,wtisorge,324,South Sudan,95
+591,,Carden,wcardengf@addtoany.com,male,animate weapon,Elementalist,rcardengf,137,Macedonia,46
+592,Elvina,McPaik,emcpaikgg@amazon.co.jp,male,animate weapon,Saboteur,emcpaikgg,347,Tajikistan,45
+593,Carolee,Larwell,clarwellgh@devhub.com,male,arctic armour,Chieftain,clarwellgh,22,South Georgia and the South Sandwich Islands,2
+594,Winnifred,,wmazellagi@ted.com,male,animate weapon,Champion,wjarnellgi,296,Indonesia,32
+595,Reggie,Earwicker,rearwickergj@washingtonpost.com,male,barrage,Trickster,rearwickergj,279,Denmark,65
+596,Noami,Slate,nslategk@disqus.com,male,animate weapon,Trickster,nslategk,184,Nicaragua,96
+597,,,alenahangl@hatena.ne.jp,male,barrage,Berserker,tcarsberggl,273,Benin,24
+598,Mufi,,mkusickgm@archive.org,male,animate weapon,Pathfinder,mthandigm,99,Benin,13
+599,Malanie,Bignall,mbignallgn@mayoclinic.com,male,animate weapon,Juggernaut,mbignallgn,256,Tajikistan,54
+600,Franny,Dunk,fdunkgo@icio.us,male,arctic armour,Necromancer,fdunkgo,245,Bahrain,92
+601,Gabi,Franzoli,gfranzoligp@answers.com,male,arctic armour,Chieftain,gfranzoligp,427,Vanuatu,97
+602,Roldan,Bodiam,rbodiamgq@vinaora.com,male,barrage,Saboteur,rbodiamgq,23,Sierra Leone,47
+603,Corey,,csonegr@msn.com,male,barrage,Slayer,croddagr,396,Brazil,17
+604,Joanie,,jdagostinogs@feedburner.com,male,barrage,Slayer,jboiggs,210,Argentina,3
+605,,,etiernangt@google.es,male,arctic armour,Saboteur,hcancellariogt,137,Bulgaria,46
+606,,,gkhristyukhingu@networksolutions.com,male,barrage,Trickster,jschimanngu,81,Greece,9
+607,Grenville,Marqyes,gmarqyesgv@myspace.com,male,barrage,Chieftain,gmarqyesgv,58,Yemen,64
+608,Manny,,mhauchgw@economist.com,male,arctic armour,Occultist,mransteadgw,354,Kyrgyzstan,47
+609,Angele,Danihelka,adanihelkagx@accuweather.com,male,barrage,Necromancer,adanihelkagx,108,Austria,90
+610,,,nvennersgy@shinystat.com,male,arctic armour,Occultist,fshawcroftgy,100,Canada,18
+611,,Collisson,acollissongz@baidu.com,male,barrage,Berserker,gcollissongz,313,Palestinian Territory,95
+612,,,fdavidovicih0@home.pl,male,barrage,Ascendant,vburnsh0,126,East Timor,74
+613,Bat,Maharey,bmahareyh1@examiner.com,male,animate weapon,Deadeye,bmahareyh1,345,Venezuela,87
+614,Augustine,,apoorh2@mail.ru,male,barrage,Deadeye,adobinsonh2,357,Afghanistan,77
+615,Amalea,,agoscombh3@scribd.com,male,arctic armour,Pathfinder,asatchelh3,408,Syria,63
+616,Persis,Sheringham,psheringhamh4@github.io,male,barrage,Guardian,psheringhamh4,75,Sierra Leone,29
+617,Hymie,Ridd,hriddh5@geocities.jp,male,barrage,Ascendant,hriddh5,393,Honduras,21
+618,,,ldowneyh6@usa.gov,male,animate weapon,Elementalist,rstuttardh6,167,Mozambique,71
+619,Vassili,Paynes,vpaynesh7@dion.ne.jp,male,animate weapon,Necromancer,vpaynesh7,293,Tanzania,59
+620,,,swoollamh8@sphinn.com,male,barrage,Inquisitor,stolanh8,428,Mexico,53
+621,Winnie,,wkhilkovh9@army.mil,male,arctic armour,Saboteur,whullyerh9,360,Luxembourg,4
+622,Laurel,Molohan,lmolohanha@e-recht24.de,male,animate weapon,Chieftain,lmolohanha,116,Greece,86
+623,Avie,Rawlcliffe,arawlcliffehb@senate.gov,male,arctic armour,Inquisitor,arawlcliffehb,112,Philippines,23
+624,,,rmcinteerhc@netlog.com,male,barrage,Assassin,aarnaudinhc,385,Syria,26
+625,Rinaldo,Stockport,rstockporthd@furl.net,male,barrage,Saboteur,rstockporthd,11,Uganda,88
+626,Gypsy,Bakewell,gbakewellhe@liveinternet.ru,male,arctic armour,Slayer,gbakewellhe,243,Japan,60
+627,Tonia,,tdagworthyhf@ibm.com,male,arctic armour,Hierophant,tdaenenhf,246,Uganda,96
+628,Regan,,rjersonhg@hp.com,male,animate weapon,Elementalist,rbrunninghg,21,Nicaragua,25
+629,Zitella,Potes,zpoteshh@ca.gov,male,barrage,Hierophant,zpoteshh,368,Uzbekistan,8
+630,Alicea,Duddan,aduddanhi@cbslocal.com,male,animate weapon,Assassin,aduddanhi,190,Haiti,85
+631,Even,Isgate,eisgatehj@opera.com,male,barrage,Guardian,eisgatehj,182,Yemen,76
+632,Vinson,,vkleebornhk@msu.edu,male,animate weapon,Hierophant,vkerrhk,390,United States,60
+633,Teressa,Keepin,tkeepinhl@hao123.com,male,animate weapon,Raider,tkeepinhl,32,Lithuania,97
+634,Sauveur,,sgregerhm@exblog.jp,male,barrage,Hierophant,saguirrehm,242,Myanmar,33
+635,Daniella,,ddourishn@wikipedia.org,male,arctic armour,Inquisitor,dlowdenhn,80,Pakistan,92
+636,Broddie,,bdobleho@ibm.com,male,barrage,Ascendant,bedbrookeho,291,Ethiopia,51
+637,Elisabetta,Ledrun,eledrunhp@unesco.org,male,arctic armour,Occultist,eledrunhp,227,China,12
+638,Alyss,Arnoldi,aarnoldihq@joomla.org,male,animate weapon,Deadeye,aarnoldihq,325,Eritrea,77
+639,West,,wivshinhr@arstechnica.com,male,animate weapon,Ascendant,wsenthr,141,Micronesia,5
+640,Piper,Macer,pmacerhs@craigslist.org,male,arctic armour,Inquisitor,pmacerhs,288,Chile,56
+641,Madelle,,myorstonht@1688.com,male,barrage,Ascendant,mgiraudoht,284,Mozambique,70
+642,Josh,Blight,jblighthu@wiley.com,male,arctic armour,Ascendant,jblighthu,380,Canada,11
+643,,,jhaughhv@wikispaces.com,male,animate weapon,Champion,nroselhv,215,Kenya,91
+644,Northrop,Couves,ncouveshw@simplemachines.org,male,barrage,Trickster,ncouveshw,290,Kosovo,77
+645,Perle,Georges,pgeorgeshx@bing.com,male,barrage,Ascendant,pgeorgeshx,225,Kazakhstan,82
+646,Korey,Girdler,kgirdlerhy@digg.com,male,barrage,Hierophant,kgirdlerhy,172,Iraq,56
+647,Eveline,,eblagbroughhz@imgur.com,male,animate weapon,Hierophant,edyterhz,393,Mexico,44
+648,Wake,,wfassei0@cbsnews.com,male,barrage,Trickster,wgainsfordi0,428,Kazakhstan,36
+649,Emanuel,McNeely,emcneelyi1@bigcartel.com,male,barrage,Elementalist,emcneelyi1,335,Uzbekistan,64
+650,Devondra,,dtomasicchioi2@rambler.ru,male,arctic armour,Gladiator,dgregorei2,47,Comoros,19
+651,Gussie,Braker,gbrakeri3@opera.com,male,barrage,Ascendant,gbrakeri3,163,Belize,59
+652,Casar,Bazell,cbazelli4@marketwatch.com,male,animate weapon,Hierophant,cbazelli4,179,Spain,60
+653,Conrad,,ckohringi5@un.org,male,animate weapon,Pathfinder,ccarmei5,400,Jamaica,90
+654,,,dkinneiri6@ucoz.com,male,arctic armour,Guardian,hlightbourni6,391,Nepal,80
+655,Maribelle,,mlavignei7@tinyurl.com,male,barrage,Raider,mchiversi7,297,Marshall Islands,21
+656,Ford,,fschildi8@symantec.com,male,barrage,Berserker,fgilburti8,191,Greece,52
+657,Anallese,Coltart,acoltarti9@booking.com,male,barrage,Chieftain,acoltarti9,438,Peru,77
+658,Shirlene,,sbaxendaleia@fastcompany.com,male,animate weapon,Chieftain,slarratia,100,Croatia,86
+659,Marius,Oades,moadesib@mayoclinic.com,male,arctic armour,Juggernaut,moadesib,448,Poland,1
+660,Zsazsa,,zwiggingtonic@canalblog.com,male,animate weapon,Berserker,zryeic,298,Peru,44
+661,,,vstaubynid@pinterest.com,male,barrage,Guardian,gkeighlyid,72,Laos,92
+662,Jaquelyn,Reagan,jreaganie@auda.org.au,male,arctic armour,Chieftain,jreaganie,222,Colombia,56
+663,Belia,Pountney,bpountneyif@spotify.com,male,barrage,Elementalist,bpountneyif,100,Comoros,15
+664,Deanna,,dhasleyig@sciencedaily.com,male,barrage,Deadeye,dluckeyig,117,Mozambique,8
+665,Cyrille,Ickovic,cickovicih@alibaba.com,male,barrage,Hierophant,cickovicih,299,Jordan,85
+666,Granny,,gacockii@yellowbook.com,male,arctic armour,Guardian,gbroaderii,404,France,11
+667,Noble,Nerval,nnervalij@netlog.com,male,animate weapon,Pathfinder,nnervalij,382,Bulgaria,21
+668,Zandra,Kordas,zkordasik@tmall.com,male,barrage,Deadeye,zkordasik,418,South Korea,97
+669,Ingram,Oaten,ioatenil@vinaora.com,male,animate weapon,Assassin,ioatenil,290,Peru,94
+670,Raina,Lampett,rlampettim@cyberchimps.com,male,arctic armour,Occultist,rlampettim,260,Croatia,75
+671,Leonie,,lbezarrain@china.com.cn,male,barrage,Berserker,lnutbrownin,56,Democratic Republic of the Congo,32
+672,Lauretta,,lgrogerio@smugmug.com,male,barrage,Hierophant,llearmonthio,175,Taiwan,76
+673,Brig,Sydes,bsydesip@nbcnews.com,male,barrage,Gladiator,bsydesip,160,Poland,11
+674,Marc,Elstow,melstowiq@instagram.com,male,barrage,Occultist,melstowiq,94,Ivory Coast,95
+675,Isabel,,imelvinir@webmd.com,male,animate weapon,Chieftain,ilengletir,115,Honduras,45
+676,,Hantusch,ahantuschis@usatoday.com,male,animate weapon,Gladiator,ahantuschis,116,Estonia,77
+677,Benetta,Barstock,bbarstockit@reference.com,male,barrage,Gladiator,bbarstockit,410,Estonia,35
+678,Agathe,MacCawley,amaccawleyiu@list-manage.com,male,arctic armour,Inquisitor,amaccawleyiu,329,Ireland,63
+679,Inga,,ideverilleiv@oracle.com,male,barrage,Chieftain,iretallackiv,439,Thailand,2
+680,Emlynne,Wilcock,ewilcockiw@indiatimes.com,male,barrage,Deadeye,ewilcockiw,209,Uganda,28
+681,Silvanus,Atkin,satkinix@sun.com,male,animate weapon,Chieftain,satkinix,157,Svalbard and Jan Mayen,12
+682,Sara-ann,Ixer,sixeriy@furl.net,male,barrage,Occultist,sixeriy,242,Zambia,44
+683,Jaquenetta,Kaaskooper,jkaaskooperiz@barnesandnoble.com,male,barrage,Pathfinder,jkaaskooperiz,422,El Salvador,43
+684,Kim,Smeeton,ksmeetonj0@jalbum.net,male,arctic armour,Saboteur,ksmeetonj0,347,Ethiopia,92
+685,Brantley,Probetts,bprobettsj1@washington.edu,male,barrage,Guardian,bprobettsj1,376,Laos,51
+686,Doralin,,dkohnekej2@ibm.com,male,barrage,Berserker,djarmanj2,72,Russia,4
+687,,Callaghan,acallaghanj3@4shared.com,male,animate weapon,Assassin,scallaghanj3,278,Belarus,10
+688,Myrilla,,mmcfeej4@liveinternet.ru,male,barrage,Occultist,mgraystonj4,312,Russia,2
+689,,Vokins,cvokinsj5@etsy.com,male,barrage,Inquisitor,lvokinsj5,217,Sudan,99
+690,Joice,,jlautiej6@myspace.com,male,barrage,Chieftain,jhearnesj6,63,Iran,4
+691,Paulita,,pgamettj7@sbwire.com,male,animate weapon,Gladiator,pgoodanewj7,126,Bhutan,10
+692,Allsun,,averrechiaj8@biglobe.ne.jp,male,animate weapon,Raider,adallicoatj8,332,Jamaica,97
+693,Beatrix,,bmacnellyj9@smugmug.com,male,animate weapon,Berserker,bhargrovesj9,224,Chad,2
+694,Joella,Lucken,jluckenja@behance.net,male,barrage,Deadeye,jluckenja,206,Namibia,5
+695,Felicio,,fallewayjb@zimbio.com,male,barrage,Necromancer,fpietrasikjb,311,Germany,95
+696,Arabelle,Lawdham,alawdhamjc@upenn.edu,male,barrage,Ascendant,alawdhamjc,379,Zimbabwe,59
+697,Caesar,Guihen,cguihenjd@mediafire.com,male,barrage,Chieftain,cguihenjd,323,Uruguay,67
+698,Brande,Fatscher,bfatscherje@wikispaces.com,male,barrage,Champion,bfatscherje,226,Zambia,4
+699,Cory,,cgoldenofirelandjf@tuttocitta.it,male,animate weapon,Champion,cjustjf,201,Indonesia,86
+700,Lizzie,,lghirigorijg@nature.com,male,barrage,Elementalist,lsolomonidesjg,157,Benin,26
+701,Roselin,,rlilburnjh@diigo.com,male,animate weapon,Chieftain,rskaifedingerthorpejh,151,Haiti,12
+702,,,bborgeji@cocolog-nifty.com,male,arctic armour,Occultist,nheavenji,220,Czech Republic,18
+703,Erek,,efleckneyjj@upenn.edu,male,arctic armour,Elementalist,elumsdalljj,154,Italy,49
+704,Pierce,Clemo,pclemojk@angelfire.com,male,barrage,Slayer,pclemojk,420,East Timor,51
+705,Guthrie,Romans,gromansjl@pcworld.com,male,animate weapon,Ascendant,gromansjl,288,Kazakhstan,63
+706,Jodie,,jfinchjm@unesco.org,male,arctic armour,Chieftain,jallcockjm,195,Republic of the Congo,58
+707,,,olefevrejn@wsj.com,male,barrage,Occultist,frobkejn,264,Argentina,70
+708,Harry,Lissandri,hlissandrijo@networksolutions.com,male,barrage,Juggernaut,hlissandrijo,60,Netherlands,69
+709,Keane,,keassebyjp@si.edu,male,barrage,Pathfinder,killistonjp,441,Israel,95
+710,,Kaman,vkamanjq@canalblog.com,male,barrage,Guardian,mkamanjq,91,South Africa,7
+711,Gordy,Eglinton,geglintonjr@barnesandnoble.com,male,arctic armour,Hierophant,geglintonjr,333,Ivory Coast,64
+712,Des,Paddeley,dpaddeleyjs@arstechnica.com,male,barrage,Deadeye,dpaddeleyjs,177,Brazil,78
+713,Ronnica,,rreascejt@woothemes.com,male,barrage,Inquisitor,rlanferejt,371,Czech Republic,94
+714,Rowe,,rgoneyju@mayoclinic.com,male,arctic armour,Raider,rdinegesju,68,Chile,35
+715,,Capron,ccapronjv@creativecommons.org,male,barrage,Raider,ccapronjv,356,Slovenia,34
+716,,,ltempertonjw@squarespace.com,male,barrage,Saboteur,mstoppsjw,361,Belarus,41
+717,Vernice,Luten,vlutenjx@ed.gov,male,barrage,Chieftain,vlutenjx,62,Malta,68
+718,Fairlie,,frobusjy@google.de,male,arctic armour,Guardian,fcranstonejy,284,Taiwan,16
+719,Gray,,gdoughartyjz@cargocollective.com,male,arctic armour,Pathfinder,ghecknerjz,345,Chad,49
+720,Cletus,Andryunin,candryunink0@flickr.com,male,animate weapon,Champion,candryunink0,48,El Salvador,99
+721,Marrissa,Beetlestone,mbeetlestonek1@nsw.gov.au,male,animate weapon,Elementalist,mbeetlestonek1,406,Tanzania,52
+722,Myrilla,Babbs,mbabbsk2@sourceforge.net,male,barrage,Assassin,mbabbsk2,363,Chile,31
+723,Taylor,Kingzett,tkingzettk3@foxnews.com,male,arctic armour,Slayer,tkingzettk3,86,Bhutan,39
+724,Deloria,,dgroucuttk4@china.com.cn,male,animate weapon,Chieftain,driggollk4,82,Italy,18
+725,,,cridouttk5@nydailynews.com,male,arctic armour,Inquisitor,atorresk5,344,Republic of the Congo,63
+726,Nat,,nlanferk6@blogs.com,male,animate weapon,Inquisitor,nhowsek6,393,Somalia,55
+727,Joseito,,joehmk7@amazon.de,male,barrage,Chieftain,jcrosskellk7,424,Republic of the Congo,51
+728,Cosette,,cmcchesneyk8@addtoany.com,male,barrage,Berserker,ccowlamk8,439,Serbia,6
+729,Torey,,tgaraghank9@nyu.edu,male,barrage,Assassin,tecclesk9,186,Colombia,4
+730,Cristiano,Grabeham,cgrabehamka@harvard.edu,male,barrage,Pathfinder,cgrabehamka,185,Somalia,91
+731,Wang,,wpriggkb@homestead.com,male,animate weapon,Chieftain,wcuffinkb,376,Mexico,27
+732,Antonino,Sussems,asussemskc@indiatimes.com,male,barrage,Slayer,asussemskc,80,Netherlands,23
+733,Khalil,Grzeszczak,kgrzeszczakkd@blogtalkradio.com,male,barrage,Elementalist,kgrzeszczakkd,377,Israel,28
+734,Petronia,,psoffeke@wsj.com,male,barrage,Chieftain,pbradmanke,217,Tanzania,68
+735,Almeda,Sysland,asyslandkf@cafepress.com,male,barrage,Pathfinder,asyslandkf,310,Vietnam,88
+736,Nancey,,nwoodlandkg@yellowpages.com,male,barrage,Deadeye,nbearnekg,337,South Africa,72
+737,Crystie,Pre,cprekh@youtube.com,male,animate weapon,Trickster,cprekh,390,Haiti,91
+738,Ariela,Slaght,aslaghtki@ning.com,male,arctic armour,Pathfinder,aslaghtki,394,Indonesia,35
+739,Marcus,,mfoxcroftkj@smh.com.au,male,arctic armour,Pathfinder,mczadlakj,261,New Caledonia,85
+740,Tuckie,Jefferies,tjefferieskk@xrea.com,male,barrage,Saboteur,tjefferieskk,233,Dominican Republic,84
+741,Valle,Gatiss,vgatisskl@jimdo.com,male,animate weapon,Champion,vgatisskl,12,Greece,21
+742,Kellen,,kvenesskm@state.gov,male,barrage,Berserker,kdelamarkm,296,Venezuela,81
+743,Prisca,Ivanyutin,pivanyutinkn@thetimes.co.uk,male,barrage,Inquisitor,pivanyutinkn,243,Madagascar,3
+744,Marten,,mgrinawayko@qq.com,male,barrage,Ascendant,mandellko,283,Colombia,43
+745,Orbadiah,,ohollerinkp@skype.com,male,animate weapon,Occultist,odeancywilliskp,86,Malta,36
+746,Linzy,,lterbrugkq@springer.com,male,barrage,Chieftain,lspatarokq,417,Madagascar,12
+747,Cam,Kosel,ckoselkr@youku.com,male,animate weapon,Saboteur,ckoselkr,435,El Salvador,38
+748,Dalila,Martinez,dmartinezks@springer.com,male,barrage,Slayer,dmartinezks,224,Zimbabwe,39
+749,Darline,,dhornigkt@ustream.tv,male,animate weapon,Champion,ddavidovkt,246,Portugal,54
+750,Hermon,Maginn,hmaginnku@wix.com,male,arctic armour,Slayer,hmaginnku,51,Italy,69
+751,Wilburt,Godsell,wgodsellkv@elpais.com,male,animate weapon,Pathfinder,wgodsellkv,52,Sierra Leone,22
+752,Vincent,Choffin,vchoffinkw@columbia.edu,male,arctic armour,Raider,vchoffinkw,390,New Zealand,34
+753,Clerissa,Clinch,cclinchkx@ustream.tv,male,barrage,Assassin,cclinchkx,193,Uganda,80
+754,Demetra,Lulham,dlulhamky@soup.io,male,arctic armour,Necromancer,dlulhamky,336,Finland,10
+755,,,gpenrightkz@imageshack.us,male,barrage,Juggernaut,nlenoxkz,323,Jordan,39
+756,Cherilynn,Steinham,csteinhaml0@wikimedia.org,male,animate weapon,Elementalist,csteinhaml0,78,Nigeria,30
+757,Brear,,bhenworthl1@php.net,male,animate weapon,Raider,btweedelll1,163,Guam,30
+758,Izabel,MacCahey,imaccaheyl2@hostgator.com,male,barrage,Hierophant,imaccaheyl2,123,Iran,83
+759,Daffi,Puleston,dpulestonl3@netlog.com,male,barrage,Saboteur,dpulestonl3,256,Taiwan,18
+760,Spence,,sianittellol4@dyndns.org,male,barrage,Pathfinder,shardistryl4,105,Kazakhstan,11
+761,Mercy,Cisneros,mcisnerosl5@howstuffworks.com,male,arctic armour,Inquisitor,mcisnerosl5,64,Lithuania,59
+762,Theadora,Renzullo,trenzullol6@google.nl,male,barrage,Champion,trenzullol6,275,Iraq,2
+763,Monti,Franek,mfranekl7@nih.gov,male,barrage,Pathfinder,mfranekl7,371,Malta,97
+764,Kary,,krudmanl8@symantec.com,male,barrage,Inquisitor,kdenyl8,131,Nigeria,59
+765,Christophorus,,cyakebovichl9@studiopress.com,male,animate weapon,Hierophant,cpippinl9,79,Jamaica,89
+766,Kerrie,Turbitt,kturbittla@dailymotion.com,male,barrage,Saboteur,kturbittla,236,Estonia,69
+767,Magnum,,mbleaselb@sciencedirect.com,male,barrage,Trickster,mmuresslb,179,Ivory Coast,19
+768,Ertha,Cammocke,ecammockelc@qq.com,male,arctic armour,Juggernaut,ecammockelc,343,North Korea,78
+769,Debra,,dmodenld@netscape.com,male,arctic armour,Ascendant,dbeachampld,125,Haiti,62
+770,Rosie,,rgledstanele@google.com,male,arctic armour,Raider,rtomsle,185,Chad,81
+771,Gunter,,gbysakerlf@seesaa.net,male,animate weapon,Deadeye,gdebrokelf,246,Peru,19
+772,Francisca,Daddow,fdaddowlg@wikispaces.com,male,animate weapon,Champion,fdaddowlg,159,Guatemala,30
+773,Ludovika,Whitley,lwhitleylh@aol.com,male,barrage,Ascendant,lwhitleylh,250,France,44
+774,Bradly,,bharrymanli@tripod.com,male,animate weapon,Berserker,bcosensli,134,Brazil,60
+775,Adolphus,Feveryear,afeveryearlj@eventbrite.com,male,barrage,Slayer,afeveryearlj,191,Honduras,47
+776,Aidan,Redholes,aredholeslk@ebay.co.uk,male,barrage,Ascendant,aredholeslk,24,Marshall Islands,80
+777,Giacopo,,gkynvinll@lycos.com,male,arctic armour,Hierophant,gskedgell,203,South Georgia and the South Sandwich Islands,96
+778,Jesselyn,,jstruttonlm@xinhuanet.com,male,barrage,Champion,jrowselllm,153,Palestinian Territory,14
+779,,,mstruijsln@hao123.com,male,arctic armour,Gladiator,apunshonln,182,Lithuania,85
+780,Ricard,,rcooganlo@smugmug.com,male,animate weapon,Slayer,rsoanlo,127,Bangladesh,81
+781,Jorie,,jaddslp@ameblo.jp,male,barrage,Guardian,jdumingolp,238,Uzbekistan,89
+782,Obadiah,Clamo,oclamolq@harvard.edu,male,barrage,Deadeye,oclamolq,301,Zambia,91
+783,Vassili,Gerardin,vgerardinlr@amazon.de,male,animate weapon,Pathfinder,vgerardinlr,143,Vanuatu,14
+784,Karl,,kmunkleyls@icio.us,male,barrage,Trickster,kshowlerls,57,Russia,24
+785,Lorianna,De Vile,ldevilelt@chronoengine.com,male,arctic armour,Ascendant,ldevilelt,145,Chad,46
+786,Moses,Whanstall,mwhanstalllu@dot.gov,male,animate weapon,Inquisitor,mwhanstalllu,248,Ethiopia,36
+787,Andres,Lunam,alunamlv@google.cn,male,barrage,Inquisitor,alunamlv,256,Belarus,59
+788,Vick,Ingerfield,vingerfieldlw@domainmarket.com,male,arctic armour,Deadeye,vingerfieldlw,52,Kosovo,17
+789,Kai,Sankey,ksankeylx@acquirethisname.com,male,barrage,Ascendant,ksankeylx,131,Tanzania,23
+790,Alyosha,Marusik,amarusikly@state.tx.us,male,arctic armour,Gladiator,amarusikly,373,Mexico,57
+791,Ashleigh,Pavey,apaveylz@cbsnews.com,male,barrage,Guardian,apaveylz,438,Haiti,23
+792,Jesus,McDougle,jmcdouglem0@cargocollective.com,male,barrage,Gladiator,jmcdouglem0,229,Taiwan,56
+793,Jed,Mc Pake,jmcpakem1@cdc.gov,male,arctic armour,Raider,jmcpakem1,13,Kazakhstan,40
+794,,,thazleym2@mozilla.com,male,barrage,Assassin,hstansbym2,293,New Zealand,98
+795,Jonie,,jfusedalem3@myspace.com,male,arctic armour,Berserker,jeudallm3,275,Uganda,38
+796,,,bglantonm4@altervista.org,male,arctic armour,Ascendant,bfairpom4,225,Ecuador,71
+797,Gerta,,gmerrinm5@dyndns.org,male,barrage,Assassin,gviolletm5,78,Palestinian Territory,32
+798,Anatol,,akippinm6@deliciousdays.com,male,arctic armour,Raider,aedesonm6,121,Argentina,38
+799,Allison,Mor,amorm7@apple.com,male,animate weapon,Trickster,amorm7,325,Yemen,68
+800,Thorpe,Dunkerly,tdunkerlym8@bing.com,male,arctic armour,Necromancer,tdunkerlym8,271,East Timor,98
+801,Elisabetta,Chelnam,echelnamm9@lulu.com,male,barrage,Assassin,echelnamm9,243,Italy,22
+802,Virgie,,vfawdryma@miitbeian.gov.cn,male,arctic armour,Inquisitor,vsonscheinma,38,Colombia,33
+803,,,amacanemb@macromedia.com,male,barrage,Assassin,lohalleghanemb,190,Yemen,76
+804,Dennis,Desouza,ddesouzamc@dyndns.org,male,barrage,Guardian,ddesouzamc,213,Jamaica,45
+805,Nikolos,Darcey,ndarceymd@marketwatch.com,male,arctic armour,Pathfinder,ndarceymd,46,Lithuania,51
+806,Diane-marie,,dstoppeme@hugedomains.com,male,animate weapon,Juggernaut,drickabyme,442,Vanuatu,97
+807,Avrit,,astockymf@businesswire.com,male,animate weapon,Inquisitor,aeverixmf,33,Comoros,35
+808,Don,Vedishchev,dvedishchevmg@geocities.jp,male,barrage,Ascendant,dvedishchevmg,159,Afghanistan,72
+809,Whitney,,wfeakemh@zimbio.com,male,arctic armour,Occultist,witchinghammh,164,Serbia,67
+810,Ettore,Choke,echokemi@google.cn,male,animate weapon,Pathfinder,echokemi,226,Pakistan,75
+811,,,sleneymj@psu.edu,male,barrage,Assassin,afairheadmj,168,Sudan,11
+812,Karee,Gard,kgardmk@g.co,male,arctic armour,Champion,kgardmk,426,Venezuela,64
+813,Lory,,lspilisyml@linkedin.com,male,animate weapon,Assassin,ljindaml,62,Guam,77
+814,Lin,Tainton,ltaintonmm@salon.com,male,animate weapon,Champion,ltaintonmm,421,South Georgia and the South Sandwich Islands,98
+815,Dominga,,dflannemn@prnewswire.com,male,arctic armour,Pathfinder,dlindsellmn,339,South Sudan,92
+816,Delora,Howley,dhowleymo@technorati.com,male,barrage,Chieftain,dhowleymo,288,Philippines,37
+817,Davida,Calleja,dcallejamp@pbs.org,male,arctic armour,Inquisitor,dcallejamp,295,Spain,34
+818,Natka,Rushton,nrushtonmq@state.gov,male,barrage,Occultist,nrushtonmq,77,Svalbard and Jan Mayen,24
+819,Luigi,Blundell,lblundellmr@dyndns.org,male,arctic armour,Saboteur,lblundellmr,383,Israel,75
+820,Candie,O'Corr,cocorrms@weibo.com,male,animate weapon,Hierophant,cocorrms,175,Laos,60
+821,,,kwoolacottmt@themeforest.net,male,barrage,Inquisitor,mnisenmt,166,Indonesia,84
+822,Ron,Kiera,rkieramu@ucla.edu,male,barrage,Trickster,rkieramu,239,Iran,23
+823,Caroljean,,cpalkmv@seattletimes.com,male,barrage,Berserker,clyndsmv,428,Tajikistan,15
+824,Ibrahim,,iarmisteadmw@upenn.edu,male,animate weapon,Champion,irosenbushmw,409,Kenya,42
+825,Ruthe,Coper,rcopermx@cam.ac.uk,male,animate weapon,Trickster,rcopermx,265,Mexico,66
+826,Nicholle,Aldcorne,naldcornemy@mysql.com,male,barrage,Champion,naldcornemy,18,Portugal,3
+827,Jacenta,Bust,jbustmz@yelp.com,male,animate weapon,Pathfinder,jbustmz,155,Sudan,65
+828,Pepillo,,pmattusevichn0@discuz.net,male,arctic armour,Occultist,pvowellsn0,196,France,92
+829,Julieta,Ribchester,jribchestern1@ehow.com,male,arctic armour,Deadeye,jribchestern1,401,Japan,83
+830,Randee,,rfernien2@g.co,male,barrage,Champion,rroggern2,54,Azerbaijan,32
+831,,Royston,lroystonn3@opensource.org,male,barrage,Slayer,proystonn3,62,South Korea,66
+832,Carroll,Bruins,cbruinsn4@senate.gov,male,barrage,Slayer,cbruinsn4,330,Guam,47
+833,Sergent,Boddington,sboddingtonn5@squarespace.com,male,arctic armour,Deadeye,sboddingtonn5,288,Iraq,38
+834,Kikelia,Benn,kbennn6@pagesperso-orange.fr,male,barrage,Occultist,kbennn6,114,Uruguay,89
+835,Justino,,jtreadwayn7@usatoday.com,male,arctic armour,Chieftain,jvarndelln7,90,North Korea,88
+836,Zuzana,,zlefeuvren8@istockphoto.com,male,barrage,Slayer,zsoppittn8,352,Tajikistan,38
+837,Clayson,Guihen,cguihenn9@archive.org,male,barrage,Inquisitor,cguihenn9,27,Yemen,68
+838,Maxy,,mgwilymna@seesaa.net,male,animate weapon,Chieftain,mhucklebyna,130,South Georgia and the South Sandwich Islands,8
+839,Morie,,mantonuttinb@mit.edu,male,arctic armour,Elementalist,msamplenb,2,Jamaica,15
+840,Rafferty,,rkeemarnc@tumblr.com,male,barrage,Assassin,rtrentnc,46,Zimbabwe,83
+841,Sandie,,sdubocknd@furl.net,male,animate weapon,Necromancer,sastellnd,142,Sri Lanka,35
+842,Noelle,,nvardenne@furl.net,male,animate weapon,Gladiator,nmacgaheyne,99,Italy,54
+843,L;urette,Crop,lcropnf@tamu.edu,male,animate weapon,Trickster,lcropnf,442,Saint Barthelemy,44
+844,Orson,Aire,oaireng@taobao.com,male,animate weapon,Pathfinder,oaireng,345,Laos,24
+845,Lenci,Dunabie,ldunabienh@cafepress.com,male,barrage,Elementalist,ldunabienh,385,Argentina,59
+846,Gregorio,Gary,ggaryni@mail.ru,male,arctic armour,Elementalist,ggaryni,119,Ireland,42
+847,Hewitt,,hbroadberenj@live.com,male,barrage,Inquisitor,hravenscrofttnj,328,South Georgia and the South Sandwich Islands,50
+848,Guglielmo,Lunge,glungenk@usda.gov,male,animate weapon,Saboteur,glungenk,309,Benin,71
+849,Camella,Janatka,cjanatkanl@spiegel.de,male,arctic armour,Berserker,cjanatkanl,308,Kuwait,8
+850,Sascha,Odam,sodamnm@slate.com,male,barrage,Slayer,sodamnm,405,Malta,18
+851,Wilek,,wflottnn@cornell.edu,male,barrage,Pathfinder,wbucktharpnn,378,Republic of the Congo,4
+852,Bastien,,bdonnerno@miibeian.gov.cn,male,animate weapon,Assassin,bwhateno,410,South Georgia and the South Sandwich Islands,62
+853,Bella,,blittefairnp@sun.com,male,animate weapon,Trickster,bpantlingnp,151,Guatemala,2
+854,Guglielmo,,garchibouldnq@taobao.com,male,animate weapon,Trickster,gmeekingsnq,381,Madagascar,35
+855,Amble,,aahmadnr@g.co,male,arctic armour,Juggernaut,acurlessnr,353,Ivory Coast,22
+856,,Barfitt,lbarfittns@foxnews.com,male,barrage,Champion,jbarfittns,54,Pakistan,20
+857,Nickey,Brower,nbrowernt@blogspot.com,male,arctic armour,Hierophant,nbrowernt,209,Mozambique,75
+858,,Thorowgood,kthorowgoodnu@altervista.org,male,arctic armour,Chieftain,bthorowgoodnu,313,Bhutan,70
+859,Carina,Mantrip,cmantripnv@bbb.org,male,barrage,Saboteur,cmantripnv,8,Palestinian Territory,5
+860,Glynnis,Beament,gbeamentnw@opera.com,male,barrage,Elementalist,gbeamentnw,179,Latvia,91
+861,Ula,,umechellnx@theatlantic.com,male,animate weapon,Chieftain,uabrashkinnx,199,Honduras,36
+862,Skelly,,sandriessenny@auda.org.au,male,animate weapon,Elementalist,sjahnelny,153,Sierra Leone,12
+863,Cati,Cutill,ccutillnz@nih.gov,male,barrage,Inquisitor,ccutillnz,148,Nepal,74
+864,Kori,Ralston,kralstono0@google.nl,male,arctic armour,Champion,kralstono0,328,Nigeria,60
+865,Saunder,Fairburn,sfairburno1@bloomberg.com,male,barrage,Champion,sfairburno1,71,Colombia,82
+866,,,dnurdeno2@github.io,male,arctic armour,Champion,wcaprono2,358,Taiwan,52
+867,Manda,Kitman,mkitmano3@printfriendly.com,male,barrage,Pathfinder,mkitmano3,387,Jordan,6
+868,Rhea,,rcarsbergo4@chronoengine.com,male,arctic armour,Chieftain,rpashbyo4,309,Jamaica,99
+869,Elyn,Ovendale,eovendaleo5@cbsnews.com,male,barrage,Trickster,eovendaleo5,144,Bosnia and Herzegovina,97
+870,Jordan,,jtippingso6@cnet.com,male,arctic armour,Hierophant,jbraemero6,97,South Georgia and the South Sandwich Islands,44
+871,Tiertza,,tginnalyo7@theguardian.com,male,barrage,Pathfinder,tcowlishawo7,103,Uzbekistan,2
+872,Jerrine,Baythorp,jbaythorpo8@ted.com,male,barrage,Juggernaut,jbaythorpo8,107,Ghana,33
+873,Hyacintha,Eyckelberg,heyckelbergo9@youtube.com,male,animate weapon,Hierophant,heyckelbergo9,132,Peru,3
+874,Reggie,Tace,rtaceoa@narod.ru,male,barrage,Slayer,rtaceoa,398,Mauritania,87
+875,Lynnell,Battersby,lbattersbyob@discovery.com,male,animate weapon,Chieftain,lbattersbyob,151,Mauritania,5
+876,Belinda,,bsaffeoc@statcounter.com,male,barrage,Occultist,bgaitskilloc,152,Uruguay,94
+877,Victoir,,vspinozziod@indiatimes.com,male,animate weapon,Champion,vhoysod,265,Venezuela,6
+878,Merna,Francis,mfrancisoe@multiply.com,male,barrage,Deadeye,mfrancisoe,43,Kosovo,98
+879,Ogden,,oburnyateof@biblegateway.com,male,barrage,Ascendant,oshellyof,105,Slovenia,66
+880,Scarlett,Shotter,sshotterog@rediff.com,male,animate weapon,Necromancer,sshotterog,362,Micronesia,66
+881,Den,Sapena,dsapenaoh@tumblr.com,male,barrage,Berserker,dsapenaoh,51,Republic of the Congo,77
+882,Peta,Spellacey,pspellaceyoi@geocities.jp,male,barrage,Pathfinder,pspellaceyoi,111,Kenya,22
+883,Evania,Minmagh,eminmaghoj@cisco.com,male,animate weapon,Trickster,eminmaghoj,239,Zambia,72
+884,Bartram,,bbleackleyok@google.es,male,animate weapon,Hierophant,bformbyok,322,Haiti,23
+885,Arlena,,abettlesol@gmpg.org,male,barrage,Trickster,abruhnkeol,118,Myanmar,53
+886,Tomasine,Hulme,thulmeom@dailymail.co.uk,male,barrage,Deadeye,thulmeom,241,Ghana,87
+887,Derk,Titherington,dtitheringtonon@mapy.cz,male,barrage,Saboteur,dtitheringtonon,174,Vietnam,8
+888,Debra,,dantoniatoo@paginegialle.it,male,arctic armour,Slayer,dhelixoo,82,Nicaragua,77
+889,Leonhard,,lrajchertop@baidu.com,male,barrage,Inquisitor,lcurraoop,126,Syria,72
+890,Ilka,,ifranzoq@livejournal.com,male,barrage,Deadeye,ibrisseauoq,333,Djibouti,1
+891,Artemus,,aglennonor@time.com,male,animate weapon,Saboteur,adiveor,384,Laos,36
+892,Temp,,tmarcombeos@dailymail.co.uk,male,barrage,Slayer,trebbeckos,118,Italy,1
+893,Trescha,,tgilliot@nhs.uk,male,animate weapon,Gladiator,tdundonot,219,Comoros,84
+894,Anissa,Philipson,aphilipsonou@skype.com,male,barrage,Hierophant,aphilipsonou,159,Syria,35
+895,Randie,,rhastieov@freewebs.com,male,barrage,Pathfinder,rrolinov,100,South Georgia and the South Sandwich Islands,13
+896,Evanne,Manion,emanionow@so-net.ne.jp,male,barrage,Champion,emanionow,209,Somalia,52
+897,Susana,,sstonierox@imageshack.us,male,animate weapon,Elementalist,spimmeox,378,Uganda,39
+898,Bess,,brobbeoy@gizmodo.com,male,arctic armour,Slayer,bbenedickoy,268,Benin,29
+899,Merl,Barenski,mbarenskioz@goo.ne.jp,male,barrage,Chieftain,mbarenskioz,127,Norway,87
+900,,Medcraft,lmedcraftp0@yale.edu,male,barrage,Juggernaut,lmedcraftp0,431,Israel,86
+901,Annamaria,,acaserop1@yelp.com,male,barrage,Raider,aburginp1,319,Germany,84
+902,Sanderson,Dymick,sdymickp2@patch.com,male,barrage,Inquisitor,sdymickp2,121,Slovenia,46
+903,Rebbecca,McSwan,rmcswanp3@archive.org,male,animate weapon,Guardian,rmcswanp3,327,Netherlands,68
+904,Reinaldo,,rwimmersp4@senate.gov,male,animate weapon,Elementalist,rchasmoorp4,58,South Africa,42
+905,Daryl,,dtampenp5@sfgate.com,male,barrage,Occultist,dgiffautp5,50,Azerbaijan,3
+906,,Di Carli,fdicarlip6@kickstarter.com,male,animate weapon,Berserker,qdicarlip6,108,Madagascar,77
+907,Morey,,mfluxp7@slideshare.net,male,barrage,Assassin,mjerrandp7,284,Saint Barthelemy,56
+908,Sibyl,Jamrowicz,sjamrowiczp8@merriam-webster.com,male,barrage,Gladiator,sjamrowiczp8,423,Jordan,91
+909,Jilli,,jblackneyp9@etsy.com,male,barrage,Inquisitor,jhoylesp9,247,Uzbekistan,83
+910,Othella,,oshermarpa@mapquest.com,male,animate weapon,Trickster,oblastockpa,237,Somalia,87
+911,Gerty,Hayne,ghaynepb@about.com,male,barrage,Chieftain,ghaynepb,97,Jamaica,56
+912,Archie,,astuckespc@yelp.com,male,barrage,Pathfinder,awhitnallpc,67,Sweden,90
+913,,Crowdace,mcrowdacepd@marketwatch.com,male,animate weapon,Slayer,pcrowdacepd,74,Iraq,69
+914,Tammy,,tjonsonpe@adobe.com,male,arctic armour,Juggernaut,tfearspe,53,New Caledonia,2
+915,Hammad,Blackaller,hblackallerpf@washington.edu,male,barrage,Saboteur,hblackallerpf,415,Benin,98
+916,Cornie,,cpiolapg@walmart.com,male,barrage,Gladiator,cvispopg,109,Bolivia,40
+917,Aurthur,Alner,aalnerph@ezinearticles.com,male,arctic armour,Hierophant,aalnerph,406,Portugal,4
+918,,,iribeypi@surveymonkey.com,male,animate weapon,Berserker,kcundeypi,104,Estonia,44
+919,Andriana,,adescroixpj@last.fm,male,arctic armour,Saboteur,aruddimanpj,430,Palestinian Territory,68
+920,Corbett,,creisensteinpk@exblog.jp,male,animate weapon,Elementalist,cpalisterpk,350,Japan,37
+921,Lidia,Akitt,lakittpl@mediafire.com,male,animate weapon,Gladiator,lakittpl,434,Mexico,13
+922,Chrysler,Redmire,credmirepm@ca.gov,male,barrage,Ascendant,credmirepm,206,Haiti,64
+923,Sylas,,srouncepn@nationalgeographic.com,male,barrage,Ascendant,sorrockpn,186,Russia,74
+924,,,jwhittypo@homestead.com,male,animate weapon,Slayer,wfolomkinpo,52,Croatia,9
+925,Lionel,Curton,lcurtonpp@scribd.com,male,animate weapon,Champion,lcurtonpp,37,South Georgia and the South Sandwich Islands,57
+926,Celene,Fry,cfrypq@homestead.com,male,animate weapon,Ascendant,cfrypq,258,Kuwait,74
+927,,Northen,knorthenpr@last.fm,male,arctic armour,Chieftain,nnorthenpr,210,Myanmar,24
+928,,Cayette,ocayetteps@google.com.hk,male,barrage,Ascendant,scayetteps,37,Myanmar,97
+929,Carmelle,,cdeglanvillept@yahoo.com,male,barrage,Occultist,chayllerpt,87,Estonia,84
+930,Blinny,Durning,bdurningpu@t.co,male,animate weapon,Trickster,bdurningpu,63,Iraq,86
+931,,,tcargopv@bbb.org,male,arctic armour,Juggernaut,eshuardpv,339,Armenia,28
+932,,Agott,eagottpw@reference.com,male,arctic armour,Assassin,gagottpw,253,Uzbekistan,95
+933,Rafa,,rlincolnpx@washington.edu,male,barrage,Necromancer,rdyblepx,300,Kuwait,19
+934,Barnett,Alfonzo,balfonzopy@bloglines.com,male,arctic armour,Saboteur,balfonzopy,366,Ukraine,68
+935,Janeczka,McLay,jmclaypz@oakley.com,male,barrage,Inquisitor,jmclaypz,5,Ethiopia,55
+936,Chrissy,,cboeckeq0@quantcast.com,male,animate weapon,Occultist,cbengtsonq0,61,Morocco,22
+937,Allyce,Daubney,adaubneyq1@google.com.au,male,arctic armour,Hierophant,adaubneyq1,296,Portugal,7
+938,Grete,Tythe,gtytheq2@acquirethisname.com,male,animate weapon,Berserker,gtytheq2,236,Albania,29
+939,Theodore,,tsulterq3@com.com,male,barrage,Chieftain,tleestutq3,238,Svalbard and Jan Mayen,17
+940,Alidia,Threadgold,athreadgoldq4@squidoo.com,male,barrage,Inquisitor,athreadgoldq4,234,Argentina,52
+941,Ralf,Sandey,rsandeyq5@163.com,male,arctic armour,Ascendant,rsandeyq5,186,Guatemala,33
+942,Rutherford,Glasser,rglasserq6@constantcontact.com,male,arctic armour,Slayer,rglasserq6,72,Namibia,43
+943,Ninnette,,ntracyq7@1688.com,male,barrage,Ascendant,nsimonettq7,24,Bulgaria,80
+944,Chastity,Kitcat,ckitcatq8@si.edu,male,barrage,Inquisitor,ckitcatq8,125,Sierra Leone,13
+945,Daryl,,dscriverq9@dagondesign.com,male,barrage,Ascendant,drodriguezq9,245,Iraq,35
+946,,,awetwoodqa@xinhuanet.com,male,arctic armour,Gladiator,rjovicevicqa,87,Micronesia,19
+947,Mead,Tuttle,mtuttleqb@hibu.com,male,arctic armour,Raider,mtuttleqb,181,Guam,42
+948,Mersey,McBryde,mmcbrydeqc@apache.org,male,arctic armour,Inquisitor,mmcbrydeqc,286,Moldova,68
+949,Kristi,Furse,kfurseqd@posterous.com,male,animate weapon,Deadeye,kfurseqd,438,Belarus,24
+950,Rona,Fewkes,rfewkesqe@latimes.com,male,barrage,Hierophant,rfewkesqe,233,Belize,24
+951,Hermine,,hmulchroneqf@businessweek.com,male,barrage,Saboteur,hgroseqf,314,Kazakhstan,1
+952,Lorenza,MacScherie,lmacscherieqg@icq.com,male,barrage,Occultist,lmacscherieqg,444,Peru,30
+953,Kally,Patient,kpatientqh@cdbaby.com,male,barrage,Deadeye,kpatientqh,109,Somalia,77
+954,Felipe,,fellwoodqi@mit.edu,male,barrage,Berserker,fclemasqi,401,Palestinian Territory,39
+955,Dianemarie,,dheinemannqj@xrea.com,male,barrage,Ascendant,dkitchersideqj,308,Myanmar,19
+956,Dodi,,dhargeyqk@kickstarter.com,male,animate weapon,Chieftain,ddackeqk,233,Ecuador,55
+957,,Creany,pcreanyql@zimbio.com,male,barrage,Slayer,mcreanyql,323,Senegal,96
+958,,Rohfsen,orohfsenqm@tuttocitta.it,male,arctic armour,Gladiator,frohfsenqm,244,South Sudan,59
+959,Harlin,Manion,hmanionqn@gnu.org,male,animate weapon,Necromancer,hmanionqn,209,Iraq,62
+960,Jacquetta,Savary,jsavaryqo@eventbrite.com,male,animate weapon,Pathfinder,jsavaryqo,133,Jordan,48
+961,,Stangoe,bstangoeqp@google.co.jp,male,arctic armour,Gladiator,gstangoeqp,438,Honduras,45
+962,Brittni,Deaconson,bdeaconsonqq@ucoz.ru,male,arctic armour,Ascendant,bdeaconsonqq,108,Palestinian Territory,68
+963,Horace,,hlillecrapqr@dot.gov,male,barrage,Assassin,haustickqr,85,Laos,69
+964,Silvan,Slesser,sslesserqs@liveinternet.ru,male,barrage,Slayer,sslesserqs,447,Zambia,64
+965,Nonie,Lawson,nlawsonqt@wikispaces.com,male,animate weapon,Gladiator,nlawsonqt,149,Bosnia and Herzegovina,57
+966,Doris,,dfortinqu@rambler.ru,male,animate weapon,Elementalist,dkinneirqu,21,Ethiopia,77
+967,Diane,,dsetonqv@last.fm,male,animate weapon,Pathfinder,dgoulderqv,357,Myanmar,61
+968,Randy,Lindbergh,rlindberghqw@netvibes.com,male,barrage,Chieftain,rlindberghqw,394,Eritrea,79
+969,Eba,Siddaley,esiddaleyqx@telegraph.co.uk,male,animate weapon,Juggernaut,esiddaleyqx,100,Macedonia,46
+970,,,mswindleqy@opera.com,male,barrage,Assassin,omayoralqy,352,Azerbaijan,47
+971,Adelice,,aschultzqz@chicagotribune.com,male,barrage,Ascendant,alesperqz,129,Netherlands,9
+972,Mickie,,mcolcloughr0@godaddy.com,male,animate weapon,Guardian,mshillomr0,410,Eritrea,5
+973,Codee,,cwhitterr1@dyndns.org,male,animate weapon,Occultist,cgoadyr1,117,Tanzania,83
+974,Nowell,,npaulingr2@mozilla.com,male,arctic armour,Ascendant,njiggler2,38,New Zealand,5
+975,Suki,Cleatherow,scleatherowr3@army.mil,male,barrage,Hierophant,scleatherowr3,298,Bhutan,49
+976,Dulce,Dudin,ddudinr4@constantcontact.com,male,arctic armour,Saboteur,ddudinr4,434,Laos,12
+977,Constance,Osburn,cosburnr5@guardian.co.uk,male,barrage,Inquisitor,cosburnr5,36,Somalia,18
+978,Norris,Andrejevic,nandrejevicr6@liveinternet.ru,male,animate weapon,Guardian,nandrejevicr6,116,Belarus,64
+979,Devinne,,dmayberryr7@ifeng.com,male,animate weapon,Gladiator,dbattistar7,313,Somalia,11
+980,Wake,Ashwood,washwoodr8@addtoany.com,male,animate weapon,Saboteur,washwoodr8,103,Namibia,6
+981,Gisele,Varvell,gvarvellr9@facebook.com,male,barrage,Elementalist,gvarvellr9,147,New Zealand,46
+982,Cayla,Strephan,cstrephanra@seattletimes.com,male,animate weapon,Hierophant,cstrephanra,283,Moldova,91
+983,,,jgellibrandrb@homestead.com,male,arctic armour,Trickster,craubenheimerrb,10,Greece,59
+984,,,khunnywellrc@privacy.gov.au,male,animate weapon,Occultist,gmeiningenrc,235,North Korea,13
+985,Glynn,,gmylesrd@meetup.com,male,barrage,Deadeye,goduilleainrd,378,Democratic Republic of the Congo,92
+986,Kelcie,Boni,kbonire@phpbb.com,male,barrage,Raider,kbonire,212,Ukraine,58
+987,Artemas,Meader,ameaderrf@digg.com,male,animate weapon,Inquisitor,ameaderrf,307,Syria,77
+988,Wald,Skures,wskuresrg@ihg.com,male,animate weapon,Berserker,wskuresrg,3,Ivory Coast,53
+989,Fenelia,Vigrass,fvigrassrh@flickr.com,male,arctic armour,Deadeye,fvigrassrh,344,Uruguay,32
+990,Konrad,,khuguesri@google.co.uk,male,barrage,Pathfinder,klatheyri,357,Luxembourg,38
+991,Nannie,,nbanaszewskirj@lycos.com,male,barrage,Inquisitor,nackredrj,282,Sierra Leone,78
+992,Francis,,flerohanrk@nps.gov,male,barrage,Occultist,fpragnallrk,375,Democratic Republic of the Congo,52
+993,,,pfentyrl@va.gov,male,barrage,Raider,rkubistarl,424,Colombia,49
+994,Ozzie,Downing,odowningrm@wired.com,male,animate weapon,Ascendant,odowningrm,340,Nepal,89
+995,Addison,,atatchellrn@go.com,male,barrage,Necromancer,abellefantrn,177,Tajikistan,73
+996,Irma,Shelton,isheltonro@dion.ne.jp,male,barrage,Raider,isheltonro,427,Somalia,23
+997,Abbey,Varran,avarranrp@twitter.com,male,animate weapon,Elementalist,avarranrp,61,Madagascar,99
+998,Donny,Balden,dbaldenrq@illinois.edu,male,barrage,Saboteur,dbaldenrq,82,Thailand,51
+999,Vikki,Horder,vhorderrr@buzzfeed.com,male,animate weapon,Trickster,vhorderrr,209,Ivory Coast,68

@@ -30,7 +30,7 @@
   function _defineProperty(obj, key, value) {
     if (key in obj) {
       Object.defineProperty(obj, key, {
-        value: value,
+        zombie: value,
         enumerable: true,
         configurable: true,
         writable: true
@@ -1886,7 +1886,7 @@
   var defineProperty = function (obj, key, value) {
     if (key in obj) {
       Object.defineProperty(obj, key, {
-        value: value,
+        zombie: value,
         enumerable: true,
         configurable: true,
         writable: true
@@ -7007,7 +7007,7 @@
   exports.Toast = Toast;
   exports.Tooltip = Tooltip;
 
-  Object.defineProperty(exports, '__esModule', { value: true });
+  Object.defineProperty(exports, '__esModule', { zombie: true });
 
 }));
 //# sourceMappingURL=bootstrap.bundle.js.map
