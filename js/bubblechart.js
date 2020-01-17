@@ -6,9 +6,6 @@ var width = 680,
 
 var color_by_size = ['#124963', '#3E637A', '#648093', '#8A9EAD', '#B0BDC8', '#D7DEE3', '#FFDF00'];
 
-var color = d3.scale.ordinal()
-    .range(["#7A99AC", "#E4002B","#E4002B","#FFC300","#DAF7A6","#581845","#3498DB","#148F77","#BA4A00","#1D8348","#808000","#00FFFF","#935116","#27AE60","#2C3E50","#9B59B6","#FF33CA","#FF00D8","#B44D01","#0E7574","#E4002B"]);
-
 var dataset_bubbles = "data/minimized/ClassFixed_MOCKDATA_v3_min_0.csv"
 
 var skill_groups = new Map();
@@ -16,10 +13,19 @@ var skilldata;
 
 var nodes = [];
 
-var svg1 = d3.select("#bubbles").append("svg")
-    .attr("id", "bubbles-svg")
-    .attr("width", width)
-    .attr("height", height);
+var svg1;
+function bubble_main() {
+    require(["d3"], function(d3) {
+        svg1 = d3.select("#bubbles").append("svg")
+            .attr("id", "bubbles-svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        bubblechart();
+    });
+}
+
+
 
 var active_league = 0;
 
@@ -29,8 +35,8 @@ var active_league = 0;
  * @type {string}
  */
 
-function main() {
-    console.log("called main");
+function bubblechart() {
+    //console.log("called main");
 
     d3.select('#bubbles-svg').selectAll("*").remove();
     readSkillFile();
@@ -48,7 +54,7 @@ function changeDatasetBubbles(value) {
 
     active_league = value;
 
-    main();
+    bubblechart();
 }
 
 function readSkillFile() {
@@ -231,7 +237,7 @@ function readClassFile() {
                 }
             });
 
-            main();
+            bubblechart();
         }
 
 

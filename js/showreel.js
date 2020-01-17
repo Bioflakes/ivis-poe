@@ -1,11 +1,6 @@
 
-require.config({
-    paths: {
-        d3: "https://d3js.org/d3.v5.min"
-    }
-});
 
-require(["d3"], function(d3) {
+require(["d3v5"], function(d3) {
 
 // set the dimensions and margins of the graph
     var margin = {top: 20, right: 20, bottom: 30, left: 40},
@@ -323,4 +318,7 @@ require(["d3"], function(d3) {
         else return"#"+(4294967296+r*16777216+g*65536+b*256+(f?m(a*255):0)).toString(16).slice(1,f?undefined:-2)
     }
 
+
 });
+
+globemap();
