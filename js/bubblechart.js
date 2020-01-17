@@ -203,9 +203,13 @@ function readClassFile() {
                 lastMouseX = getCursorPositionX(d);
                 lastMouseY = getCursorPositionY(d);
 
-                if(!(Math.abs(mouseX - lastMouseX) > 10 || Math.abs(mouseY - lastMouseY) > 10)) {
+                if(!(dict_groups.has(d.text))) {
+                }
+                else if(!(Math.abs(mouseX - lastMouseX) > 10 || Math.abs(mouseY - lastMouseY) > 10)) {
                     display_skills(d);
                 }
+
+
             })
             .on("mouseover", function(d) {
                 //d.style("tooltip", d.text);
