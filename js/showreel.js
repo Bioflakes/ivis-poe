@@ -20,7 +20,7 @@ require(["d3v5"], function(d3) {
 // append the svg object to the body of the page
 // append a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
-    var svg = d3.select("#stackedBarChart").append("svg")
+    var svgChart = d3.select("#stackedBarChart").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
@@ -30,26 +30,26 @@ require(["d3v5"], function(d3) {
 //generate the legend svg
     var legendSvg = d3.select("#stackedBarChart_Legend").append("svg");
 
-    var data2 = d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
+    var data2 = d3.csv("data/MOCK_DATA_Fixed.csv").then(function(dataBarChart) {
 
         // format the data
-        data.forEach(function(d) {
+        dataBarChart.forEach(function(d) {
             d.scion = +d.scion;
             d.maurauder = +d.maurauder;
             d.templar = +d.templar;
             d.zombie = +d.zombie;
         });
 
-        generateLegend(data);
-        generateSortButtons(data);
+        generateLegend(dataBarChart);
+        generateSortButtons(dataBarChart);
         //startview == timeline
-        update(data, "time");
+        update(dataBarChart, "time");
         $('select').val('time');
     });
 
-    function generateDiagram(data){
+    function generateDiagram(dataBarChart){
         //reset the svg
-        svg.selectAll("*").remove(); //clear barchart
+        svgChart.selectAll("*").remove(); //clear barchart
 
         //reset the selected bars
         var element = document.getElementById("selectedDiv");
@@ -58,8 +58,8 @@ require(["d3v5"], function(d3) {
         }
 
         // Scale the range of the data in the domains
-        x.domain(data.map(function(d) { return d.league; }));
-        y.domain([0, d3.max(data, function(d) {
+        x.domain(dataBarChart.map(function(d) { return d.league; }));
+        y.domain([0, d3.max(dataBarChart, function(d) {
             var obj =  d[Object.keys(d)[1]]; //takes the second column value
             for(i = 2; i<= Object.keys(d).length-1; i++){
                 obj = obj + d[Object.keys(d)[i]];
@@ -70,8 +70,8 @@ require(["d3v5"], function(d3) {
         // GENERATE THE BARS
         for(i = 0; i< 4; i++){ //4 is the current number of leagues
             //random memes
-            svg.selectAll(".bar"+i)
-                .data(data)
+            svgChart.selectAll(".bar"+i)
+                .data(dataBarChart)
                 .enter().append("rect")
                 .attr("class", "bar"+i)
                 .attr("x", function(d) {return x(d[Object.keys(d)[0]]); })
@@ -137,7 +137,7 @@ require(["d3v5"], function(d3) {
                         // CODE THAT DISPLAYS THE SPECIFIC VALUES OF SELECTED
                         var infoDivID="infoDiv"+d3.select(this).attr("id");
                         $( "#selectedDiv" ).append( "<div id='"+infoDivID+"' class='infoDiv'><strong>League: </strong>"+d[Object.keys(d)[0]]+"<br>" +
-                            "<strong>Class: </strong>"+d3.keys(data[0])[playerCount]+"<br>" +
+                            "<strong>Class: </strong>"+d3.keys(dataBarChart[0])[playerCount]+"<br>" +
                             "<strong>Count: </strong>"+d[Object.keys(d)[playerCount]]+"<br>" +
                             "</div>" )
                     }
@@ -154,18 +154,18 @@ require(["d3v5"], function(d3) {
         }
 
         // add the x Axis
-        svg.append("g")
+        svgChart.append("g")
             .attr("transform", "translate(0," + height + ")")
             .attr("color", "white")
             .call(d3.axisBottom(x));
 
         // add the y Axis
-        svg.append("g")
+        svgChart.append("g")
             .attr("color", "white")
             .call(d3.axisLeft(y));
 
         // Prep the tooltip bits, initial display is hidden
-        var tooltip = svg.append("g")
+        var tooltip = svgChart.append("g")
             .attr("class", "tooltip")
             .style("display", "none");
 
@@ -184,11 +184,11 @@ require(["d3v5"], function(d3) {
 
     }
 
-    function generateLegend(data){
+    function generateLegend(dataBarChart){
         //TODO: GENERATE THE LEGEND
         // Add one dot in the legend for each name.
 
-        var classData = d3.keys(data[0]);
+        var classData = d3.keys(dataBarChart[0]);
         classData.shift(); //removes first entity of data array
 
         var size = 20;
@@ -206,21 +206,21 @@ require(["d3v5"], function(d3) {
 
         // Add one dot in the legend for each name.
         legendSvg.selectAll("mylabels")
-            .data(d3.keys(data[0]))
+            .data(d3.keys(dataBarChart[0]))
             .enter()
             .append("text")
             .attr("x", size*1.2)
             .attr("y", function(d,i){ return i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
             .style("fill", function(d, i){ return colors[i]})
-            .text(function(d, i){ return d3.keys(data[0])[i+1] })
+            .text(function(d, i){ return d3.keys(dataBarChart[0])[i+1] })
             .attr("text-anchor", "left")
             .style("alignment-baseline", "middle");
     }
 
 
 //TODO: GENERATE SORT BUTTONS
-    function generateSortButtons(data){
-        var classData = d3.keys(data[0]);
+    function generateSortButtons(dataBarChart){
+        var classData = d3.keys(dataBarChart[0]);
         classData.shift();
 
         $('#stackedBarChart_Select').append("<span>Sort by </span>");
@@ -240,7 +240,7 @@ require(["d3v5"], function(d3) {
             .attr("class", function(d) {
                 return "select";
             })
-            .text(function(d, i){ return d3.keys(data[0])[i+1] })// text showed in the menu
+            .text(function(d, i){ return d3.keys(dataBarChart[0])[i+1] })// text showed in the menu
             .attr("value", function (d,i) {return i+1; }) // corresponding value returned by the button
             .style("alignment-baseline", "middle");
 
@@ -257,34 +257,34 @@ require(["d3v5"], function(d3) {
             // recover the option that has been chosen
             var selectedOption = d3.select(this).property("value");
             // run the update function with this selected option
-            update(data, selectedOption);
+            update(dataBarChart, selectedOption);
         })
     }
 
-    function update(data, selectedOption) {
+    function update(dataBarChart, selectedOption) {
         if(selectedOption === "all"){
-            data.sort((a, b) => (b[Object.keys(b)[1]]+b[Object.keys(b)[2]]+b.templar+b.zombie) - (a.scion+a.maurauder+a.templar+a.zombie))
-            generateDiagram(data);
+            dataBarChart.sort((a, b) => (b[Object.keys(b)[1]]+b[Object.keys(b)[2]]+b.templar+b.zombie) - (a.scion+a.maurauder+a.templar+a.zombie))
+            generateDiagram(dataBarChart);
         }
         else if(selectedOption === "time"){
-            var time = d3.csv("data/MOCK_DATA_Fixed.csv").then(function(data) {
+            var time = d3.csv("data/MOCK_DATA_Fixed.csv").then(function(dataBarChart) {
                 // format the data
-                data.forEach(function(d) {
+                dataBarChart.forEach(function(d) {
                     d.scion = +d.scion;
                     d.maurauder = +d.maurauder;
                     d.templar = +d.templar;
                     d.zombie = +d.zombie;
                 });
 
-                generateDiagram(data);
+                generateDiagram(dataBarChart);
             });
         }
         else {
             //sort the different data according to the selected option
-            data.sort(function (a, b) {
+            dataBarChart.sort(function (a, b) {
                 return b[Object.keys(a)[selectedOption]] - a[Object.keys(a)[selectedOption]];
             });
-            generateDiagram(data);
+            generateDiagram(dataBarChart);
         }
     }
 

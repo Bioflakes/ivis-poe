@@ -187,18 +187,18 @@ function globemap() {
 
 
                 //Globe rotating
-                (function transition() {
-                    d3.transition()
-                        .duration(2500)
-                        .tween("rotate", function() {
-                            var r = d3.interpolate(projection.rotate(), [-p[0], -p[1]]);
-                            return function(t) {
-                                projection.rotate(r(t));
-                                svg.selectAll("path").attr("d", path)
-                                    .classed("focused", function(d, i) { return d.id == focusedCountry.id ? focused = d : false; });
-                            };
-                        })
-                })();
+                // (function transition() {
+                //     d3.transition()
+                //         .duration(2500)
+                //         .tween("rotate", function() {
+                //             var r = d3.interpolate(projection.rotate(), [-p[0], -p[1]]);
+                //             return function(t) {
+                //                 projection.rotate(r(t));
+                //                 svg.selectAll("path").attr("d", path)
+                //                     .classed("focused", function(d, i) { return d.id == focusedCountry.id ? focused = d : false; });
+                //             };
+                //         })
+                // })();
             });
 
             function country(cnt, sel) {

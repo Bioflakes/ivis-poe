@@ -80,10 +80,12 @@ h1{
 }
 .legend{
     display: inline-grid;
-    position: absolute;
+    /* position: absolute; */
     /* margin-left: 53rem; */
     /* margin-top: 2rem; */
-    right: 220px;
+    float: right;
+    margin-bottom: -19rem;
+    width: 36rem;
 }
 .rect{
     width: 20px;
