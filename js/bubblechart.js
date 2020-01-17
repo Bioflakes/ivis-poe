@@ -1,5 +1,5 @@
-var width = 1080,
-    height = 900,
+var width = 680,
+    height = 550,
     padding = 80, // separation between same-color nodes
     clusterPadding = 90, // separation between different-color nodes
     maxRadius = 12;

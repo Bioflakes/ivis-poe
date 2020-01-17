@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+#bubbles{
+    margin-bottom: 5rem;
+    margin-top: 7rem;
+}
 body {
    /*background-image: url('/img/blight-bg.jpg');
     background-position: center center;
@@ -61,6 +64,10 @@ select {
     font-size: 14px;
     font-family: sans-serif;
 }
+h1{
+    text-align: center;
+    margin-top: 2rem;
+}
 #selectOption{
     background: #104761;
     border: .1rem solid #e2d8a4;
@@ -73,13 +80,13 @@ select {
     position: absolute;
     /* margin-left: 53rem; */
     /* margin-top: 2rem; */
-    right: 200px;
+    right: 220px;
 }
 .rect{
     width: 20px;
     height: 20px;
     outline: dashed;
-    outline-offset: -5px;
+    outline-offset: -6px;
     margin: .5rem;
 }
  .lg1{

@@ -17,7 +17,7 @@ select{
     width: 6.5rem;
 }
 .barContainer{
-    margin-bottom: 13rem;
+    margin-bottom: 5rem;
     margin-top: 5rem;
 }
 .container {
@@ -46,6 +46,9 @@ select{
 }
 
 #selectedDiv{
+    display: flex; /* or inline-flex */
+}
+#selectedDiv2{
     display: flex; /* or inline-flex */
 }
 
