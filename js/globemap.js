@@ -31,7 +31,6 @@ function getData(nameCSV){
         function ready(error, world, countryData, cityData, classData, leagueData) {
                 var countryById = {},
                     countries = topojson.feature(world, world.objects.countries).features;
-                console.log(countries);
 
                 //Adding countries to select
                 countryData.forEach(function(d) {
@@ -49,7 +48,6 @@ function getData(nameCSV){
                     .key(function(d) { return d.country; })
                     .rollup(function(v) { return v.length; })
                     .entries(classData);
-                console.log(JSON.stringify(countryClasssCount));
 
                 // define colorScale for heatmapped data
                 var colorScale = d3.scale.threshold()
@@ -150,7 +148,7 @@ function changeDataset(value) {
     dataset = "data/minimized/ClassFixed_MOCKDATA_v3_" + value + ".csv";
     sliderValue = value;
     getData(dataset);
-    changeDatasetBubbles(dataset);
+    changeDatasetBubbles(value);
 }
 
 

@@ -36,7 +36,6 @@ var active_league = 0;
  */
 
 function bubblechart() {
-    //console.log("called main");
 
     d3.select('#bubbles-svg').selectAll("*").remove();
     readSkillFile();
@@ -61,8 +60,6 @@ function readSkillFile() {
     d3.text("data/SKILL_LIST.csv", function(error, skilltext) {
         if(error) throw error;
 
-        console.log("reading skill file");
-
         var headers = skilltext;
 
         skilldata = d3.csv.parse(headers);
@@ -79,19 +76,10 @@ function readClassFile() {
     d3.text(dataset_bubbles, function(error, text) {
         if (error) throw error;
 
-
-
-
-        console.log(skill_groups);
-
-
         var colNames = text;
-        //console.log("colnames are : " + colNames);
+
         // data as an object Object
         var data = d3.csv.parse(colNames);
-
-        //console.log("Data is : " + data + "\n");
-        //console.log("ColName is : " + colNames);
 
         var dict_groups = new Map();
 
@@ -108,23 +96,16 @@ function readClassFile() {
                 dict_groups.set(d.class, dict_groups.get(d.class)+1)
             }
 
-            //console.log(d.gender);
-            //d.size = +d.size;
-            //console.log("doing some shit with d+ size - " + d.size);
         })
 
-        console.log()
 
         let value = 0;
         var indexed_classes = [];
         for (let key of dict_groups.keys()) {
-            console.log(key + ': ' + dict_groups.get(key));
             value = value + dict_groups.get(key);
             // pushes to a list of indexed classes, for use in grouping them together
             indexed_classes.push(key).toString();
         }
-        //console.log("amount of classes: " + value);
-        //console.log("Indexed classes: " + indexed_classes);
 
 
         /**
@@ -140,9 +121,6 @@ function readClassFile() {
 
             }
         });
-
-        //console.log("length of grouped classes: " + grouped_classes.length);
-        //console.log("grouped classes are: " + grouped_classes);
 
         var n = data.length, // total number of nodes
             m = grouped_classes.length; // number of distinct clusters
@@ -169,9 +147,6 @@ function readClassFile() {
                 var randomSkill = Math.floor(Math.random() * skill_groups.size);
                 d.text = skill_groups.get(randomSkill.toString());
                 d.radius = (Math.random() * 3)+1;
-                //d.text = d.radius;
-                //console.log("random number: " + randomSkill);
-                //console.log("randomed " + skill_groups.get(randomSkill.toString()));
                 hidden_nodes.push(d);
             }
 
@@ -184,7 +159,6 @@ function readClassFile() {
             .charge(0)
             .on("tick", tick)
             .start()
-        console.log("called tick");
 
 
 
@@ -197,7 +171,6 @@ function readClassFile() {
             .on("mousedown", function(d) {
                 mouseX = getCursorPositionX(d);
                 mouseY = getCursorPositionY(d);
-                console.log("pos is: " + mouseX + " " + mouseY);
             })
             .on("mouseup", function(d) {
                 lastMouseX = getCursorPositionX(d);
@@ -231,12 +204,6 @@ function readClassFile() {
 
             hidden_nodes.forEach(function(node) {
                 if(d.cluster === node.cluster) {
-                    console.log("----------------------------------------------------------");
-                    console.log("node cluster: " + node.cluster + " - given data cluster: " + d.cluster);
-                    console.log("node text: " + node.text + " - given text: " + d.text);
-
-                    console.log("d - " + JSON.stringify(d));
-                    console.log("node - " + JSON.stringify(node));
                     nodes.push(node);
                 }
             });
@@ -277,8 +244,6 @@ function readClassFile() {
             })
             .attr("r", function(d){
                 if(dict_groups.has(d.text)) {
-                    //existing_playerclass.push(d.text);
-                    //console.log("pushed to list" + d.text);
                     return d.radius*6;
                 }
                 else {
@@ -302,7 +267,6 @@ function readClassFile() {
             // gets data[i].group id
             // has to be changed or worked around with ids
             //
-            // console.log("data node counter : " + data[node_counter].class)
             var i = indexed_classes.indexOf(data[node_counter].class),
                 r = Math.sqrt((i + 1) / m * -Math.log(Math.random())) * maxRadius,
                 d = {
@@ -314,30 +278,16 @@ function readClassFile() {
                     y: Math.sin(i / m * 2 * Math.PI) * 200 + height / 2 + Math.random()
                 };
 
-            //console.log("data is : " + data[node_counter].class);
-            //console.log("i = " + i);
-            //console.log("r = " + r);
-            //console.log("d = cluster: " + d.cluster + "\nradius: " +d.radius + "\ntext: " +d.text + "\nx, y: " + d.x + ", " +d.y);
-            //
-            // checks if group id exists in the clusters array
-            // or if r (radius) is bigger than the radius of the cluster item
             if (!clusters[i] || (r > clusters[i].radius)) clusters[i] = d;
             return d;
         };
 
 
-
-        console.log("nodes are: " + JSON.stringify(nodes[0]));
-
-
         function tick(e) {
-            //console.log("entered tick function.");
-            //console.log("event is: " + e.x);
             node.each(cluster(10 * e.alpha * e.alpha))
                 .each(collide(.5))
                 .attr("transform", function (d) {
 
-                    //console.log("d.x and d.y are: " +d.x+"-"+d.y);
                     var k = "translate(" + d.x + "," + d.y + ")";
                     return k;
                 })
@@ -353,7 +303,6 @@ function readClassFile() {
                     y = d.y - cluster.y,
                     l = Math.sqrt(x * x + y * y),
                     r = d.radius + cluster.radius;
-                //console.log("radius in cluster function: " + r);
                 if (l != r) {
                     l = (l - r) / l * alpha;
                     d.x -= x *= l;
