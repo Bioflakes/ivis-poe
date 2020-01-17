@@ -116,8 +116,8 @@ function getData(nameCSV){
                         }
 
                         // CODE THAT DISPLAYS THE SPECIFIC VALUES OF SELECTED
-                        var infoDivID="infoDiv"+countryById[d.id];
-
+                        var infoDivID= "infoDivGlobe";
+                        $("#infoDivGlobe").remove();
                         $( "#selectedDiv2" ).append( "<div id='"+infoDivID+"' class='infoDiv'><strong>League: </strong>"+leagueValue+"<br>" +
                             "<strong>Country: </strong>"+countryById[d.id]+"<br>" +
                             "<strong>Count: </strong>"+count+"<br>" +

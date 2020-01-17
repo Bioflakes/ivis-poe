@@ -202,7 +202,7 @@ require(["d3v5"], function(d3) {
             .attr("height", size)
             .style("fill", function(d, i){ return colors[i]})
             .style("outline", "dashed")
-            .style("outline-offset", "-5px");
+            .style("outline-offset", "-2.7px");
 
         // Add one dot in the legend for each name.
         legendSvg.selectAll("mylabels")
