@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="48576897-ed1a-4a07-a59e-6bbc569ea386" name="Default Changelist" comment="fixed colors 2.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/globeStylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/globeStylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/bubblechart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bubblechart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/showreel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/showreel.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,8 +27,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="901">
-                  <caret line="95" column="30" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
+                <state relative-caret-position="3009">
+                  <caret line="177" selection-start-line="177" selection-end-line="177" />
                 </state>
               </provider>
             </entry>
@@ -48,8 +45,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/bubblechart.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="833">
-                  <caret line="234" selection-start-line="234" selection-end-line="234" />
+                <state relative-caret-position="271">
+                  <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -75,8 +72,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/showreel.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4318">
-                  <caret line="254" lean-forward="true" selection-start-line="254" selection-end-line="254" />
+                <state relative-caret-position="811">
+                  <caret line="254" selection-start-line="254" selection-end-line="254" />
                 </state>
               </provider>
             </entry>
@@ -105,7 +102,6 @@
       <find>centersc</find>
       <find>g</find>
       <find>nodes</find>
-      <find>random</find>
       <find>unpadd</find>
       <find>split</find>
       <find>changeda</find>
@@ -116,6 +112,7 @@
       <find>svg</find>
       <find>d.radius</find>
       <find>contains</find>
+      <find>random</find>
     </findStrings>
     <replaceStrings>
       <replace>data</replace>
@@ -278,6 +275,7 @@
       <workItem from="1579189067419" duration="583000" />
       <workItem from="1579190853003" duration="1254000" />
       <workItem from="1579211038947" duration="3037000" />
+      <workItem from="1579255780878" duration="523000" />
     </task>
     <task id="LOCAL-00001" summary="added d3.js globe">
       <created>1575562416130</created>
@@ -332,13 +330,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68989000" />
+    <option name="totallyTimeSpent" value="69512000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2931442" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29293993" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -355,8 +353,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="8" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.500394" side_tool="true" visible="true" weight="0.030935809" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49960598" visible="true" weight="0.030935809" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50105375" side_tool="true" visible="true" weight="0.032502707" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49894625" visible="true" weight="0.032502707" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -479,27 +477,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/world-110m.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/showreel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4318">
-          <caret line="254" lean-forward="true" selection-start-line="254" selection-end-line="254" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/globeStylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="95" column="30" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
+        <state relative-caret-position="3009">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
         </state>
       </provider>
     </entry>
@@ -510,10 +491,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/globeStylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/world-110m.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/showreel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="811">
+          <caret line="254" selection-start-line="254" selection-end-line="254" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/bubblechart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="234" selection-start-line="234" selection-end-line="234" />
+        <state relative-caret-position="271">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>

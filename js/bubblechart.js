@@ -16,6 +16,11 @@ var skilldata;
 
 var nodes = [];
 
+var svg1 = d3.select("#bubbles").append("svg")
+    .attr("id", "bubbles-svg")
+    .attr("width", width)
+    .attr("height", height);
+
 var active_league = 0;
 
 /**
@@ -27,7 +32,7 @@ var active_league = 0;
 function main() {
     console.log("called main");
 
-    d3.select('#bubbles-svg').remove();
+    d3.select('#bubbles-svg').selectAll("*").remove();
     readSkillFile();
     readClassFile();
 }
@@ -157,7 +162,7 @@ function readClassFile() {
             else {
                 var randomSkill = Math.floor(Math.random() * skill_groups.size);
                 d.text = skill_groups.get(randomSkill.toString());
-                d.radius = (Math.random() * 2)+1;
+                d.radius = (Math.random() * 3)+1;
                 //d.text = d.radius;
                 //console.log("random number: " + randomSkill);
                 //console.log("randomed " + skill_groups.get(randomSkill.toString()));
@@ -175,11 +180,6 @@ function readClassFile() {
             .start()
         console.log("called tick");
 
-
-        var svg1 = d3.select("#bubbles").append("svg")
-            .attr("id", "bubbles-svg")
-            .attr("width", width)
-            .attr("height", height);
 
 
         var mouseX, mouseY;
@@ -225,8 +225,6 @@ function readClassFile() {
                     console.log("node cluster: " + node.cluster + " - given data cluster: " + d.cluster);
                     console.log("node text: " + node.text + " - given text: " + d.text);
 
-
-
                     console.log("d - " + JSON.stringify(d));
                     console.log("node - " + JSON.stringify(node));
                     nodes.push(node);
@@ -241,26 +239,25 @@ function readClassFile() {
         node.append("circle")
             .style("fill", function (d) {
 
-                if(dict_groups.has(d.text)) {
-                    switch(true) {
-                        case(d.radius >= 10): return color_by_size[0]
-                            break;
-                        case(d.radius >= 8): return color_by_size[1]
-                            break;
-                        case(d.radius >= 6): return color_by_size[2]
-                            break;
-                        case(d.radius >= 4): return color_by_size[3]
-                            break;
-                        case(d.radius >= 2): return color_by_size[4]
-                            break;
-                        default: return color_by_size[5];
+
+
+                    if(dict_groups.has(d.text)) {
+                        switch(true) {
+                            case(d.radius >= 10): return color_by_size[0]
+                                break;
+                            case(d.radius >= 8): return color_by_size[1]
+                                break;
+                            case(d.radius >= 6): return color_by_size[2]
+                                break;
+                            case(d.radius >= 4): return color_by_size[3]
+                                break;
+                            case(d.radius >= 2): return color_by_size[4]
+                                break;
+                            default: return color_by_size[5];
+                        }
                     }
-                }
-                else {return color_by_size[6]}
+                    else {return color_by_size[6]}
 
-
-                console.log(d.text + " radius is " + d.radius);
-                return color(d.cluster);
             })
             .style("opacity", function (d) {
                 if(dict_groups.has(d.text)) {
